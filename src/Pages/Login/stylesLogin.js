@@ -29,7 +29,7 @@ export const ContainerLoginFlex = styled.div`
   }
 `
 
-export const ContainerLoginLeft = styled.div`
+export const ContainerLeft = styled.div`
   border: 0px;
   padding: 4px auto;
   margin: 4px auto;
@@ -42,7 +42,7 @@ export const ContainerLoginLeft = styled.div`
   background-color: transparent;
 `
 
-export const ContainerLoginHidth = styled.div`
+export const ContainerRight = styled.div`
   border: 0px;
   padding: 4px auto;
   margin: 4px auto;

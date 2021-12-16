@@ -42,7 +42,7 @@ export const ContainerLoginLeft = styled.div`
   background-color: transparent;
 `
 
-export const ContainerLoginHidth = styled.div`
+export const ContainerLoginRight = styled.div`
   border: 0px;
   padding: 4px auto;
   margin: 4px auto;
@@ -54,7 +54,7 @@ export const ContainerLoginHidth = styled.div`
   align-content: center;
   background-color: transparent;
 `
-export const ContainerImagemLogin = styled.div`
+export const ContainerImageLogin = styled.div`
   border: 2px #7f7fbb solid;
   margin: 4px auto;
   padding: 4px auto;
@@ -81,7 +81,7 @@ export const ButtonsLoginImageBg = styled.button`
   background-image: url(${({ img }) => img || semimg});
   cursor: pointer;
   outline: none;
-  font-size: 18px;
+  font-size: 14px;
 `
 //         css form login
 export const ContainerFormLogin = styled.div`

@@ -1,12 +1,15 @@
 import React from 'react'
+// import { useHistory } from 'react-router-dom'
 import {
   ContainerMain,
   ContainerFlex,
   ContainerCard,
-  ContainerTexto
+  ContainerText
 } from '../stylePages'
-import Tarjeta from '../components/Tarjeta'
-import Login from '../components/Login'
+import { TitlePageButton } from '../components/Titles'
+// import { ButtonBg } from '../components/Buttons/ButtonBg'
+// import home from '../../../assets/image/home.png'
+// import Login from '../components/Login'
 
 export const PageLogin = () => {
   // const { push } = useHistory()
@@ -14,12 +17,15 @@ export const PageLogin = () => {
     <ContainerMain>
       <ContainerFlex>
         <ContainerCard>
-          <ContainerTexto>
-            <Tarjeta title={'Acesso à segurança do Sistema.'} />
-            <Login />
-          </ContainerTexto>
+          <ContainerText>
+            <TitlePageButton>
+            </TitlePageButton> tit={'Acesso à segurança do Sistema.'} />
+          </ContainerText>
         </ContainerCard>
       </ContainerFlex>
     </ContainerMain>
   )
 }
+
+// <ButtonBg img={home} onClick={() => push('/')} />
+// <Login />

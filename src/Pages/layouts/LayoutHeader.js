@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { LayoutHeaderPage } from '../../layouts/stylesLayouts'
+import { LayoutHeaderPage } from './stylesLayouts'
 
 export const LayoutHeader = ({ children }) => {
   return <LayoutHeaderPage>{children}</LayoutHeaderPage>

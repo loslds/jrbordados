@@ -2,12 +2,12 @@ import React from 'react'
 import {
   ContainerLoginCard,
   ContainerLoginFlex,
-  ContainerImagemLogin,
+  ContainerImageLogin,
   ButtonsLoginImageBg,
   ContainerFormLogin,
   ContainerFormFlex
 } from './stylesLogin'
-import { TextoObsActacion } from '../../../styles/styles'
+import { TextObsActacion } from '../../../styles/styles'
 import logoff from '../../../assets/image/key-lock.png'
 import FormLogin from '../Forms/FormLogin'
 
@@ -15,15 +15,12 @@ export default function Login() {
   return (
     <ContainerLoginCard>
       <ContainerLoginFlex>
-        <TextoObsActacion>
-          <p>
-            &emsp;&emsp; * Systema em operação de Acesso. Informações serão
-            pesquisadas em nossoa bancos de Dados ao enviar.
-          </p>
-        </TextoObsActacion>
-        <ContainerImagemLogin>
+        <TextObsActacion>
+          <p>&emsp;&emsp; * Systema em operação de Acesso.</p>
+        </TextObsActacion>
+        <ContainerImageLogin>
           <ButtonsLoginImageBg img={logoff} />
-        </ContainerImagemLogin>
+        </ContainerImageLogin>
         <ContainerFormLogin>
           <ContainerFormFlex>
             <FormLogin />

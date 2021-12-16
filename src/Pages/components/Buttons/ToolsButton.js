@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { CtrlPageCol, CtrlPage } from './styleButton'
 
-export default function ToolBar({ children }) {
+export default function ToolsButton({ children }) {
   return (
     <CtrlPageCol>
       <CtrlPage>{children}</CtrlPage>
@@ -10,10 +10,10 @@ export default function ToolBar({ children }) {
   )
 }
 
-ToolBar.propTypes = {
+ToolsButton.propTypes = {
   children: PropTypes.any
 }
 
-ToolBar.defaultProps = {
+ToolsButton.defaultProps = {
   children: null
 }

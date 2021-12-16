@@ -26,7 +26,22 @@ export const CtrlPage = styled.div`
     margin: 0px 0px 0px 0px;
   }
 `
-export const ButtonsHomeBg = styled.button`
+export const ContainerButtonImgBg = styled.div`
+  border: 2px blue solid;
+  padding: 4px auto;
+  margin: 4px auto;
+  height: 45px;
+  width: 45px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-content: center;
+  color: black;
+  min-height: 35px;
+  font-size: 14px;
+`
+export const ButtonsImgBg = styled.button`
   border: 0px;
   margin: 0 4px;
   padding: 0;
@@ -40,5 +55,5 @@ export const ButtonsHomeBg = styled.button`
   background-image: url(${({ img }) => img || semimg});
   cursor: pointer;
   outline: none;
-  font-size: 18px;
+  font-size: 14px;
 `

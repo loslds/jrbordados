@@ -14,6 +14,7 @@ export const ContainerMain = styled.div`
   background-color: #ffffff;
 `
 export const ContainerFlex = styled.div`
+  border: 0.3px #8284f1 solid;
   margin: 10px auto;
   padding: 10px auto;
   border: 0px;
@@ -26,7 +27,7 @@ export const ContainerFlex = styled.div`
   background-color: transparent;
 `
 export const ContainerCard = styled.div`
-  border: 0px;
+  border: 0.3px #e06eeb solid;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   width: 100%;
@@ -40,20 +41,21 @@ export const ContainerCardFlex = styled.div`
   display: flex;
 `
 
-export const ContainerTexto = styled.div`
-  border: 1px red dashed;
+export const ContainerText = styled.div`
+  border: 0.3px #8284f1 solid;
   padding: 1.5px 5px 1.5px 5px;
   margin: 5px 5px 5px 5px;
   width: 98%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row wrap;
+  flex-flow: wrap;
   align-content: center;
   justify-content: center;
   align-items: center;
 
   h5 {
     margin-left: 25px;
-    font-size: 14px;
+    font-size: 10px;
     color: blue;
   }
 `
@@ -82,7 +84,7 @@ export const ContainerButton = styled.div`
   min-height: 35px;
   font-size: 18px;
 `
-export const DivisionTexto = styled.div`
+export const DivisionText = styled.div`
   border: 0px;
   padding: 1.5px auto;
   margin: 1.5px auto;

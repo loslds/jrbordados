@@ -1,2 +1,2 @@
-export { default as ButtonHome } from './ButtonHome'
-export { default as ToolBar } from './ToolBar'
+export { default as ButtonBg } from './ButtonBg'
+export { default as ToolsButton } from './ToolsButton'

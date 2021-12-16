@@ -3,10 +3,10 @@ import {
   ContainerMain,
   ContainerFlex,
   ContainerCard,
-  ContainerTexto,
-  DivisionTexto
+  ContainerText,
+  DivisionText
 } from '../stylePages'
-import Tarjeta from '../components/Tarjeta'
+import { TitlePageButton } from '../components/Titles'
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 
 export const PageAbout = () => {
@@ -15,10 +15,8 @@ export const PageAbout = () => {
     <ContainerMain>
       <ContainerFlex>
         <ContainerCard>
-          <ContainerTexto>
-            <Tarjeta title={'Documentação sobre o Sistema.'} />
-          </ContainerTexto>
-          <ContainerTexto>
+          <TitlePageButton title={'Documentação sobre o Sistema.'} />
+          <ContainerText>
             <p>
               &emsp;&emsp;O Systema esta adequado a tratar as Informações com
               eficiência e fidelidade de acôrdo com o exercício do Usuário.
@@ -42,8 +40,8 @@ export const PageAbout = () => {
               <TitleBg>&nbsp;Produtos&nbsp;</TitleBg>
               <TitleBg>&nbsp;Serviços&nbsp;</TitleBg>
             </ContainerTitleBg>
-            <DivisionTexto />
-          </ContainerTexto>
+            <DivisionText />
+          </ContainerText>
         </ContainerCard>
       </ContainerFlex>
     </ContainerMain>

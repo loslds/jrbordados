@@ -25,7 +25,7 @@ export const TitleBg = styled.div`
   background-size: 20px;
   background-color: #8a7cbb;
 `
-export const TextoObsActacion = styled.div`
+export const TextObsActacion = styled.div`
   border: 0px; /*1px black solid;*/
   margin: 5px auto;
   padding: 5px auto;

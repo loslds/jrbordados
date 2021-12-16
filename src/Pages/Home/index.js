@@ -2,11 +2,10 @@ import React from 'react'
 import {
   ContainerMain,
   ContainerFlex,
-  ContainerTexto,
-  ContainerCard,
-  DivisionTexto
+  ContainerText,
+  ContainerCard
 } from '../stylePages'
-import TitlePage from '../layouts/LayoutTitlePage'
+import TitlePage from '../components/Titles/TitlePage'
 import { ContainerSys, ContainerImgSys } from './styleHome'
 // import Login from '../../Pages/components/Login'
 import logosys from '../../assets/image/logosys.png'
@@ -16,12 +15,10 @@ export const PageHome = () => {
     <ContainerMain>
       <ContainerFlex>
         <ContainerCard>
-          <ContainerTexto>
-            <DivisionTexto />
+          <ContainerText>
             <TitlePage title={'Bem Vindo'} />
-            <DivisionTexto />
-          </ContainerTexto>
-          <ContainerTexto>
+          </ContainerText>
+          <ContainerText>
             {/* <Login /> */}
             <ContainerSys>
               <ContainerImgSys img={logosys} />
@@ -43,7 +40,7 @@ export const PageHome = () => {
               de requerer, guardar e publicar as informações dentro destes para
               lhes ser útil o necessário.
             </p>
-          </ContainerTexto>
+          </ContainerText>
         </ContainerCard>
       </ContainerFlex>
     </ContainerMain>

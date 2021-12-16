@@ -15,21 +15,3 @@ export const Container = styled.form`
   font-size: 14px;
   background: transparent;
 `
-
-/* > div {
-      border: 1px black dashed;
-  padding: 1.5px 5px 1.5px 5px;
-  margin: 5px 5px 5px 5px;
-  width: 98%;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-
-      background: linear-gradient(180deg, #53f, 15%, #05d5ff);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0 11px;
-    } */

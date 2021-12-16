@@ -5,7 +5,7 @@ import { LayoutHeaderPage } from './LayoutHeaderPage'
 import { LayoutMainPage } from './LayoutMainPage'
 import { LayoutFooterPage } from './LayoutFooterPage'
 
-export const LayoutPage = ({ children }) => {
+export const LayoutPg = ({ children }) => {
   return (
     <LayoutContainerPage>
       <LayoutHeaderPage />
@@ -15,9 +15,6 @@ export const LayoutPage = ({ children }) => {
   )
 }
 
-LayoutPage.propTypes = {
+LayoutPg.propTypes = {
   children: PropTypes.string
-}
-LayoutPage.default = {
-  children: null
 }
