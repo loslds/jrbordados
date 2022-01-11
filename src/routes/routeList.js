@@ -5,6 +5,7 @@ import { LayoutPages } from '../Pages/layouts/LayoutPages'
 import { PageHome } from '../Pages/Home'
 import { PageAbout } from '../Pages/About'
 import { PageLogin } from '../Pages/Login'
+import { PageSystem } from '../Pages/System'
 
 export const homeRoutes = [
   {
@@ -29,6 +30,13 @@ export const optionCompanyRoutes = [
     label: 'Login',
     path: '/login',
     component: PageLogin,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'System',
+    path: '/system',
+    component: PageSystem,
     layout: LayoutPages
   }
 ]

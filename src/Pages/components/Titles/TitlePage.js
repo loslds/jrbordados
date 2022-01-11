@@ -1,22 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {
-  ContainerText,
-  ContainerTextFlex,
-  DivisionText
-} from '../../stylePages'
-
-// import Title from './Title'
+import { ContainerTextFlex, DivisionText } from '../../stylePages'
 
 export default function TitlePage({ title }) {
   return (
-    <ContainerText>
-      <ContainerTextFlex>
-        <DivisionText />
-        <h3>{title}</h3>
-        <DivisionText />
-      </ContainerTextFlex>
-    </ContainerText>
+    // <ContainerText>
+    <ContainerTextFlex>
+      <DivisionText />
+      <h5>{title}</h5>
+      <DivisionText />
+    </ContainerTextFlex>
+    // </ContainerText>
   )
 }
 TitlePage.propTypes = {

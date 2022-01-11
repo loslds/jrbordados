@@ -6,7 +6,7 @@ import {
   ContainerCard,
   ContainerText
 } from '../stylePages'
-import { TitlePageButton } from '../components/Titles'
+// import { TitlePageButton } from '../components/Titles'
 // import { ButtonBg } from '../components/Buttons/ButtonBg'
 // import home from '../../../assets/image/home.png'
 // import Login from '../components/Login'
@@ -18,8 +18,8 @@ export const PageLogin = () => {
       <ContainerFlex>
         <ContainerCard>
           <ContainerText>
-            <TitlePageButton>
-            </TitlePageButton> tit={'Acesso à segurança do Sistema.'} />
+            <h1>ContainerText</h1>
+            {/* </TitlePageButton> tit={'Acesso à segurança do Sistema.'} /> */}
           </ContainerText>
         </ContainerCard>
       </ContainerFlex>

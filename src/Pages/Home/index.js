@@ -15,6 +15,7 @@ export const PageHome = () => {
     <ContainerMain>
       <ContainerFlex>
         <ContainerCard>
+          <TitlePage title={'tudo bem'} />
           <ContainerText>
             <TitlePage title={'Bem Vindo'} />
           </ContainerText>

@@ -8,7 +8,7 @@ export const CtrlPageCol = styled.div`
   margin: 2px auto;
   min-width: 100%;
   display: flex;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: transparent; /*rgba(0, 0, 0, 1);*/
 `
 export const CtrlPage = styled.div`
   min-height: 40px;
@@ -27,11 +27,11 @@ export const CtrlPage = styled.div`
   }
 `
 export const ContainerButtonImgBg = styled.div`
-  border: 2px blue solid;
-  padding: 4px auto;
-  margin: 4px auto;
-  height: 45px;
-  width: 45px;
+  border: 1.3px blue dotted;
+  padding: 1.3px auto;
+  margin: 1.3px auto;
+  height: 40px;
+  width: 40px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -43,11 +43,11 @@ export const ContainerButtonImgBg = styled.div`
 `
 export const ButtonsImgBg = styled.button`
   border: 0px;
-  margin: 0 4px;
+  margin: 0px 4px;
   padding: 0;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: contain;

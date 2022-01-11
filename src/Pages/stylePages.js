@@ -1,9 +1,10 @@
 import styled from 'styled-components'
-
+/** corpo da pagina */
+/** largura 900 , altuta 100%(o quanto existir) */
 export const ContainerMain = styled.div`
   border: 0.3px #82b6f1 solid;
   top: 0px;
-  max-width: 900px;
+  max-width: 98%;
   margin: 0 auto;
   height: 100%;
   display: flex;
@@ -13,21 +14,34 @@ export const ContainerMain = styled.div`
   color: Black;
   background-color: #ffffff;
 `
+/** quota da flexão do corpo  sem Borda */
 export const ContainerFlex = styled.div`
-  border: 0.3px #8284f1 solid;
+  border: 0px;
   margin: 10px auto;
   padding: 10px auto;
-  border: 0px;
-  border-radius: 10px;
-  width: 98%;
+  width: 96%;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   background-color: transparent;
 `
+/** quota da flexão do corpo com Borda */
+export const ContainerFlexBorder = styled.div`
+  border: 1px black solid;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px auto;
+  width: 96%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+`
+
 export const ContainerCard = styled.div`
-  border: 0.3px #e06eeb solid;
+  border: 0.3px #750580 solid;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   width: 100%;
@@ -45,7 +59,7 @@ export const ContainerText = styled.div`
   border: 0.3px #8284f1 solid;
   padding: 1.5px 5px 1.5px 5px;
   margin: 5px 5px 5px 5px;
-  width: 98%;
+  width: 96%;
   display: flex;
   flex-wrap: row wrap;
   flex-flow: wrap;
@@ -62,7 +76,7 @@ export const ContainerText = styled.div`
 export const ContainerTextFlex = styled.div`
   border: 1px black dashed;
   padding: 1.5px auto;
-  margin: 1.5px auto;
+  margin: 5px;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -74,7 +88,7 @@ export const ContainerButton = styled.div`
   border: 2px blue solid;
   padding: 4px auto;
   margin: 4px auto;
-  height: 20px;
+  height: 45px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

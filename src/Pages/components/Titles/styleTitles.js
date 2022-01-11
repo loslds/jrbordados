@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const CardTitleFlex = styled.div`
-  border: 0px;
+  border: 1px red solid;
   padding: 2px auto;
   margin: 2px auto;
   width: 98%;
@@ -11,6 +11,6 @@ export const CardTitleFlex = styled.div`
   align-items: center;
   align-content: center;
   color: black;
-  min-height: 35px;
+  min-height: 45px;
   font-size: 18px;
 `

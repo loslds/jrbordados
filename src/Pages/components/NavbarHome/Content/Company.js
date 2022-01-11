@@ -15,7 +15,7 @@ export const Company = () => (
       </li>
       <li>
         <span className="system" />
-        Versão
+        <Link to="/system">Sistema.</Link>
       </li>
     </ul>
     {/*
