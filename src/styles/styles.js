@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 export const ConteinerMainApp = styled.div`
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 0 auto;
   border: 1px #1214b6 dotted;
+  max-width: 920px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 `
 export const ContainerTitleBg = styled.div`
-  border: 0px; /*1px #090b8d solid; */
+  border: 0px;
   max-width: 920px;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   display: flex;
 `
 

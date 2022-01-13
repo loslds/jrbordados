@@ -6,6 +6,7 @@ import { PageHome } from '../Pages/Home'
 import { PageAbout } from '../Pages/About'
 import { PageLogin } from '../Pages/Login'
 import { PageSystem } from '../Pages/System'
+import { PageDocEmpresa, PageDocAcesso, PageDocSistema } from '../Pages/Docs'
 
 export const homeRoutes = [
   {
@@ -16,7 +17,7 @@ export const homeRoutes = [
     layout: LayoutApp
   }
 ]
-
+/**    rotas do menu principal opção Empresa */
 export const optionCompanyRoutes = [
   {
     exact: true,
@@ -37,6 +38,28 @@ export const optionCompanyRoutes = [
     label: 'System',
     path: '/system',
     component: PageSystem,
+    layout: LayoutPages
+  },
+  /**    Link da Pagina About */
+  {
+    exact: true,
+    label: 'Empresa',
+    path: '/docs/empresa',
+    component: PageDocEmpresa,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Acesso',
+    path: '/docs/PageDocAcesso',
+    component: PageDocAcesso,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Sistema',
+    path: '/docs/pageDocSistema',
+    component: PageDocSistema,
     layout: LayoutPages
   }
 ]

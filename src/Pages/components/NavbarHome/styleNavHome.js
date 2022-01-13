@@ -6,7 +6,7 @@ export const Container = styled.nav`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 11px;
+    padding: 0px 11px;
   }
 `
 
@@ -48,9 +48,9 @@ export const DropdownStyles = styled.div`
   .dropdown-container {
     position: absolute;
     overflow: hidden;
-    box-shadow: 0 30px 100px -20px rgba(50, 50, 93, 0.25),
-      0 20px 60px -30px rgba(0, 0, 0, 0.3),
-      0 -10px 60px -10px rgba(0, 0, 0, 0.025);
+    box-shadow: 0px 30px 100px -20px rgba(50, 50, 93, 0.25),
+      0px 20px 60px -30px rgba(0, 0, 0, 0.3),
+      0px -10px 60px -10px rgba(0, 0, 0, 0.5);
     background-color: #f3efd9;
     border-radius: 4px;
   }

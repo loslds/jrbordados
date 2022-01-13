@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import semimg from '../../assets/image/semimg.svg'
 
 export const ContainerSys = styled.div`
-  border: 0; /** 1px green dashed;*/
-  padding: 2.5px auto;
+  border: 1px green dashed;
+  padding: 2px auto;
   margin: 4px auto;
   max-width: 94%;
   display: flex;

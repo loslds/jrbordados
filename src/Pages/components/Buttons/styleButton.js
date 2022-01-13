@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import semimg from '../../../assets/image/semimg.svg'
 
 export const CtrlPageCol = styled.div`
-  border: 3px white solid;
+  border: 0px;
   border-radius: 10px;
   padding: 2px auto;
   margin: 2px auto;
@@ -27,9 +27,9 @@ export const CtrlPage = styled.div`
   }
 `
 export const ContainerButtonImgBg = styled.div`
-  border: 1.3px blue dotted;
-  padding: 1.3px auto;
-  margin: 1.3px auto;
+  border: 0px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
   height: 40px;
   width: 40px;
   display: flex;
@@ -42,9 +42,8 @@ export const ContainerButtonImgBg = styled.div`
   font-size: 14px;
 `
 export const ButtonsImgBg = styled.button`
-  border: 0px;
-  margin: 0px 4px;
-  padding: 0;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   display: block;
   width: 35px;
   height: 35px;

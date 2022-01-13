@@ -2,8 +2,8 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
     box-sizing: border-box;
 }
 
@@ -24,20 +24,20 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  border: 0;
+
+  border: 0px;
 }
 
 
 *, button, input {
-    border: 0;
+    border: 0px;
     background: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif,syste-UI,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, system-UI,sans-serif;
 }
 
 ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0px;
 }
 
 #root{
@@ -57,7 +57,7 @@ code {
 p{
   display: block;
   margin: 0px 16px auto;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
 }
 `
 export default GlobalStyles

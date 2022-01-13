@@ -11,7 +11,7 @@ export const Company = () => (
       </li>
       <li>
         <span className="about" />
-        <Link to="/about">About.</Link>
+        <Link to="/about">Sobre.</Link>
       </li>
       <li>
         <span className="system" />

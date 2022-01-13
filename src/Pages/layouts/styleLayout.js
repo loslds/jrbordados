@@ -2,14 +2,14 @@ import styled from 'styled-components'
 
 export const LayoutContainer = styled.div`
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0;
   height: 100%;
   max-width: 100%;
   background-color: transparent;
 `
 export const LayoutContainerPage = styled.div`
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   top: 0px;
   height: 100%;
   max-width: 100%;
@@ -18,8 +18,8 @@ export const LayoutContainerPage = styled.div`
 `
 export const LayoutCenterPage = styled.div`
   border: 0px;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
   top: 45px;
   width: 98%;
   position: relative;

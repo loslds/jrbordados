@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
 export const ContainerPanelMain = styled.div`
-  border: 0.3px #82b6f1 solid;
+  border: 1px #82b6f1 solid;
   top: 0px;
-  max-width: 98%;
+  // max-width: 98%;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  height: 100%;
+  height: 98%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,7 +40,7 @@ export const ContainerPanelMainFlexBorder = styled.div`
   background-color: transparent;
 `
 export const ContainerPanelMainCard = styled.div`
-  border: 2.3px #750580 dotted;
+  border: 0px;
   padding: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   width: 100%;
@@ -49,9 +49,9 @@ export const ContainerPanelMainCard = styled.div`
 `
 export const DivisionPanel = styled.div`
   border: 0px;
-  padding: 1.5px auto;
-  margin: 1.5px auto;
-  height: 2px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 1px 1px 1px;
+  height: 1px;
   width: 98%;
   display: flex;
   background-color: #7f7fbb;
@@ -60,8 +60,8 @@ export const DivisionPanel = styled.div`
 /** quota para titulo */
 export const ContainerPanelTitleFlex = styled.div`
   border: 0px;
-  padding: 0px auto;
-  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -71,7 +71,6 @@ export const ContainerPanelTitleFlex = styled.div`
   color: black;
   font-size: 18px;
 `
-
 export const ContainerPanel = styled.div`
   border: 0px;
   padding: 0px 0px 0px 0px;
@@ -84,8 +83,8 @@ export const ContainerPanel = styled.div`
 export const ContainerPanelFlex = styled.div`
   border: 0px;
   width: 98%;
-  padding: 0px auto;
-  margin: 0px auto;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
@@ -97,8 +96,8 @@ export const ContainerPanelFlex = styled.div`
 `
 export const ContainerPanelLeft = styled.div`
   border: 0px;
-  padding: 4px auto;
-  margin: 4px auto;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
   max-width: 40%;
   display: flex;
   flex-flow: row wrap;
@@ -109,9 +108,9 @@ export const ContainerPanelLeft = styled.div`
 `
 
 export const ContainerPanelEnd = styled.div`
-  border: 1px #37b406 solid;
-  padding: 4px auto;
-  margin: 4px auto;
+  border: 0px;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
   max-width: 40%;
   display: flex;
   flex-flow: row wrap;
@@ -121,8 +120,8 @@ export const ContainerPanelEnd = styled.div`
   background-color: transparent;
 `
 export const ContainerPanelText = styled.div`
-  border: 0.3px #8284f1 solid;
-  padding: 1.5px 5px 1.5px 5px;
+  border: 0px #8284f1 solid;
+  padding: 1px 5px 1px 5px;
   margin: 5px 5px 5px 5px;
   width: 98%;
   display: flex;
@@ -139,8 +138,8 @@ export const ContainerPanelText = styled.div`
   }
 `
 export const ContainerPanelTextFlex = styled.div`
-  border: 1px black dashed;
-  padding: 1.5px auto;
+  border: 1px red dashed;
+  padding: 1px 1px 1px 1px;
   margin: 5px;
   display: flex;
   flex-wrap: wrap;
