@@ -1,31 +1,37 @@
 import React from 'react'
-// import { useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import { PanelMain, PanelLeft, PanelEnd, PanelTitle } from '../components/Panel'
 import {
-  ContainerMain,
-  ContainerFlex,
-  ContainerCard,
-  ContainerText
-} from '../stylePages'
-// import { TitlePageButton } from '../components/Titles'
-// import { ButtonBg } from '../components/Buttons/ButtonBg'
-// import home from '../../../assets/image/home.png'
+  ContainerPanelText,
+  ContainerPanelTextFlex,
+  DivisionPanel
+} from '../components/Panel/stylePanel'
+import { ButtonBg } from '../components/Buttons'
+
+import home from '../../assets/image/home.svg'
+import PanelForm from '../components/Panel/PanelForm'
 // import Login from '../components/Login'
 
 export const PageLogin = () => {
-  // const { push } = useHistory()
+  const { push } = useHistory()
+
   return (
-    <ContainerMain>
-      <ContainerFlex>
-        <ContainerCard>
-          <ContainerText>
-            <h1>ContainerText</h1>
-            {/* </TitlePageButton> tit={'Acesso à segurança do Sistema.'} /> */}
-          </ContainerText>
-        </ContainerCard>
-      </ContainerFlex>
-    </ContainerMain>
+    <PanelMain>
+      <ContainerPanelText>
+        <ContainerPanelTextFlex>
+          <DivisionPanel />
+          <PanelLeft>
+            <PanelTitle title="Acesso ao Sistema." />
+          </PanelLeft>
+          <PanelEnd>
+            <ButtonBg img={home} onClick={() => push('/')} />
+          </PanelEnd>
+          <DivisionPanel />
+          <PanelForm>
+            <h3>Panel Form</h3>
+          </PanelForm>
+        </ContainerPanelTextFlex>
+      </ContainerPanelText>
+    </PanelMain>
   )
 }
-
-// <ButtonBg img={home} onClick={() => push('/')} />
-// <Login />

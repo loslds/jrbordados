@@ -3,10 +3,9 @@ import styled from 'styled-components'
 export const ContainerPanelMain = styled.div`
   border: 1px #82b6f1 solid;
   top: 0px;
-  // max-width: 98%;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  height: 98%;
+  width: 98%;
   display: flex;
   justify-content: center;
   align-items: center;

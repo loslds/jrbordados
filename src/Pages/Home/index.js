@@ -8,7 +8,7 @@ import {
 } from '../components/Panel/stylePanel'
 import { PanelEnd, PanelLeft } from '../components/Panel'
 import { ButtonBg } from '../components/Buttons'
-import login from '../../assets/image/key-lock.png'
+import login from '../../assets/image/key-lock.svg'
 
 export const PageHome = () => {
   const { push } = useHistory()
