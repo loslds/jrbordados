@@ -1,30 +1,33 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
+import { PanelMain, PanelLeft, PanelEnd, PanelTitle } from '../components/Panel'
 import {
-  ContainerPanelMain,
   ContainerPanelText,
   ContainerPanelTextFlex,
   DivisionPanel
 } from '../components/Panel/stylePanel'
-import { PanelEnd, PanelLeft } from '../components/Panel'
 import { ButtonBg } from '../components/Buttons'
 import login from '../../assets/image/key-lock.svg'
+import { ContainerSys, ContainerImgSys } from './styleHome'
+import logosys from '../../assets/image/logosys.png'
 
 export const PageHome = () => {
   const { push } = useHistory()
   return (
-    <ContainerPanelMain>
+    <PanelMain>
       <ContainerPanelText>
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <h3>Bem Vindo.</h3>
+            <PanelTitle title="Bem Vindo ao Sistema." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg img={login} onClick={() => push('/login')} />
           </PanelEnd>
           <DivisionPanel />
-
+          <ContainerSys>
+            <ContainerImgSys img={logosys} />
+          </ContainerSys>
           <p>
             {' '}
             &emsp;&emsp;O Systema esta adequado a tratar as Informações com
@@ -44,7 +47,7 @@ export const PageHome = () => {
           </p>
         </ContainerPanelTextFlex>
       </ContainerPanelText>
-    </ContainerPanelMain>
+    </PanelMain>
   )
 }
 

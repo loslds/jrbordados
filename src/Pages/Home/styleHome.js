@@ -2,10 +2,10 @@ import styled from 'styled-components'
 import semimg from '../../assets/image/semimg.svg'
 
 export const ContainerSys = styled.div`
-  border: 1px green dashed;
+  border: 0px; /*1px green dashed;*/
   padding: 2px auto;
   margin: 4px auto;
-  max-width: 94%;
+  width: 94%;
   display: flex;
   background-color: transparent;
 `

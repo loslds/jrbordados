@@ -10,7 +10,7 @@ import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 import { ButtonBg } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
 
-export default function PageDocSistema() {
+export default function PageDocServico() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -18,15 +18,16 @@ export default function PageDocSistema() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Documentação opção Sistema." />
+            <PanelTitle title="Documentação opção Serviços." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg img={home} onClick={() => push('/about')} />
           </PanelEnd>
           <DivisionPanel />
           <ContainerTitleBg>
-            <TitleBg>&nbsp;Sistema&nbsp;</TitleBg>
+            <TitleBg>&nbsp;Serviços&nbsp;</TitleBg>
           </ContainerTitleBg>
+          <h2> MUDAR TEXTO</h2>
           <p>
             &emsp;&emsp;A Sistema foi elaborado para controlar prestações de
             serviços de Empresa que manufatura Bordados, Cortes à Laser e

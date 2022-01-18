@@ -1,6 +1,6 @@
 import React from 'react'
 import { useHistory, Link } from 'react-router-dom'
-import { PanelEnd, PanelLeft, PanelMain, PanelTitle } from '../components/Panel'
+import { PanelMain, PanelLeft, PanelEnd, PanelTitle } from '../components/Panel'
 import {
   ContainerPanelText,
   ContainerPanelTextFlex,
@@ -45,13 +45,13 @@ export const PageAbout = () => {
           </p>
           <ContainerTitleBg>
             <TitleBg>
-              &nbsp;<Link to="/docs/empresa">Empresa</Link>&nbsp;
+              &nbsp;<Link to="/docs/empresa">Empresas</Link>&nbsp;
             </TitleBg>
             <TitleBg>
-              <Link to="">&nbsp;Produtos</Link>&nbsp;
+              <Link to="/docs/produto">&nbsp;Produtos</Link>&nbsp;
             </TitleBg>
             <TitleBg>
-              <Link to="">&nbsp;Serviços</Link>&nbsp;
+              <Link to="/docs/servico">&nbsp;Serviços</Link>&nbsp;
             </TitleBg>
           </ContainerTitleBg>
           <DivisionPanel />

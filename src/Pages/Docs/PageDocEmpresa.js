@@ -16,7 +16,7 @@ export default function PageDocEmpresa() {
     <PanelMain>
       <ContainerPanelText>
         <ContainerPanelTextFlex>
-          <DivisionPanel className="1" />
+          <DivisionPanel />
           <PanelLeft>
             <PanelTitle title="Documentação opção Empresa." />
           </PanelLeft>
@@ -24,22 +24,27 @@ export default function PageDocEmpresa() {
             <ButtonBg img={home} onClick={() => push('/about')} />
           </PanelEnd>
           <DivisionPanel />
-          <ContainerTitleBg>
-            <TitleBg>&nbsp;Empresa&nbsp;</TitleBg>
-          </ContainerTitleBg>
+          <ContainerPanelText>
+            <ContainerTitleBg>
+              <TitleBg>&nbsp;Empresas&nbsp;</TitleBg>
+            </ContainerTitleBg>
+          </ContainerPanelText>
+
           <p>
             &emsp;&emsp;A Sistema esta adequado a tratar as Informações com
             eficiência e fidelidade de acôrdo com o exercício do Usuário.
           </p>
           <p>
-            &emsp;&emsp;Estaremos trabalhando com apenas 3 opções no menu
-            principal, os quais estão delegados as Rotinas dentro de opções que
-            determinarão o desenvolvimento do sistema integrado.
+            &emsp;&emsp;Estaremos trabalhando com a possibilidade de operar com
+            diferêntes empresas no mesmo Sistema.
           </p>
           <p>
             &emsp;&emsp;Todas evoluem de acordo com seus próprios princípios em
-            requerer, guardar e publicar as informações dentro destes para lhes
-            ser útil o necessário.
+            requerer, guardar e publicar as informações.
+          </p>
+          <p>
+            &emsp;&emsp;Todas as rotinas e processamento tem o mesmo perfil,
+            somente usa filtro para indexar-las.
           </p>
           <DivisionPanel />
         </ContainerPanelTextFlex>
