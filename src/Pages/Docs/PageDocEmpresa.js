@@ -9,6 +9,8 @@ import {
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 import { ButtonBg } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
+import { ContainerCenter, ContainerImgMatriz } from '../stylePages'
+import matrizfilial from '../../assets/image/matrizfilial.svg'
 
 export default function PageDocEmpresa() {
   const { push } = useHistory()
@@ -46,6 +48,20 @@ export default function PageDocEmpresa() {
             &emsp;&emsp;Todas as rotinas e processamento tem o mesmo perfil,
             somente usa filtro para indexar-las.
           </p>
+          <p>
+            &emsp;&emsp;As demais Empresa estarão disponiveis através de um novo
+            cadastro para a mesma como sendo uma Filial.
+          </p>
+          <p>
+            &emsp;&emsp;O controle das Filiais são independentes poderão se
+            tratar com liberdade de escolhas e preços das manufaturas
+            operacionais.
+          </p>
+          <ContainerCenter>
+            <ContainerImgMatriz>
+              <img src={matrizfilial} width={'300px'} height={'230px'} />
+            </ContainerImgMatriz>
+          </ContainerCenter>
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import semimg from '../assets/image/semimg.svg'
 /** corpo da pagina */
 /** largura 900 , altuta 100%(o quanto existir) */
 export const ContainerMain = styled.div`
@@ -106,4 +107,42 @@ export const DivisionText = styled.div`
   width: 98%;
   display: flex;
   background-color: #7f7fbb;
+`
+export const ContainerCenter = styled.div`
+  border: 1px #fff555 dashed;
+  padding: 5px auto;
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+`
+export const ContainerCenterImg = styled.div`
+  border: 2px #7f7fbb solid;
+  margin: 4px auto;
+  padding: 4px auto;
+  min-height: 100px;
+  width: 300px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+`
+
+export const ContainerImgMatriz = styled.div`
+  border: 2px #7f7fbb solid;
+  margin: 4px auto;
+  padding: 4px auto;
+  min-height: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: transparent;
 `
