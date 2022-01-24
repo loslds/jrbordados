@@ -22,7 +22,11 @@ export const PageHome = () => {
             <PanelTitle title="Bem Vindo ao Sistema." />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg img={login} onClick={() => push('/login')} />
+            <ButtonBg
+              img={login}
+              onClick={() => push('/login')}
+              title={'Login.'}
+            />
           </PanelEnd>
           <DivisionPanel />
           <ContainerSys>
@@ -45,6 +49,7 @@ export const PageHome = () => {
             processo de funcionamento de uma das maiores Empresas no ramo de
             Bordados, Corte e Gravação à Laser.
           </p>
+          <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>
     </PanelMain>

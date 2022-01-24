@@ -6,6 +6,11 @@ import { PageHome } from '../Pages/Home'
 import { PageAbout } from '../Pages/About'
 import { PageLogin } from '../Pages/Login'
 import { PageSystem } from '../Pages/System'
+import {
+  PagePortfolio,
+  PagePFProdutos,
+  PagePFServicos
+} from '../Pages/Portfolios'
 import { PageDocEmpresa, PageDocProduto, PageDocServico } from '../Pages/Docs'
 
 export const homeRoutes = [
@@ -40,6 +45,27 @@ export const optionCompanyRoutes = [
     component: PageSystem,
     layout: LayoutPages
   },
+  {
+    exact: true,
+    label: 'Portfólios',
+    path: '/portfolios/pageportfolio',
+    component: PagePortfolio,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Portfólios Produtos',
+    path: '/portfolios/portpfprodutos',
+    component: PagePFProdutos,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Portfólios Serviços',
+    path: '/portfolios/portpfservicos',
+    component: PagePFServicos,
+    layout: LayoutPages
+  },
   /**    Link da Pagina About */
   {
     exact: true,
@@ -59,6 +85,13 @@ export const optionCompanyRoutes = [
     exact: true,
     label: 'Serviços',
     path: '/docs/servico',
+    component: PageDocServico,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'PortFolio',
+    path: '/docs/docportfolio',
     component: PageDocServico,
     layout: LayoutPages
   }

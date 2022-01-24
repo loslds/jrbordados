@@ -48,6 +48,9 @@ export const CompanyWrapper = styled.div`
         &.system {
           background: #f2f555;
         }
+        &.portfolio {
+          background: #6cf312;
+        }
       }
       > span:hover {
         border: 2px red solid;

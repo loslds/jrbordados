@@ -21,7 +21,11 @@ export default function PageDocServico() {
             <PanelTitle title="Documentação opção Serviços." />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg img={home} onClick={() => push('/about')} />
+            <ButtonBg
+              img={home}
+              onClick={() => push('/about')}
+              title={'About.'}
+            />
           </PanelEnd>
           <DivisionPanel />
           <ContainerTitleBg>

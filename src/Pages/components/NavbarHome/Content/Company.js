@@ -17,6 +17,10 @@ export const Company = () => (
         <span className="system" />
         <Link to="/system">Sistema.</Link>
       </li>
+      <li>
+        <span className="portfolio" />
+        <Link to="/portfolio">PortFolios.</Link>
+      </li>
     </ul>
     {/*
     <ul className="secondary">

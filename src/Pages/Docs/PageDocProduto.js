@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 import { PanelEnd, PanelLeft, PanelMain, PanelTitle } from '../components/Panel'
 import {
   ContainerPanelText,
@@ -9,6 +9,7 @@ import {
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 import { ButtonBg } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
+import previous from '../../assets/image/previous.svg'
 
 export default function PageDocProduto() {
   const { push } = useHistory()
@@ -21,7 +22,12 @@ export default function PageDocProduto() {
             <PanelTitle title="Documentação opção Produtos." />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg img={home} onClick={() => push('/about')} />
+            <ButtonBg img={home} onClick={() => push('/')} title={'Home.'} />
+            <ButtonBg
+              img={previous}
+              onClick={() => push('/about')}
+              title={'About.'}
+            />
           </PanelEnd>
           <DivisionPanel />
           <ContainerPanelText>
@@ -57,7 +63,12 @@ export default function PageDocProduto() {
             Cliênte nos entrega para a elaboração do serviço.
           </p>
 
-          <p>&emsp;&emsp; Conheça nosso Portfólio.</p>
+          <p>&emsp;&emsp; Conheça nosso Produtos....</p>
+          <ContainerTitleBg>
+            <TitleBg>
+              &nbsp;<Link to="/docs/portfolio">Portfólio Produtos.</Link>&nbsp;
+            </TitleBg>
+          </ContainerTitleBg>
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>
