@@ -18,7 +18,7 @@ export const PageAbout = () => {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Documentação Sobre o Sistema." />
+            <PanelTitle title="Documentação sobre o Menu." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg img={home} onClick={() => push('/')} />
@@ -40,8 +40,8 @@ export const PageAbout = () => {
             ser útil o necessário.
           </p>
           <p>
-            &emsp;&emsp;Em nosso MENU PRINCIPAL, notamos acima, as seguintes
-            opções: <br />
+            &emsp;&emsp;Em nosso MENU, notamos acima, as seguintes opções:{' '}
+            <br />
           </p>
           <ContainerTitleBg>
             <TitleBg>

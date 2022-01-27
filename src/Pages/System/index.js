@@ -4,7 +4,7 @@ import PanelMain from '../components/Panel/PanelMain'
 export const PageSystem = () => {
   return (
     <PanelMain>
-      <h1>Sistema.</h1>
+      <h1>Sistemas.</h1>
     </PanelMain>
   )
 }

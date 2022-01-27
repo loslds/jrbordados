@@ -8,7 +8,9 @@ import {
 } from '../components/Panel/stylePanel'
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 import { ButtonBg } from '../components/Buttons'
+
 import previous from '../../assets/image/previous.svg'
+import home from '../../assets/image/home.svg'
 import { ContainerCenter, ContainerImgMatriz } from '../stylePages'
 import matrizfilial from '../../assets/image/matrizfilial.svg'
 
@@ -28,6 +30,7 @@ export default function PageDocEmpresa() {
               onClick={() => push('/about')}
               title={'About.'}
             />
+            <ButtonBg img={home} onClick={() => push('/about')} />
           </PanelEnd>
           <DivisionPanel />
           <ContainerPanelText>
