@@ -117,7 +117,7 @@ export const ContainerCenter = styled.div`
   background-color: transparent;
 `
 export const ContainerCenterImg = styled.div`
-  border: 2px #7f7fbb solid;
+  border: 0;
   margin: 4px auto;
   padding: 4px auto;
   min-height: 100px;
@@ -135,7 +135,8 @@ export const ContainerCenterImg = styled.div`
 `
 
 export const ContainerImgMatriz = styled.div`
-  border: 2px #7f7fbb solid;
+  border: 2px #1010aa solid;
+  border-radius: 10px;
   margin: 4px auto;
   padding: 4px auto;
   min-height: 100px;

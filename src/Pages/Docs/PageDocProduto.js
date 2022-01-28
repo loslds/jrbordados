@@ -4,6 +4,7 @@ import { PanelEnd, PanelLeft, PanelMain, PanelTitle } from '../components/Panel'
 import {
   ContainerPanelText,
   ContainerPanelTextFlex,
+  ContainerPanelMainCard,
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
@@ -22,54 +23,83 @@ export default function PageDocProduto() {
             <PanelTitle title="Documentação opção Produtos." />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg img={home} onClick={() => push('/')} title={'Home.'} />
             <ButtonBg
               img={previous}
               onClick={() => push('/about')}
               title={'About.'}
             />
+            <ButtonBg img={home} onClick={() => push('/')} />
           </PanelEnd>
           <DivisionPanel />
+          <ContainerPanelMainCard>
+            <ContainerPanelText>
+              <ContainerTitleBg>
+                <TitleBg>&nbsp;Produtos&nbsp;</TitleBg>
+              </ContainerTitleBg>
+            </ContainerPanelText>
+          </ContainerPanelMainCard>
+          {/**   ate aqui */}
           <ContainerPanelText>
-            <ContainerTitleBg>
-              <TitleBg>&nbsp;Produtos&nbsp;</TitleBg>
-            </ContainerTitleBg>
+            {' '}
+            <h3>Operacional</h3>
           </ContainerPanelText>
-          <h3>Operacional</h3>
           <p>
+            {' '}
             &emsp;&emsp;Trabalhamos para melhor servir os nossos Cliêntes,
             adotamos da perssonaficação independênte e de sigilo extremo, como
             tambem a forma liberal.
           </p>
           <p>
+            {' '}
             &emsp;&emsp;Nossos Cliêntes podem contar com os Serviços de Designs
-            próprios e acompanhar o desenvolvimento. Como tambem podem trazer
-            que será elaborado dentro dos padrões específicos, ou contar com
-            nossa ajuda para melhorar.
+            próprios e acompanhar o desenvolvimento.
           </p>
-          <h3>Execução</h3>
           <p>
-            &emsp;&emsp;Todo contato poderá ser efetuado atravéz do WhatszApp,
+            {' '}
+            &emsp;&emsp;Como tambem podem trazer imagens: TIF, TIFF, JPEG, JPG,
+            GIF, PDF, EPS, SVG ou CDR. Ou contar com nossa ajuda para melhor
+            lhes atender.
+          </p>
+          <ContainerPanelText>
+            {' '}
+            <h3>Execução</h3>
+          </ContainerPanelText>
+          <p>
+            {' '}
+            &emsp;&emsp;Todo contato poderá ser efetuado atravéz do WhatszApp.{' '}
             Estaremos atendendo com a possibilidade de operar com diferêntes
             plataformas.
           </p>
           <p>
+            {' '}
             &emsp;&emsp;Todos serviço será estabelecido conforme ordem emetida
             diante do Cliênte, após seu concentimento pelo presencial e ou pelo
             indicado.
           </p>
           <p>
+            {'    '}
             &emsp;&emsp;Podemos fornecer material específico ou o próprio
             Cliênte nos entrega para a elaboração do serviço.
+            <br />
           </p>
 
-          <p>&emsp;&emsp; Conheça nosso Produtos....</p>
-          <ContainerTitleBg>
-            <TitleBg>
-              &nbsp;<Link to="/docs/portfolio">Portfólio Produtos.</Link>&nbsp;
-            </TitleBg>
-          </ContainerTitleBg>
           <DivisionPanel />
+          <p>
+            {'    '}
+            &emsp;&emsp; Conheça nosso Produtos....
+            <br />
+          </p>
+          <ContainerPanelMainCard>
+            <ContainerPanelText>
+              <ContainerTitleBg>
+                <TitleBg>
+                  &nbsp;
+                  <Link to="/docs/docpfprodutos">Portfólio Produtos.</Link>
+                  &nbsp;
+                </TitleBg>
+              </ContainerTitleBg>
+            </ContainerPanelText>
+          </ContainerPanelMainCard>
         </ContainerPanelTextFlex>
       </ContainerPanelText>
     </PanelMain>

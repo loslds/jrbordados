@@ -4,6 +4,7 @@ import { PanelEnd, PanelLeft, PanelMain, PanelTitle } from '../components/Panel'
 import {
   ContainerPanelText,
   ContainerPanelTextFlex,
+  ContainerPanelMainCard,
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
@@ -30,40 +31,50 @@ export default function PageDocEmpresa() {
               onClick={() => push('/about')}
               title={'About.'}
             />
-            <ButtonBg img={home} onClick={() => push('/about')} />
+            <ButtonBg img={home} onClick={() => push('/')} />
           </PanelEnd>
           <DivisionPanel />
-          <ContainerPanelText>
-            <ContainerTitleBg>
-              <TitleBg>&nbsp;Empresas&nbsp;</TitleBg>
-            </ContainerTitleBg>
-          </ContainerPanelText>
+          <ContainerPanelMainCard>
+            <ContainerPanelText>
+              <ContainerTitleBg>
+                <TitleBg>&nbsp;Empresas&nbsp;</TitleBg>
+              </ContainerTitleBg>
+            </ContainerPanelText>
+          </ContainerPanelMainCard>
 
-          <p>
-            &emsp;&emsp;A Sistema esta adequado a tratar as Informações com
-            eficiência e fidelidade de acôrdo com o exercício do Usuário.
-          </p>
-          <p>
-            &emsp;&emsp;Estaremos trabalhando com a possibilidade de operar com
-            diferêntes empresas no mesmo Sistema.
-          </p>
-          <p>
-            &emsp;&emsp;Todas evoluem de acordo com seus próprios princípios em
-            requerer, guardar e publicar as informações.
-          </p>
-          <p>
-            &emsp;&emsp;Todas as rotinas e processamento tem o mesmo perfil,
-            somente usa filtro para indexar-las.
-          </p>
-          <p>
-            &emsp;&emsp;As demais Empresa estarão disponiveis através de um novo
-            cadastro para a mesma como sendo uma Filial.
-          </p>
-          <p>
-            &emsp;&emsp;O controle das Filiais são independentes poderão se
-            tratar com liberdade de escolhas e preços das manufaturas
-            operacionais.
-          </p>
+          <ContainerPanelText>
+            <p>
+              {' '}
+              &emsp;&emsp;A Sistema esta adequado a tratar as Informações com
+              eficiência e fidelidade de acôrdo com o exercício do Usuário.
+            </p>
+            <p>
+              {' '}
+              &emsp;&emsp;Estaremos trabalhando com a possibilidade de operar
+              com diferêntes empresas no mesmo Sistema.
+            </p>
+            <p>
+              {' '}
+              &emsp;&emsp;Todas evoluem de acordo com seus próprios princípios
+              em requerer, guardar e publicar as informações.
+            </p>
+            <p>
+              {' '}
+              &emsp;&emsp;Todas as rotinas e processamento tem o mesmo perfil,
+              somente usa filtro para indexar-las.
+            </p>
+            <p>
+              {' '}
+              &emsp;&emsp;As demais Empresa estarão disponiveis através de um
+              novo cadastro para a mesma como sendo uma Filial.
+            </p>
+            <p>
+              {' '}
+              &emsp;&emsp;O controle das Filiais são independentes poderão se
+              tratar com liberdade de escolhas e preços das manufaturas
+              operacionais.
+            </p>
+          </ContainerPanelText>
           <ContainerCenter>
             <ContainerImgMatriz>
               <img src={matrizfilial} width={'300px'} height={'230px'} />

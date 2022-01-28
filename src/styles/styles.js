@@ -15,7 +15,7 @@ export const ContainerTitleBg = styled.div`
 `
 
 export const TitleBg = styled.div`
-  border: 1px #85f0ea solid;
+  border: 1px #1010aa solid;
   border-radius: 5px;
   padding: 2px auto;
   margin-left: 10px;
