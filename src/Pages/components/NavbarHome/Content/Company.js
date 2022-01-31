@@ -19,7 +19,7 @@ export const Company = () => (
       </li>
       <li>
         <span className="portfolio" />
-        <Link to="/portfolio">PortFolios.</Link>
+        <Link to="/portfolios">PortFolios.</Link>
       </li>
     </ul>
     {/*

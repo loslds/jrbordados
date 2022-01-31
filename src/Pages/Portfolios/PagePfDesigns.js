@@ -7,9 +7,10 @@ import {
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ButtonBg } from '../components/Buttons'
+
 import home from '../../assets/image/home.svg'
 
-export default function PagePfProdutos() {
+export default function PagePfDesigns() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -17,7 +18,7 @@ export default function PagePfProdutos() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="PortFolios Produtos." />
+            <PanelTitle title="PortFolios Design`s." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />

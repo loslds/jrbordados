@@ -20,23 +20,23 @@ export default function PageDocPFProdutos() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Documentação do Portfólios de Produtos." />
+            <PanelTitle title="Documentação do Portfólio de Produto." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg
               img={previous}
-              onClick={() => push('/docprodutos')}
-              title={'Produtos.'}
+              onClick={() => push('/docs/docproduto')}
+              title={'Produto.'}
             />
-            <ButtonBg onClick={() => push('/about')} />
             <ButtonBg img={home} onClick={() => push('/')} />
           </PanelEnd>
           <DivisionPanel />
           <ContainerPanelText>
             <p>
               {'  '}
-              &emsp;&emsp;Todos os nossos trabalhos mostrados aqui, são
-              liberados pelos nossos Cliêntes.
+              &emsp;&emsp;Todos os nossos trabalhos de Bordados e Serviços de
+              Corte à Laser e Gravações à Laser mostrados aqui, são liberados
+              pelos nossos Cliêntes.
             </p>
             <p>
               {'  '}
@@ -48,13 +48,15 @@ export default function PageDocPFProdutos() {
             <ContainerPanelText>
               <ContainerTitleBg>
                 <TitleBg>
-                  &nbsp;<Link to="#">Bordados.</Link>&nbsp;
+                  &nbsp;
+                  <Link to="/docs/docprfcrsbordado">Ex: Bordados.</Link>
+                  &nbsp;
                 </TitleBg>
                 <TitleBg>
-                  <Link to="#">&nbsp;Corte à Laser.</Link>&nbsp;
+                  <Link to="#">&nbsp;Ex: Corte à Laser.</Link>&nbsp;
                 </TitleBg>
                 <TitleBg>
-                  <Link to="#">&nbsp;Gravação à Laser.</Link>&nbsp;
+                  <Link to="#">&nbsp;Ex: Gravação à Laser.</Link>&nbsp;
                 </TitleBg>
               </ContainerTitleBg>
             </ContainerPanelText>

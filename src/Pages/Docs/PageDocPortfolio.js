@@ -18,10 +18,14 @@ export default function PageDocPortfolio() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Documentação dos Portfólios." />
+            <PanelTitle title="Documentação dos Portfólio." />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg img={home} onClick={() => push('/about')} />
+            <ButtonBg
+              img={home}
+              onClick={() => push('/about')}
+              title={'About.'}
+            />
           </PanelEnd>
           <DivisionPanel />
           <p>
@@ -34,20 +38,20 @@ export default function PageDocPortfolio() {
             colaboração dos participes de pequenos , médios e grandes empresas
             para fornecerem materiais de alto padrão e serviços de qualidade.
           </p>
+          <DivisionPanel />
           <p>&emsp;&emsp; Conheça nossos Trabalhos...</p>
           <ContainerTitleBg>
             <TitleBg>
               &nbsp;
-              <Link to="#">Portfólio Produtos.</Link>
+              <Link to="#">Portfólio Produto.</Link>
               &nbsp;
             </TitleBg>
             <TitleBg>
               &nbsp;
-              <Link to="#">Portfólio Serviços.</Link>
+              <Link to="#">Portfólio Serviço.</Link>
               &nbsp;
             </TitleBg>
           </ContainerTitleBg>
-
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

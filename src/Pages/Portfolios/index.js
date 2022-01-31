@@ -1,3 +1,4 @@
-export { default as PagePortfolio } from './PagePortfolio'
-export { default as PagePFProdutos } from './PagePFProdutos'
-export { default as PagePFServicos } from './PagePFServicos'
+export { default as PagePortfolios } from './PagePortfolios'
+export { default as PagePfDesigns } from './PagePfDesigns'
+export { default as PagePfProdutos } from './PagePfProdutos'
+export { default as PagePfServicos } from './PagePfServicos'

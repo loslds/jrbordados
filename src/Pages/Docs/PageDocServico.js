@@ -9,6 +9,7 @@ import {
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 import { ButtonBg } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
+import previous from '../../assets/image/previous.svg'
 
 export default function PageDocServico() {
   const { push } = useHistory()
@@ -22,10 +23,11 @@ export default function PageDocServico() {
           </PanelLeft>
           <PanelEnd>
             <ButtonBg
-              img={home}
+              img={previous}
               onClick={() => push('/about')}
               title={'About.'}
             />
+            <ButtonBg img={home} onClick={() => push('/')} />{' '}
           </PanelEnd>
           <DivisionPanel />
           <ContainerTitleBg>

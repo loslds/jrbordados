@@ -100,6 +100,7 @@ export default function PageDocProduto() {
               </ContainerTitleBg>
             </ContainerPanelText>
           </ContainerPanelMainCard>
+          <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>
     </PanelMain>

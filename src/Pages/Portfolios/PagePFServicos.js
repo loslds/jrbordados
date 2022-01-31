@@ -9,7 +9,7 @@ import {
 import { ButtonBg } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
 
-export default function PagePFServicos() {
+export default function PagePfServicos() {
   const { push } = useHistory()
   return (
     <PanelMain>

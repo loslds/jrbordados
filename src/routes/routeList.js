@@ -7,12 +7,11 @@ import { PageAbout } from '../Pages/About'
 import { PageLogin } from '../Pages/Login'
 import { PageSystem } from '../Pages/System'
 import {
-  PageDocEmpresa,
-  PageDocProduto,
-  PageDocServico,
-  PageDocPortfolio,
-  PageDocPFProdutos
-} from '../Pages/Docs'
+  PagePortfolios,
+  PagePfDesigns,
+  PagePfProdutos,
+  PagePfServicos
+} from '../Pages/Portfolios'
 
 export const homeRoutes = [
   {
@@ -49,61 +48,80 @@ export const optionCompanyRoutes = [
   {
     exact: true,
     label: 'Portfólios',
-    path: '/docs/portfolios',
-    component: PageDocPortfolio,
+    path: '/portfolios',
+    component: PagePortfolios,
     layout: LayoutPages
   },
   {
     exact: true,
-    label: 'Portfólios Produtos',
-    path: '/docs/docprodutos',
-    component: PageDocProduto,
+    label: 'Portfolio Design`s',
+    path: '/portfolios/pagepfdesigns',
+    component: PagePfDesigns,
     layout: LayoutPages
   },
   {
     exact: true,
-    label: 'Portfólios dos Produtos',
-    path: '/docs/docpfprodutos',
-    component: PageDocPFProdutos,
+    label: 'Portfolio Podutos',
+    path: '/portfolios/pagepfprodutos',
+    component: PagePfProdutos,
     layout: LayoutPages
   },
-
   {
     exact: true,
     label: 'Portfólios Serviços',
-    path: '/docs/docservicos',
-    component: PageDocServico,
-    layout: LayoutPages
-  },
-  /**    Link da Pagina About */
-  {
-    exact: true,
-    label: 'Empresas',
-    path: '/docs/empresa',
-    component: PageDocEmpresa,
-    layout: LayoutPages
-  },
-  {
-    exact: true,
-    label: 'Podutos',
-    path: '/docs/produto',
-    component: PageDocProduto,
-    layout: LayoutPages
-  },
-  {
-    exact: true,
-    label: 'Serviços',
-    path: '/docs/servico',
-    component: PageDocServico,
-    layout: LayoutPages
-  },
-  {
-    exact: true,
-    label: 'PortFolio',
-    path: '/docs/docportfolio',
-    component: PageDocServico,
+    path: '/portfolios/pagepfservicos',
+    component: PagePfServicos,
     layout: LayoutPages
   }
+
+  /** portfolio produto */
+  // {
+  //  exact: true,
+  //  label: 'Portfólios Produto',
+  //  path: '/docs/docproduto',
+  //  component: PageDocProduto,
+  //  layout: LayoutPages
+  // },
+  //* * portfolio servicos */
+  /** portfolios de produtos */
+  // {
+  //  exact: true,
+  //  label: 'Portfólios dos Produto',
+  //  path: '/docs/docpfproduto',
+  //  component: PageDocPFProduto,
+  //  layout: LayoutPages
+  // },
+  /** Carrocel de produtos em portfolio Produto */
+  // {
+  //  exact: true,
+  // label: 'Portfólios dos Bordados',
+  //  path: '/docs/doccrcbordado',
+  //  component: PageDocCRCBordado,
+  //  layout: LayoutPages
+  // },
+
+  /**    Link da Pagina About */
+  // {
+  //  exact: true,
+  //  label: 'Empresas',
+  //  path: '/docs/empresa',
+  //  component: PageDocEmpresa,
+  //  layout: LayoutPages
+  // },
+  // {
+  //  exact: true,
+  //  label: 'Podutos',
+  //  path: '/docs/produto',
+  //  component: PageDocProduto,
+  //  layout: LayoutPages
+  // },
+  // {
+  //  exact: true,
+  //  label: 'Serviços',
+  //  path: '/docs/servico',
+  //  component: PageDocServico,
+  //  layout: LayoutPages
+  // }
 ]
 
 export const routeList = [...optionCompanyRoutes, ...homeRoutes]

@@ -56,13 +56,13 @@ export const PageAbout = () => {
             <ContainerPanelText>
               <ContainerTitleBg>
                 <TitleBg>
-                  &nbsp;<Link to="/docs/empresa">Empresas</Link>&nbsp;
+                  &nbsp;<Link to="/docs/docempresa">Empresas</Link>&nbsp;
                 </TitleBg>
                 <TitleBg>
-                  <Link to="/docs/produto">&nbsp;Produtos</Link>&nbsp;
+                  <Link to="/docs/docproduto">&nbsp;Produtos</Link>&nbsp;
                 </TitleBg>
                 <TitleBg>
-                  <Link to="/docs/servico">&nbsp;Serviços</Link>&nbsp;
+                  <Link to="/docs/docservico">&nbsp;Serviços</Link>&nbsp;
                 </TitleBg>
               </ContainerTitleBg>
             </ContainerPanelText>

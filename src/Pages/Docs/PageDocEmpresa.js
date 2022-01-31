@@ -31,7 +31,7 @@ export default function PageDocEmpresa() {
               onClick={() => push('/about')}
               title={'About.'}
             />
-            <ButtonBg img={home} onClick={() => push('/')} />
+            <ButtonBg img={home} onClick={() => push('/')} title={'Home.'} />
           </PanelEnd>
           <DivisionPanel />
           <ContainerPanelMainCard>
