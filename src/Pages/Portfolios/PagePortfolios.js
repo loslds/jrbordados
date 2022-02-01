@@ -9,7 +9,7 @@ import {
 } from '../components/Panel/stylePanel'
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 import { ButtonBg } from '../components/Buttons'
-import previous from '../../assets/image/previous.svg'
+
 import home from '../../assets/image/home.svg'
 
 export default function PagePortfolios() {
@@ -23,11 +23,6 @@ export default function PagePortfolios() {
             <PanelTitle title="Acesso ao PortFolios." />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg
-              img={previous}
-              onClick={() => push('/about')}
-              title={'About.'}
-            />
             <ButtonBg img={home} onClick={() => push('/')} title={'Home.'} />
           </PanelEnd>
           <DivisionPanel />

@@ -8,12 +8,10 @@ import {
 } from '../components/Panel/stylePanel'
 import { ButtonBg } from '../components/Buttons'
 
-import home from '../../assets/image/home.svg'
-import previous from '../../assets/image/previous.svg'
+import login from '../../assets/image/key-lock.svg'
+import { ContainerSys, ContainerImgSys } from '../Home/styleHome'
 import logosys from '../../assets/image/logosys.png'
-import { CarroselMain, CarroselLogo, ButtonLogo } from '../components/Carousel'
-
-export default function PagePfDesigns() {
+export default function PageSamples() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -21,23 +19,19 @@ export default function PagePfDesigns() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="PortFolios Design`s." />
+            <PanelTitle title="Bem Vindo ao Portfólio." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg
-              img={previous}
-              onClick={() => push('/portfolios')}
-              title={'Portfólio Design`s.'}
+              img={login}
+              onClick={() => push('/login')}
+              title={'Login.'}
             />
-            <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
           </PanelEnd>
           <DivisionPanel />
-
-          <CarroselMain>
-            <CarroselLogo>
-              <ButtonLogo img={logosys} />
-            </CarroselLogo>
-          </CarroselMain>
+          <ContainerSys>
+            <ContainerImgSys img={logosys} />
+          </ContainerSys>
 
           <DivisionPanel />
         </ContainerPanelTextFlex>

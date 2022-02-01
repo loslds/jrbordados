@@ -12,6 +12,8 @@ import {
   PagePfProdutos,
   PagePfServicos
 } from '../Pages/Portfolios'
+import { PageDocEmpresa, PageDocProduto, PageDocServico } from '../Pages/Docs'
+import { PageSamples } from '../Pages/Samples'
 
 export const homeRoutes = [
   {
@@ -72,56 +74,52 @@ export const optionCompanyRoutes = [
     path: '/portfolios/pagepfservicos',
     component: PagePfServicos,
     layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Empresas',
+    path: '/docs/docempresa',
+    component: PageDocEmpresa,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Portfólios Produto',
+    path: '/docs/docproduto',
+    component: PageDocProduto,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Serviços',
+    path: '/docs/docservico',
+    component: PageDocServico,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Samples',
+    path: '/samples/samples',
+    component: PageSamples,
+    layout: LayoutPages
   }
-
-  /** portfolio produto */
-  // {
-  //  exact: true,
-  //  label: 'Portfólios Produto',
-  //  path: '/docs/docproduto',
-  //  component: PageDocProduto,
-  //  layout: LayoutPages
-  // },
-  //* * portfolio servicos */
-  /** portfolios de produtos */
-  // {
-  //  exact: true,
-  //  label: 'Portfólios dos Produto',
-  //  path: '/docs/docpfproduto',
-  //  component: PageDocPFProduto,
-  //  layout: LayoutPages
-  // },
-  /** Carrocel de produtos em portfolio Produto */
-  // {
-  //  exact: true,
-  // label: 'Portfólios dos Bordados',
-  //  path: '/docs/doccrcbordado',
-  //  component: PageDocCRCBordado,
-  //  layout: LayoutPages
-  // },
-
-  /**    Link da Pagina About */
-  // {
-  //  exact: true,
-  //  label: 'Empresas',
-  //  path: '/docs/empresa',
-  //  component: PageDocEmpresa,
-  //  layout: LayoutPages
-  // },
-  // {
-  //  exact: true,
-  //  label: 'Podutos',
-  //  path: '/docs/produto',
-  //  component: PageDocProduto,
-  //  layout: LayoutPages
-  // },
-  // {
-  //  exact: true,
-  //  label: 'Serviços',
-  //  path: '/docs/servico',
-  //  component: PageDocServico,
-  //  layout: LayoutPages
-  // }
 ]
+
+/** portfolios de produtos */
+// {
+//  exact: true,
+//  label: 'Portfólios dos Produto',
+//  path: '/docs/docpfproduto',
+//  component: PageDocPFProduto,
+//  layout: LayoutPages
+// },
+/** Carrocel de produtos em portfolio Produto */
+// {
+//  exact: true,
+// label: 'Portfólios dos Bordados',
+//  path: '/docs/doccrcbordado',
+//  component: PageDocCRCBordado,
+//  layout: LayoutPages
+// },
 
 export const routeList = [...optionCompanyRoutes, ...homeRoutes]
