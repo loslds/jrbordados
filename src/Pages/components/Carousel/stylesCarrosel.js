@@ -15,7 +15,7 @@ export const ContainerCarroselFlex = styled.div`
   border-radius: 10px;
   margin: 5px 10px 5px 5px;
   padding: 10px 0px 10px 0px;
-  min-height: 100vh;
+  min-height: 130px;
   width: 97%;
   background-color: #e1e1e1e1;
   color: black;
@@ -47,7 +47,7 @@ export const ContainerCarroselLogoFlex = styled.div`
   font-size: 18px;
 `
 export const ContainerCarroselLogo = styled.div`
-  border: 1px black double;
+  border: 0px;
   padding: 1px 1px 1px 1px;
   margin: 1px 4px 1px 4px;
   height: 100px;

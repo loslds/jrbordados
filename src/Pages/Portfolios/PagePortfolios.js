@@ -26,7 +26,6 @@ export default function PagePortfolios() {
             <ButtonBg img={home} onClick={() => push('/')} title={'Home.'} />
           </PanelEnd>
           <DivisionPanel />
-
           <ContainerPanelMainCard>
             <ContainerPanelText>
               <ContainerTitleBg>
@@ -34,7 +33,6 @@ export default function PagePortfolios() {
               </ContainerTitleBg>
             </ContainerPanelText>
           </ContainerPanelMainCard>
-
           <p>
             {'    '}
             &emsp;&emsp;Os PortFolios se tratar de poder apresentar alguns

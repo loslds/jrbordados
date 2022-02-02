@@ -10,7 +10,7 @@ import { ButtonBg } from '../components/Buttons'
 
 import home from '../../assets/image/home.svg'
 import previous from '../../assets/image/previous.svg'
-import logosys from '../../assets/image/logosys.png'
+import designs from '../../assets/image/designs.svg'
 import { CarroselMain, CarroselLogo, ButtonLogo } from '../components/Carousel'
 
 export default function PagePfDesigns() {
@@ -35,7 +35,7 @@ export default function PagePfDesigns() {
 
           <CarroselMain>
             <CarroselLogo>
-              <ButtonLogo img={logosys} />
+              <ButtonLogo img={designs} />
             </CarroselLogo>
           </CarroselMain>
 
