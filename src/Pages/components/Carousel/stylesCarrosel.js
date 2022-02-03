@@ -11,13 +11,13 @@ export const ContainerCarrosel = styled.div`
   border: 0px;
 `
 export const ContainerCarroselFlex = styled.div`
-  border: 1px black solid;
+  border: 0.3px #82b6f1 solid;
   border-radius: 10px;
   margin: 5px 10px 5px 5px;
   padding: 10px 0px 10px 0px;
   min-height: 130px;
   width: 97%;
-  background-color: #e1e1e1e1;
+  background-color: #c0d1f396;
   color: black;
   display: flex;
   flex-wrap: wrap;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory, Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import { PanelMain, PanelLeft, PanelEnd, PanelTitle } from '../components/Panel'
 import {
   ContainerPanelText,
@@ -8,9 +8,9 @@ import {
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
-import { ButtonBg } from '../components/Buttons'
-
+import { ButtonBg, ButtonLogoPage } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
+import designs from '../../assets/image/designs.svg'
 
 export default function PagePortfolios() {
   const { push } = useHistory()
@@ -53,7 +53,23 @@ export default function PagePortfolios() {
           </p>
           <ContainerPanelMainCard>
             <ContainerPanelText>
-              <ContainerTitleBg>
+              <ButtonLogoPage
+                img={designs}
+                onClick={() => push('/portfolios/PagePfDesigns')}
+                title="Portfolio Design`s."
+              />
+              <ButtonLogoPage
+                img={designs}
+                onClick={() => push('/portfolios/PagePfProdutos')}
+                title="Portfolio Produtos"
+              />
+              <ButtonLogoPage
+                img={designs}
+                onClick={() => push('/portfolios/PagePfServicos')}
+                title="Portfolio Serviços."
+              />
+
+              {/* <ContainerTitleBg>
                 <TitleBg>
                   <Link to="/portfolios/PagePfDesigns">
                     Portfolio Design`s.
@@ -71,15 +87,15 @@ export default function PagePortfolios() {
                     Portfolio Serviços.
                   </Link>
                 </TitleBg>
-              </ContainerTitleBg>
+              </ContainerTitleBg> */}
             </ContainerPanelText>
           </ContainerPanelMainCard>
           <DivisionPanel />
           <ContainerPanelText>
             <p>
               {'    '}
-              &emsp;&emsp;Basta clicar no Link desejado e desfrutar das nossas
-              opções ao visualizar.
+              &emsp;&emsp;Basta clicar no Logotipo desejado e desfrutar das
+              nossas opções ao visualizar.
               <br />{' '}
             </p>
           </ContainerPanelText>
