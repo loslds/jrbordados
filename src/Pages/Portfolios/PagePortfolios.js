@@ -11,7 +11,8 @@ import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 import { ButtonBg, ButtonLogoPage } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
 import designs from '../../assets/image/designs.svg'
-
+import produtos from '../../assets/image/produtoslogo.svg'
+import servicos from '../../assets/image/servicoslogo.svg'
 export default function PagePortfolios() {
   const { push } = useHistory()
   return (
@@ -59,12 +60,12 @@ export default function PagePortfolios() {
                 title="Portfolio Design`s."
               />
               <ButtonLogoPage
-                img={designs}
+                img={produtos}
                 onClick={() => push('/portfolios/PagePfProdutos')}
                 title="Portfolio Produtos"
               />
               <ButtonLogoPage
-                img={designs}
+                img={servicos}
                 onClick={() => push('/portfolios/PagePfServicos')}
                 title="Portfolio Serviços."
               />

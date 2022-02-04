@@ -78,7 +78,7 @@ export const ContainerButtonLogoPage = styled.div`
   flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
-  align-content: center;
+  align-content: center;n
   color: black;
   min-height: 35px;
   font-size: 14px;
