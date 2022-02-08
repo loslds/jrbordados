@@ -7,9 +7,9 @@ import {
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ButtonBg } from '../components/Buttons'
-
-import home from '../../assets/image/home.svg'
 import previous from '../../assets/image/previous.svg'
+import home from '../../assets/image/home.svg'
+
 import designs from '../../assets/image/designs.svg'
 import { CarroselMain, CarroselLogo, ButtonLogo } from '../components/Carousel'
 
@@ -27,12 +27,11 @@ export default function PagePfDesigns() {
             <ButtonBg
               img={previous}
               onClick={() => push('/portfolios')}
-              title={'Portfólio Design`s.'}
+              title={'Portfólio'}
             />
             <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
           </PanelEnd>
           <DivisionPanel />
-
           <CarroselMain>
             <CarroselLogo>
               <ButtonLogo img={designs} />

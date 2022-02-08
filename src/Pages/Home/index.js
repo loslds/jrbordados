@@ -19,7 +19,7 @@ export const PageHome = () => {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Bem Vindo ao Sistema." />
+            <PanelTitle title="Bem Vindo ao nosso Sistema." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg

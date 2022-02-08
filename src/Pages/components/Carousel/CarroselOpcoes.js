@@ -2,17 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {
   ContainerCarroselCard,
-  ContainerCarroselCardFlex
+  ContainerCarroselCardFlexBrd
 } from './stylesCarrosel'
 
-export default function CarroselLogo({ children }) {
+export default function CarroselOpcoes({ children }) {
   return (
     <ContainerCarroselCard>
-      <ContainerCarroselCardFlex>{children}</ContainerCarroselCardFlex>
+      <ContainerCarroselCardFlexBrd>{children}</ContainerCarroselCardFlexBrd>
     </ContainerCarroselCard>
   )
 }
 
-CarroselLogo.propTypes = {
+CarroselOpcoes.propTypes = {
   children: PropTypes.any
 }

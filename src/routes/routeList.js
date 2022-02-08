@@ -26,19 +26,20 @@ export const homeRoutes = [
 ]
 /**    rotas do menu principal opção Empresa */
 export const optionCompanyRoutes = [
-  {
-    exact: true,
-    label: 'About',
-    path: '/about',
-    component: PageAbout,
-    layout: LayoutApp
-  },
+  /** Raiz Menu opção empresas */
   {
     exact: true,
     label: 'Login',
     path: '/login',
     component: PageLogin,
     layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'About',
+    path: '/about',
+    component: PageAbout,
+    layout: LayoutApp
   },
   {
     exact: true,
@@ -54,27 +55,7 @@ export const optionCompanyRoutes = [
     component: PagePortfolios,
     layout: LayoutPages
   },
-  {
-    exact: true,
-    label: 'Portfolio Design`s',
-    path: '/portfolios/pagepfdesigns',
-    component: PagePfDesigns,
-    layout: LayoutPages
-  },
-  {
-    exact: true,
-    label: 'Portfolio Podutos',
-    path: '/portfolios/pagepfprodutos',
-    component: PagePfProdutos,
-    layout: LayoutPages
-  },
-  {
-    exact: true,
-    label: 'Portfólios Serviços',
-    path: '/portfolios/pagepfservicos',
-    component: PagePfServicos,
-    layout: LayoutPages
-  },
+  /** sub-Raiz Menu opção about  */
   {
     exact: true,
     label: 'Empresas',
@@ -96,6 +77,29 @@ export const optionCompanyRoutes = [
     component: PageDocServico,
     layout: LayoutPages
   },
+  /** sub-sub-Raiz Menu opção about -> Protifolio  */
+  {
+    exact: true,
+    label: 'Portfolio Design`s',
+    path: '/portfolios/pagepfdesigns',
+    component: PagePfDesigns,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Portfolio Podutos',
+    path: '/portfolios/pagepfprodutos',
+    component: PagePfProdutos,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Portfólios Serviços',
+    path: '/portfolios/pagepfservicos',
+    component: PagePfServicos,
+    layout: LayoutPages
+  },
+  /** componentes -> Protifolio  */
   {
     exact: true,
     label: 'Samples',
@@ -104,22 +108,5 @@ export const optionCompanyRoutes = [
     layout: LayoutPages
   }
 ]
-
-/** portfolios de produtos */
-// {
-//  exact: true,
-//  label: 'Portfólios dos Produto',
-//  path: '/docs/docpfproduto',
-//  component: PageDocPFProduto,
-//  layout: LayoutPages
-// },
-/** Carrocel de produtos em portfolio Produto */
-// {
-//  exact: true,
-// label: 'Portfólios dos Bordados',
-//  path: '/docs/doccrcbordado',
-//  component: PageDocCRCBordado,
-//  layout: LayoutPages
-// },
 
 export const routeList = [...optionCompanyRoutes, ...homeRoutes]

@@ -94,7 +94,9 @@ export default function PageDocProduto() {
               <ContainerTitleBg>
                 <TitleBg>
                   &nbsp;
-                  <Link to="/docs/docpfprodutos">Portfólio Produtos.</Link>
+                  <Link to="/portfolios/pagepfprodutos">
+                    Portfólio Produtos.
+                  </Link>
                   &nbsp;
                 </TitleBg>
               </ContainerTitleBg>

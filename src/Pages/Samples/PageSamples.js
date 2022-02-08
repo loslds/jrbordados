@@ -9,7 +9,7 @@ import {
 import { ButtonBg } from '../components/Buttons'
 
 import login from '../../assets/image/key-lock.svg'
-import { ContainerSys, ContainerImgSys } from '../Home/styleHome'
+import { ContainerSys, ContainerImgSys } from './stylesSamples'
 import logosys from '../../assets/image/logosys.png'
 export default function PageSamples() {
   const { push } = useHistory()

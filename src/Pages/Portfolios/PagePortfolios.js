@@ -56,39 +56,19 @@ export default function PagePortfolios() {
             <ContainerPanelText>
               <ButtonLogoPage
                 img={designs}
-                onClick={() => push('/portfolios/PagePfDesigns')}
+                onClick={() => push('/portfolios/pagepfdesigns')}
                 title="Portfolio Design`s."
               />
               <ButtonLogoPage
                 img={produtos}
-                onClick={() => push('/portfolios/PagePfProdutos')}
+                onClick={() => push('/portfolios/pagepfprodutos')}
                 title="Portfolio Produtos"
               />
               <ButtonLogoPage
                 img={servicos}
-                onClick={() => push('/portfolios/PagePfServicos')}
+                onClick={() => push('/portfolios/pagepfservicos')}
                 title="Portfolio Serviços."
               />
-
-              {/* <ContainerTitleBg>
-                <TitleBg>
-                  <Link to="/portfolios/PagePfDesigns">
-                    Portfolio Design`s.
-                  </Link>
-                </TitleBg>
-                <TitleBg>
-                  &nbsp;
-                  <Link to="/portfolios/PagePfProdutos">
-                    Portfolio Produtos.
-                  </Link>
-                  &nbsp;
-                </TitleBg>
-                <TitleBg>
-                  <Link to="/portfolios/PagePfServicos">
-                    Portfolio Serviços.
-                  </Link>
-                </TitleBg>
-              </ContainerTitleBg> */}
             </ContainerPanelText>
           </ContainerPanelMainCard>
           <DivisionPanel />

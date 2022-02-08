@@ -1,11 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerCarrosel, ContainerCarroselFlex } from './stylesCarrosel'
-
+import {
+  ContainerCarrosel,
+  ContainerCarroselFlex,
+  CardBarMain
+} from './stylesCarrosel'
 export default function CarroselMain({ children }) {
   return (
     <ContainerCarrosel>
-      <ContainerCarroselFlex>{children}</ContainerCarroselFlex>
+      <ContainerCarroselFlex>
+        <CardBarMain>{children}</CardBarMain>
+      </ContainerCarroselFlex>
     </ContainerCarrosel>
   )
 }
