@@ -12,15 +12,18 @@ import home from '../../assets/image/home.svg'
 import {
   CarroselMain,
   CarroselLogo,
-  ButtonLogo,
+  ButtonLogo
+  /*
   CarroselOpcoes,
   CarroselBar,
   CardBarLeft,
   CardBarEnd,
   ButtonBarBg
+  */
 } from '../components/Carousel'
-import { ContainerCardFilters } from '../components/Carousel/stylesCarrosel'
+import { LayoutNav } from '../components/Menus'
 import produtos from '../../assets/image/produtoslogo.svg'
+// import { NavBarProdutos } from '../components/Menus'
 
 export default function PagePfProdutos() {
   const { push } = useHistory()
@@ -49,14 +52,14 @@ export default function PagePfProdutos() {
             </CarroselLogo>
           </CarroselMain>
 
+          <LayoutNav>{<h1>LayoutNav</h1>}</LayoutNav>
+
+          {/*
           <CarroselMain>
             <CarroselOpcoes>
               <CarroselBar>
                 <CardBarLeft>
-                  <ContainerCardFilters>
-                    <div>{<h5>bar filtro serviços</h5>}</div>
-                    <div>{<h5>bar filtro serviços</h5>}</div>
-                  </ContainerCardFilters>
+                  <NavBarProdutos />
                 </CardBarLeft>
                 <CardBarEnd>
                   <ButtonBarBg />
@@ -64,6 +67,8 @@ export default function PagePfProdutos() {
               </CarroselBar>
             </CarroselOpcoes>
           </CarroselMain>
+ */}
+
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

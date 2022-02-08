@@ -195,31 +195,3 @@ export const ButtonsBarImgBg = styled.button`
   outline: none;
   font-size: 14px;
 `
-
-export const ContainerCardFilters = styled.div`
-  border: 2px green dotted;
-  padding: 0px 0px 0px 0px;
-  margin: 4px 10px 4px 10px;
-  max-width: 99%;
-  /* height: 30px; */
-  display: row flex;
-  flex-flow: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  color: white;
-  font-size: 18px;
-  div {
-    padding: 0px 0px 0px 0px;
-    margin: 4px 10px 4px 10px;
-    max-width: 99%;
-    height: 25px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    color: white;
-    font-size: 18px;
-  }
-`
