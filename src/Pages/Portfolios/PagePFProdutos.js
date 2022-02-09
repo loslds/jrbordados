@@ -21,7 +21,11 @@ import {
   ButtonBarBg
   */
 } from '../components/Carousel'
-import { LayoutNav } from '../components/Menus'
+import {
+  LayoutNav,
+  LayoutNavColCenter,
+  LayoutNavHeader
+} from '../components/Menus/Layout'
 import produtos from '../../assets/image/produtoslogo.svg'
 // import { NavBarProdutos } from '../components/Menus'
 
@@ -52,7 +56,15 @@ export default function PagePfProdutos() {
             </CarroselLogo>
           </CarroselMain>
 
-          <LayoutNav>{<h1>LayoutNav</h1>}</LayoutNav>
+          <LayoutNav>
+            <LayoutNavHeader>
+              <LayoutNavColCenter>
+                {<h1>LayoutNav1</h1>}
+                {<h2>LayoutNav2</h2>}
+                {<h3>LayoutNav3</h3>}
+              </LayoutNavColCenter>
+            </LayoutNavHeader>
+          </LayoutNav>
 
           {/*
           <CarroselMain>

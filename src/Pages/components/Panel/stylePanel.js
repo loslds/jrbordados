@@ -137,7 +137,7 @@ export const ContainerPanelText = styled.div`
   }
 `
 export const ContainerPanelTextFlex = styled.div`
-  border: 1px red dashed;
+  border: 0px;
   padding: 1px 1px 1px 1px;
   margin: 5px;
   display: flex;

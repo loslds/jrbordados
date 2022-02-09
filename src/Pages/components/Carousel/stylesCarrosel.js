@@ -5,7 +5,7 @@ export const ContainerCarrosel = styled.div`
   margin: 0px auto;
   padding: 0px auto;
   min-height: 40px;
-  width: 100%;
+  width: 98%;
   background-color: transparent;
   color: black;
   border: 0px;

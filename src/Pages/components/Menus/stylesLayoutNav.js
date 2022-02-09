@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 export const ContainerLayout = styled.div`
-  border: 2px red solid;
-  width: 100%;
+  border: 0px;
   margin: 0px 0px 0px 0px;
-  min-height: 50%;
+  padding: 0px 0px 0px 0px;
+  width: 98%;
+  min-height: 60px;
   background-color: transparent;
 `
 
@@ -30,29 +31,52 @@ export const Divs = styled.div`
   width: 920px;
 `
 
-export const LayoutContainerNav = styled(Divs)`
-  border: 3px #000000 solid;
-  border-radius: 23px;
-  margin: 0px 0px 0px 0px;
+export const LayoutContainerNavFlex = styled.div`
+  border: 0px;
+  margin: 0px 0px 5px 5px;
   padding: 0px 0px 0px 0px;
-  height: 100%;
-  width: 920px;
+  min-height: 100px;
+  width: 99%;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
 `
 
-export const LayoutHeaderNav = styled(Divs)`
-  border: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+export const LayoutHeaderNav = styled.div`
+  border: 0.3px #82b6f1 solid;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  min-height: 58px;
+  height: 50x;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(211, 210, 210, 0.5);
+`
+
+export const LayoutHeaderNavFlex = styled.div`
+  border: 0;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  min-height: 43px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+`
+
+export const LayoutColCenterNav = styled.div`
+  border: 0.3px red dashed;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  max-width: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: transparent;
 `
 
 export const LayoutMainNav = styled(Divs)`
@@ -62,7 +86,7 @@ export const LayoutMainNav = styled(Divs)`
   padding: 0px 0px 0px 0px;
   width: 100%;
   flex-grow: 1;
-  background-color: rgb(166, 181, 182);
+  background-color: rgb(189, 224, 226);
   scroll-behavior: auto;
 `
 
