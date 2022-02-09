@@ -23,10 +23,13 @@ import {
 } from '../components/Carousel'
 import {
   LayoutNav,
+  LayoutNavHeader,
   LayoutNavColCenter,
-  LayoutNavHeader
+  LayoutNavColEnd,
+  ButtonNavBar
 } from '../components/Menus/Layout'
-import produtos from '../../assets/image/produtoslogo.svg'
+import produtos from '../../assets/image/produtos.svg'
+import menu from '../../assets/image/menu.svg'
 // import { NavBarProdutos } from '../components/Menus'
 
 export default function PagePfProdutos() {
@@ -58,11 +61,10 @@ export default function PagePfProdutos() {
 
           <LayoutNav>
             <LayoutNavHeader>
-              <LayoutNavColCenter>
-                {<h1>LayoutNav1</h1>}
-                {<h2>LayoutNav2</h2>}
-                {<h3>LayoutNav3</h3>}
-              </LayoutNavColCenter>
+              <LayoutNavColCenter>{<h1>ColCenter</h1>}</LayoutNavColCenter>
+              <LayoutNavColEnd>
+                <ButtonNavBar img={menu} title={'Menu de Filtros...'} />
+              </LayoutNavColEnd>
             </LayoutNavHeader>
           </LayoutNav>
 

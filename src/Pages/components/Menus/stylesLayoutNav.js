@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import proibido from '../../../assets/image/proibido.svg'
 
 export const ContainerLayout = styled.div`
   border: 0px;
@@ -79,6 +80,49 @@ export const LayoutColCenterNav = styled.div`
   background-color: transparent;
 `
 
+export const LayoutColEndNav = styled.div`
+  border: 0.3px red dashed;
+  padding: 4px 4px 4px 4px;
+  margin: 4px 4px 4px 4px;
+  max-width: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  background-color: transparent;
+`
+
+export const ContainerButtonNavBar = styled.div`
+  border: 0;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  min-height: 35px;
+  font-size: 14px;
+`
+export const ButtonsNavBarImgBg = styled.button`
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || proibido});
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+`
 export const LayoutMainNav = styled(Divs)`
   border-top: 3px #000000 solid;
   border-bottom: 3px #000000 solid;
