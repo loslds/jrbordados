@@ -80,6 +80,20 @@ export const LayoutColCenterNav = styled.div`
   background-color: transparent;
 `
 
+export const LayoutColCenterNavFlex = styled.div`
+  border: 0.3px #000000 dashed;
+  margin: 0px 0px 5px 5px;
+  padding: 0px 0px 0px 0px;
+  min-height: 100px;
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  background-color: ${({ color }) => color};
+`
+
 export const LayoutColEndNav = styled.div`
   border: 0.3px red dashed;
   padding: 4px 4px 4px 4px;
@@ -90,7 +104,20 @@ export const LayoutColEndNav = styled.div`
   justify-content: flex-end;
   align-items: center;
   align-content: center;
-  background-color: transparent;
+`
+
+export const LayoutColEndNavFlex = styled.div`
+  border: 0.3px #000000 dashed;
+  margin: 0px 0px 5px 5px;
+  padding: 0px 0px 0px 0px;
+  min-height: 100px;
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  background-color: ${({ color }) => color};
 `
 
 export const ContainerButtonNavBar = styled.div`

@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
-import { PanelMain, PanelLeft, PanelEnd, PanelTitle } from '../components/Panel'
+import { PanelMain, PanelLeft, PanelEnd } from '../components/Panel'
 import {
   ContainerPanelText,
   ContainerPanelTextFlex,
@@ -10,28 +11,15 @@ import { ButtonBg } from '../components/Buttons'
 import previous from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
 import {
-  CarroselMain,
-  CarroselLogo,
-  ButtonLogo
-  /*
-  CarroselOpcoes,
-  CarroselBar,
-  CardBarLeft,
-  CardBarEnd,
-  ButtonBarBg
-  */
-} from '../components/Carousel'
-import {
-  LayoutNav,
-  LayoutNavHeader,
-  LayoutNavColCenter,
-  LayoutNavColEnd,
-  ButtonNavBar
-} from '../components/Menus/Layout'
-import produtos from '../../assets/image/produtos.svg'
-import menu from '../../assets/image/menu.svg'
-// import { NavBarProdutos } from '../components/Menus'
-
+  LayoutMain,
+  LayoutMainFlex,
+  ToolsBarMain,
+  ToolsBarMainFlex,
+  ToolsBarColCenter,
+  ToolsBarColEnd
+} from '../components/Data'
+import { ContainerCenterImgLogo } from '../stylePages'
+import produtoslogo from '../../assets/image/produtoslogo.svg'
 export default function PagePfProdutos() {
   const { push } = useHistory()
   return (
@@ -40,7 +28,7 @@ export default function PagePfProdutos() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="PortFolios Produtos." />
+            <ContainerCenterImgLogo img={produtoslogo} />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg
@@ -53,6 +41,38 @@ export default function PagePfProdutos() {
           <DivisionPanel />
           {<label>Show dos Produtos Portifolio.</label>}
           <DivisionPanel />
+          <LayoutMain>
+            <LayoutMainFlex>
+              <ToolsBarMain>
+                <ToolsBarMainFlex>
+                  <ToolsBarColCenter color={'#ffffff'}>
+                    <h4>Data/ ToolBar/ ToolsBar ColCenter</h4>
+                  </ToolsBarColCenter>
+                  <ToolsBarColEnd>
+                    <h4>Data/ ToolBar/ ToolsBar ColEnd</h4>
+                  </ToolsBarColEnd>
+                </ToolsBarMainFlex>
+              </ToolsBarMain>
+              <h3>Data/Layout/LayoutMainFlex</h3>
+            </LayoutMainFlex>
+
+            <h3>Data/Layout/LayoutMain</h3>
+          </LayoutMain>
+          <DivisionPanel />
+        </ContainerPanelTextFlex>
+      </ContainerPanelText>
+    </PanelMain>
+  )
+}
+
+PagePfProdutos.propTypes = {
+  color: PropTypes.string
+}
+// PagePfProdutos.defaultProps = {
+//   color: 'transparent'
+// }
+
+/**
           <CarroselMain>
             <CarroselLogo>
               <ButtonLogo img={produtos} />
@@ -61,14 +81,21 @@ export default function PagePfProdutos() {
 
           <LayoutNav>
             <LayoutNavHeader>
-              <LayoutNavColCenter>{<h1>ColCenter</h1>}</LayoutNavColCenter>
+              <LayoutNavColCenter>
+                {<h1>ColCenter</h1>}
+                <LayoutNavColCenterFlex>
+                  {<h1>ColCenter</h1>}
+                </LayoutNavColCenterFlex>
+              </LayoutNavColCenter>
+
               <LayoutNavColEnd>
                 <ButtonNavBar img={menu} title={'Menu de Filtros...'} />
+                <ButtonNavBar />
+                <ButtonNavBar />
               </LayoutNavColEnd>
             </LayoutNavHeader>
           </LayoutNav>
 
-          {/*
           <CarroselMain>
             <CarroselOpcoes>
               <CarroselBar>
@@ -81,11 +108,4 @@ export default function PagePfProdutos() {
               </CarroselBar>
             </CarroselOpcoes>
           </CarroselMain>
- */}
-
-          <DivisionPanel />
-        </ContainerPanelTextFlex>
-      </ContainerPanelText>
-    </PanelMain>
-  )
-}
+ */

@@ -27,6 +27,7 @@ export const ContainerFlex = styled.div`
   align-content: center;
   background-color: transparent;
 `
+
 /** quota da flexão do corpo com Borda */
 export const ContainerFlexBorder = styled.div`
   border: 1px black solid;
@@ -133,7 +134,23 @@ export const ContainerCenterImg = styled.div`
   background-position: center;
   background-image: url(${({ img }) => img || semimg});
 `
-
+export const ContainerCenterImgLogo = styled.div`
+  border: 0;
+  margin: 4px auto;
+  padding: 4px auto;
+  min-height: 50px;
+  width: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+`
 export const ContainerImgMatriz = styled.div`
   border: 2px #1010aa solid;
   border-radius: 10px;

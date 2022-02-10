@@ -1,5 +1,5 @@
 import React from 'react'
-import HomeIcon from '@mui/icons-material/Home';
+import HomeIcon from '@mui/icons-material/Home'
 import { Link } from 'react-router-dom'
 import { routeList } from '../../../routes/routeList'
 import {

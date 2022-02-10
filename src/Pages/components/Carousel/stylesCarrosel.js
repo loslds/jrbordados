@@ -149,7 +149,7 @@ export const CardBarFilterEnd = styled.div`
   justify-content: flex-end;
   align-items: center;
   align-content: center;
-  background-color: transparent;
+  background-color: 'transparent';
 `
 
 export const CardBarCenter = styled.div`

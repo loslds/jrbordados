@@ -18,3 +18,6 @@ export default function PanelMain({ children }) {
 PanelMain.propTypes = {
   children: PropTypes.any
 }
+PanelMain.default = {
+  children: null
+}

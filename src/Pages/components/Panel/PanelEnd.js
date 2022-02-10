@@ -9,3 +9,6 @@ export default function PanelEnd({ children }) {
 PanelEnd.propTypes = {
   children: PropTypes.any
 }
+PanelEnd.default = {
+  children: null
+}

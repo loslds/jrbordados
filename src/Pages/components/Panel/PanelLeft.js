@@ -9,3 +9,6 @@ export default function PanelLeft({ children }) {
 PanelLeft.propTypes = {
   children: PropTypes.any
 }
+PanelLeft.default = {
+  children: null
+}

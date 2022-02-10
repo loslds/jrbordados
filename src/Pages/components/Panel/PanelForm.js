@@ -12,3 +12,6 @@ export default function PanelForm({ children }) {
 PanelForm.propTypes = {
   children: PropTypes.any
 }
+PanelForm.default = {
+  children: null
+}

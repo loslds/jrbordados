@@ -18,3 +18,6 @@ export const LayoutPg = ({ children }) => {
 LayoutPg.propTypes = {
   children: PropTypes.string
 }
+LayoutPg.default = {
+  children: null
+}

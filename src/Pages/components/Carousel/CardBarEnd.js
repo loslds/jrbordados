@@ -9,3 +9,6 @@ export default function CardBarEnd({ children }) {
 CardBarEnd.propTypes = {
   children: PropTypes.any
 }
+CardBarEnd.defaultProps = {
+  color: 'transparent'
+}

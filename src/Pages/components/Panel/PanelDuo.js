@@ -13,3 +13,6 @@ export default function PanelDuo({ children }) {
 PanelDuo.propTypes = {
   children: PropTypes.any
 }
+PanelDuo.default = {
+  children: null
+}
