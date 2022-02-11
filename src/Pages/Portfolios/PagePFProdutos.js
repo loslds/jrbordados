@@ -8,8 +8,11 @@ import {
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ButtonBg } from '../components/Buttons'
-import previous from '../../assets/image/previous.svg'
+import retornar from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
+import produtoslogo from '../../assets/image/produtoslogo.svg'
+import menubrc from '../../assets/image/menubrc.svg'
+import limparbrc from '../../assets/image/limparbrc.svg'
 import {
   LayoutMain,
   LayoutMainFlex,
@@ -19,7 +22,7 @@ import {
   ToolsBarColEnd
 } from '../components/Data'
 import { ContainerCenterImgLogo } from '../stylePages'
-import produtoslogo from '../../assets/image/produtoslogo.svg'
+
 export default function PagePfProdutos() {
   const { push } = useHistory()
   return (
@@ -32,9 +35,9 @@ export default function PagePfProdutos() {
           </PanelLeft>
           <PanelEnd>
             <ButtonBg
-              img={previous}
+              img={retornar}
               onClick={() => push('/portfolios')}
-              title={'Portfólio'}
+              title={'Retornar...'}
             />
             <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
           </PanelEnd>
@@ -49,7 +52,16 @@ export default function PagePfProdutos() {
                     <h4>Data/ ToolBar/ ToolsBar ColCenter</h4>
                   </ToolsBarColCenter>
                   <ToolsBarColEnd>
-                    <h4>Data/ ToolBar/ ToolsBar ColEnd</h4>
+                    <ButtonBg
+                      img={menubrc}
+                      onClick={() => {}}
+                      title={'Menu On/Off.'}
+                    />
+                    <ButtonBg
+                      img={limparbrc}
+                      onClick={() => {}}
+                      title={'Limpar Filtros...'}
+                    />
                   </ToolsBarColEnd>
                 </ToolsBarMainFlex>
               </ToolsBarMain>
@@ -73,6 +85,8 @@ PagePfProdutos.propTypes = {
 // }
 
 /**
+ *
+ *
           <CarroselMain>
             <CarroselLogo>
               <ButtonLogo img={produtos} />
