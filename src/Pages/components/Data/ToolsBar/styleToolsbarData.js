@@ -25,8 +25,8 @@ export const ContainerToolsBarMainFlex = styled.div`
 `
 
 export const ContainerToolsBarColCenter = styled.div`
-  border: 0.3px white solid;
-  padding: 0px 10px 0px 10px;
+  border: 0px;
+  padding: 0px 5px 0px 5px;
   margin: 5px 5px 5px 5px;
   max-width: 45%;
   display: flex;
@@ -34,8 +34,8 @@ export const ContainerToolsBarColCenter = styled.div`
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: ${({ color }) => color};
-  visibility: visible;
+  background-color: white; /*${({ color }) => color};*/
+  color: black;
 `
 
 export const ContainerToolsBarColEnd = styled.div`

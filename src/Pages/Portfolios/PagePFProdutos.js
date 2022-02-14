@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+// import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import { PanelMain, PanelLeft, PanelEnd } from '../components/Panel'
 import {
@@ -22,8 +22,12 @@ import {
   ToolsBarColEnd
 } from '../components/Data'
 import { ContainerCenterImgLogo } from '../stylePages'
-
+import { DropMenu } from '../components/Dorpdownmenu'
 export default function PagePfProdutos() {
+  const [onoff, setOnOff] = useState(false)
+  const handleMenu = () => {
+    setOnOff(b => !b)
+  }
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -48,13 +52,14 @@ export default function PagePfProdutos() {
             <LayoutMainFlex>
               <ToolsBarMain>
                 <ToolsBarMainFlex>
-                  <ToolsBarColCenter color={'#ffffff'}>
-                    <h4>Data/ ToolBar/ ToolsBar ColCenter</h4>
+                  <ToolsBarColCenter>
+                    <DropMenu open={onoff} />
                   </ToolsBarColCenter>
+
                   <ToolsBarColEnd>
                     <ButtonBg
                       img={menubrc}
-                      onClick={() => {}}
+                      onClick={handleMenu}
                       title={'Menu On/Off.'}
                     />
                     <ButtonBg
@@ -77,10 +82,10 @@ export default function PagePfProdutos() {
   )
 }
 
-PagePfProdutos.propTypes = {
-  color: PropTypes.string
-}
-// PagePfProdutos.defaultProps = {
+// PagePfProdutos.propTypes = {
+//   color: PropTypes.string
+// }
+// // PagePfProdutos.defaultProps = {
 //   color: 'transparent'
 // }
 
