@@ -26,7 +26,7 @@ import { DropMenu } from '../components/Dorpdownmenu'
 export default function PagePfProdutos() {
   const [onoff, setOnOff] = useState(false)
   const handleMenu = () => {
-    setOnOff(b => !b)
+    setOnOff(off => !off)
   }
   const { push } = useHistory()
   return (
