@@ -22,7 +22,7 @@ import {
   ToolsBarColEnd
 } from '../components/Data'
 import { ContainerCenterImgLogo } from '../stylePages'
-import { DropMenu } from '../components/Dorpdownmenu'
+import { DropMenu } from '../components/Dropdowmenu'
 export default function PagePfProdutos() {
   const [onoff, setOnOff] = useState(false)
   const handleMenu = () => {
@@ -70,7 +70,7 @@ export default function PagePfProdutos() {
                   </ToolsBarColEnd>
                 </ToolsBarMainFlex>
               </ToolsBarMain>
-              <h3>Data/Layout/LayoutMainFlex</h3>
+              <div> mostra page produtos </div>
             </LayoutMainFlex>
 
             <h3>Data/Layout/LayoutMain</h3>

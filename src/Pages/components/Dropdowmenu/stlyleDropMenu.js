@@ -6,11 +6,19 @@ export const ContentMenu = styled.div`
   padding: 0px auto;
   margin: 0px auto;
   display: ${({ open }) => (open ? 'flex' : 'none')};
-  flex-flow: center;
-  flex-wrap: row nowrap;
+  flex-flow: left;
+  flex-wrap: nowrap;
   align-items: center;
   align-content: center;
   justify-content: center;
+  z-index: 10000;
+  /* 
+  h3 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+  }
 
   nav {
     border: 1px red dashed;
@@ -18,42 +26,56 @@ export const ContentMenu = styled.div`
     color: black;
   }
 
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-  }
   ul {
     list-style: none;
     padding-left: 0px;
   }
+
   ul li {
     position: relative;
+    margin: 4 4 4 4;
+    padding: 5 5 5 5;
     color: black;
     background-color: transparent;
   }
-  li ul {
-    position: absolute;
-    left: 149px;
-    top: 0;
-    display: none;
-  }
+  li {
+    display: block;
+  } */
 `
 
 export const ButtonMenuDropdown = styled.button`
-  border: 0px;
-  margin: 0 5 0 5;
-  padding: 0 auto;
+  margin: 2px 2px 2px 2px;
+  padding: 0px 5px 0px 5px;
   width: 100%;
   display: inline-block;
-  flex-flow: center;
+  flex-flow: left;
   flex-wrap: nowrap;
+  background: transparent;
   color: black;
-  background-color: ${({ btbg }) => (btbg ? 'transparent' : 'white')};
   font-size: 1em;
   cursor: pointer;
+  transition: 0.5s all ease-out;
+  &:hover {
+    background-color: #ff4949;
+    color: white;
+  }
 `
+
+export const ContainerDropdownPrd = styled.div`
+  border-radius: 3px;
+  border: 3px #00ff55 solid;
+  margin: 2 5 2 5;
+  padding: 0 auto;
+  width: 100%;
+  top: 30px;
+  height: 50px;
+  display: ${({ uldiv }) => (uldiv ? 'flex' : 'none')};
+  flex-flow: center;
+  flex-wrap: row nowrap;
+  align-items: center;
+  align-content: center;
+`
+
 // `
 // export const ContainerMenuFlex = styled.div`
 //   border: 0px;

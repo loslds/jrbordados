@@ -19,8 +19,7 @@ export const ContainerToolsBarMainFlex = styled.div`
   align-items: center;
   align-content: space-between;
   justify-content: center;
-  background-color: #000000; /*${({ color }) => color};*/
-  color: #ffffff;
+  background-color: #000000;
   font-size: 14px;
 `
 
@@ -31,10 +30,10 @@ export const ContainerToolsBarColCenter = styled.div`
   max-width: 45%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   align-content: center;
-  background-color: white; /*${({ color }) => color};*/
+  background-color: white;
   color: black;
 `
 
