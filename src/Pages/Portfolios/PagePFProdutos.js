@@ -13,6 +13,7 @@ import home from '../../assets/image/home.svg'
 import produtoslogo from '../../assets/image/produtoslogo.svg'
 import menubrc from '../../assets/image/menubrc.svg'
 import limparbrc from '../../assets/image/limparbrc.svg'
+import designbrc from '../../assets/image/designbrc.svg'
 import {
   LayoutMain,
   LayoutMainFlex,
@@ -23,6 +24,7 @@ import {
 } from '../components/Data'
 import { ContainerCenterImgLogo } from '../stylePages'
 import { DropMenu } from '../components/Dropdowmenu'
+
 export default function PagePfProdutos() {
   const [onoff, setOnOff] = useState(false)
   const handleMenu = () => {
@@ -55,7 +57,6 @@ export default function PagePfProdutos() {
                   <ToolsBarColCenter>
                     <DropMenu open={onoff} />
                   </ToolsBarColCenter>
-
                   <ToolsBarColEnd>
                     <ButtonBg
                       img={menubrc}
@@ -67,13 +68,15 @@ export default function PagePfProdutos() {
                       onClick={() => {}}
                       title={'Limpar Filtros...'}
                     />
+                    <ButtonBg
+                      img={designbrc}
+                      onClick={() => push('/portfolios/pagedesignprod')}
+                      title={'Dedigns'}
+                    />
                   </ToolsBarColEnd>
                 </ToolsBarMainFlex>
               </ToolsBarMain>
-              <div> mostra page produtos </div>
             </LayoutMainFlex>
-
-            <h3>Data/Layout/LayoutMain</h3>
           </LayoutMain>
           <DivisionPanel />
         </ContainerPanelTextFlex>

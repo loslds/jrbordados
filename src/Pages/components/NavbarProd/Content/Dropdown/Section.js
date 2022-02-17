@@ -2,10 +2,10 @@ import React, { useContext } from 'react'
 import PropTypes from 'prop-types'
 
 import { motion } from 'framer-motion'
-import { Context } from './Provider'
+import { ContextPrd } from './Provider'
 
 export function DropdownSection({ option }) {
-  const { cachedId } = useContext(Context)
+  const { cachedId } = useContext(ContextPrd)
 
   const { id, contentDimensions, optionContextX, WrappedContent } = option
   const contentWidth = contentDimensions?.width || 0

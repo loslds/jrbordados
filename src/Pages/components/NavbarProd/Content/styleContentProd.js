@@ -192,7 +192,7 @@ export const ProdutosWrapper = styled.div`
   }
 `
 
-export const DevelopersWrapper = styled.div`
+export const ServicosWrapper = styled.div`
   padding: 32px 35px;
   white-space: nowrap;
   .primary {

@@ -1,6 +1,7 @@
 /** ====== Layout dos Componentes Paginas */
 import { LayoutApp } from '../Pages/layouts/LayoutApp'
 import { LayoutPages } from '../Pages/layouts/LayoutPages'
+import { LayoutPrd } from '../Pages/layouts/LayoutPrd'
 
 /** ====== Paginas do Component Menu Principal */
 import { PageHome } from '../Pages/Home'
@@ -11,7 +12,8 @@ import {
   PagePortfolios,
   PagePfDesigns,
   PagePfProdutos,
-  PagePfServicos
+  PagePfServicos,
+  PageDesignProd
 } from '../Pages/Portfolios'
 import { PageDocEmpresa, PageDocProduto, PageDocServico } from '../Pages/Docs'
 import { PageSamples } from '../Pages/Samples'
@@ -96,6 +98,13 @@ export const optionCompanyRoutes = [
   },
   {
     exact: true,
+    label: 'Designs de Produtos',
+    path: '/portfolios/pagedesignprod',
+    component: PageDesignProd,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
     label: 'Portfólios Serviços',
     path: '/portfolios/pagepfservicos',
     component: PagePfServicos,
@@ -116,7 +125,7 @@ export const optionProdutosRoutes = [
     label: 'Produtos',
     path: '/produtos',
     component: PageProdutos,
-    layout: LayoutApp
+    layout: LayoutPrd
   }
 ]
 

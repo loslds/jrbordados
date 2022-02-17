@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react'
 import PropTypes from 'prop-types'
-export const Context = React.createContext()
+export const ContextPrd = React.createContext()
 
 export default function DropdownProvider({ children }) {
   const [options, setOptions] = useState([])
@@ -60,7 +60,7 @@ export default function DropdownProvider({ children }) {
   }, [targetId])
 
   return (
-    <Context.Provider
+    <ContextPrd.Provider
       value={{
         registerOption,
         updateOptionsProps,
@@ -74,7 +74,7 @@ export default function DropdownProvider({ children }) {
       }}
     >
       {children}
-    </Context.Provider>
+    </ContextPrd.Provider>
   )
 }
 

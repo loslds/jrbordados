@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { motion } from 'framer-motion'
 import { useDimensions } from './Dimensions'
-import { Context } from './Provider'
+import { ContextPrd } from './Provider'
 
 let lastOptionId = 0
 
@@ -23,7 +23,7 @@ export default function DropdownOpction({
     deleteOptionById,
     setTargetId,
     targetId
-  } = useContext(Context)
+  } = useContext(ContextPrd)
 
   useEffect(() => {
     if (!registered && optionDimensions) {

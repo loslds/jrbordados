@@ -1,13 +1,13 @@
 import React, { useContext, useMemo, useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import PropTypes from 'prop-types'
-import { Context } from './Provider'
+import { ContextPrd } from './Provider'
 import { DropdownSection } from './Section'
 
 const refDuration = 0.22
 
 export default function DropdownRoot() {
-  const { options, cachedId, getOptionById, targetId } = useContext(Context)
+  const { options, cachedId, getOptionById, targetId } = useContext(ContextPrd)
 
   const cachedOption = useMemo(
     () => getOptionById(cachedId),
@@ -103,7 +103,7 @@ export default function DropdownRoot() {
 }
 
 function DropdownArrow({ isFirstInteraction }) {
-  const { cachedId, getOptionById } = useContext(Context)
+  const { cachedId, getOptionById } = useContext(ContextPrd)
 
   const cachedOption = useMemo(
     () => getOptionById(cachedId),
@@ -136,7 +136,7 @@ DropdownArrow.propTypes = {
 }
 
 export function DropdownBackground() {
-  const { cachedId, getOptionById } = useContext(Context)
+  const { cachedId, getOptionById } = useContext(ContextPrd)
 
   const cachedOption = useMemo(
     () => getOptionById(cachedId),

@@ -1,11 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { LayoutContainer } from './styleLayout'
-import { NavbarPrd } from '../components/NavbarProd'
+import { NavbarProd } from '../components/NavbarProd'
+import { PropTypes } from 'prop-types'
+
 export const LayoutPrd = ({ children }) => {
   return (
     <LayoutContainer>
-      <NavbarPrd />
+      <NavbarProd />
       {children}
     </LayoutContainer>
   )

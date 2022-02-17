@@ -2,14 +2,14 @@ import styled from 'styled-components'
 // import proibido from '../../../../assets/image/proibido.svg'
 
 export const ContainerToolsBarMain = styled.div`
-  border: 1px white solid;
+  border: 0px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   width: 100%;
   background-color: transparent;
 `
 export const ContainerToolsBarMainFlex = styled.div`
-  border: 1px white dashed;
+  border: 0px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   min-height: 50px;
