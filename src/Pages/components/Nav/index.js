@@ -24,14 +24,14 @@ export function NavbarHome() {
               <DropdownOpction
                 name="Produtos"
                 content={Products}
-                backgroundHeight={'200'}
+                backgroundHeight={'246'}
               />
             </li>
             <li>
               <DropdownOpction
                 name="Serviços"
                 content={Developers}
-                backgroundHeight={'200'}
+                backgroundHeight={'150'}
               />
             </li>
           </ul>

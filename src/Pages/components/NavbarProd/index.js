@@ -1,43 +1,43 @@
 import React from 'react'
-import { Products, Developers, Company } from './Content'
+import { Designs, Produtos, Servicos } from './Content'
 import {
   DropdownProvider,
   DropdownOpction,
   DropdownRoot
 } from './Content/Dropdown'
-import { Container, DropdownStyles } from './styleNavHome'
+import { ContainerPrd, DropdownPrdStyles } from './styleNavProd'
 
-export function NavbarHome() {
+export function NavbarProd() {
   return (
     <DropdownProvider>
-      <DropdownStyles>
-        <Container>
+      <DropdownPrdStyles>
+        <ContainerPrd>
           <ul>
             <li>
               <DropdownOpction
-                name="Empresa"
-                content={Company}
-                backgroundHeight={'200'}
+                name="Designs"
+                content={Designs}
+                backgroundHeight={'150'}
               />
             </li>
             <li>
               <DropdownOpction
                 name="Produtos"
-                content={Products}
-                backgroundHeight={'200'}
+                content={Produtos}
+                backgroundHeight={'150'}
               />
             </li>
             <li>
               <DropdownOpction
                 name="Serviços"
-                content={Developers}
-                backgroundHeight={'200'}
+                content={Servicos}
+                backgroundHeight={'150'}
               />
             </li>
           </ul>
-        </Container>
+        </ContainerPrd>
         <DropdownRoot />
-      </DropdownStyles>
+      </DropdownPrdStyles>
     </DropdownProvider>
   )
 }

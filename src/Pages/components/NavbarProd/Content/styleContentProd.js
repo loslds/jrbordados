@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components'
 
 const h3 = css`
-  font-size: 12px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
   color: #32325d;
@@ -21,8 +21,8 @@ const hover = css`
   }
 `
 
-export const CompanyWrapper = styled.div`
-  padding: 16px 16.5px;
+export const DesignsWrapper = styled.div`
+  padding: 32px 35px;
   white-space: nowrap;
   .primary {
     > li {
@@ -36,8 +36,8 @@ export const CompanyWrapper = styled.div`
       > span {
         margin-right: 13px;
         display: inline-block;
-        width: 14px;
-        height: 14px;
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
         &.access {
           background: #bde958;
@@ -105,8 +105,8 @@ export const CompanyWrapper = styled.div`
   }
 `
 
-export const ProductsWrapper = styled.div`
-  padding: 16px 16.5px;
+export const ProdutosWrapper = styled.div`
+  padding: 32px 35px;
   white-space: nowrap;
   .primary {
     > li {
@@ -120,8 +120,8 @@ export const ProductsWrapper = styled.div`
       > span {
         margin-right: 13px;
         display: inline-block;
-        width: 14px;
-        height: 14px;
+        width: 28px;
+        height: 28px;
         border-radius: 50%;
         &.bordar {
           background: #beaef0;

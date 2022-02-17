@@ -1,6 +1,7 @@
 /** ====== Layout dos Componentes Paginas */
 import { LayoutApp } from '../Pages/layouts/LayoutApp'
 import { LayoutPages } from '../Pages/layouts/LayoutPages'
+
 /** ====== Paginas do Component Menu Principal */
 import { PageHome } from '../Pages/Home'
 import { PageAbout } from '../Pages/About'
@@ -14,6 +15,7 @@ import {
 } from '../Pages/Portfolios'
 import { PageDocEmpresa, PageDocProduto, PageDocServico } from '../Pages/Docs'
 import { PageSamples } from '../Pages/Samples'
+import { PageProdutos } from '../Pages/Produtos'
 
 export const homeRoutes = [
   {
@@ -108,5 +110,18 @@ export const optionCompanyRoutes = [
     layout: LayoutPages
   }
 ]
+export const optionProdutosRoutes = [
+  {
+    exact: true,
+    label: 'Produtos',
+    path: '/produtos',
+    component: PageProdutos,
+    layout: LayoutApp
+  }
+]
 
-export const routeList = [...optionCompanyRoutes, ...homeRoutes]
+export const routeList = [
+  ...optionProdutosRoutes,
+  ...optionCompanyRoutes,
+  ...homeRoutes
+]

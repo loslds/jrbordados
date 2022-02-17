@@ -1,8 +1,8 @@
-import React from 'react'
 import { NavbarHome } from '../components/NavbarHome'
 import { LayoutContainer } from './styleLayout'
 // import { FootersBar } from '../components/FootersBar'
 import PropTypes from 'prop-types'
+import React from 'react'
 
 export const LayoutApp = ({ children }) => {
   return (

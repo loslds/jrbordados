@@ -31,13 +31,13 @@ export const Divs = styled.div`
 
 export const LayoutContainerPage = styled(Divs)`
   border: 3px #000000 solid;
-  border-radius: 23px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   height: 100%;
-  width: 920px;
+  width: 100%;
   display: flex;
-  flex-flow: column nowrap;
+  flex-wrap: nowrap;
+  flex-flow: center;
   justify-content: space-between;
   align-items: flex-start;
   align-content: flex-start;

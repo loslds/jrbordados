@@ -96,7 +96,6 @@ export default function DropdownOpction({
     </motion.button>
   )
 }
-
 DropdownOpction.propTypes = {
   name: PropTypes.string,
   content: PropTypes.any,

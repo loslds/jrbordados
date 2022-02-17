@@ -7,6 +7,14 @@ export const LayoutContainer = styled.div`
   max-width: 100%;
   background-color: transparent;
 `
+export const LayoutContainerProServ = styled.div`
+  margin: 0 auto;
+  padding: 0;
+  height: 100%;
+  max-width: 100%;
+  background-color: black;
+  color: white;
+`
 export const LayoutContainerPage = styled.div`
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
@@ -15,6 +23,7 @@ export const LayoutContainerPage = styled.div`
   max-width: 100%;
   min-height: 50px;
   background-color: black;
+  color: white;
 `
 export const LayoutCenterPage = styled.div`
   border: 0px;
@@ -24,6 +33,6 @@ export const LayoutCenterPage = styled.div`
   width: 98%;
   position: relative;
   background-color: black;
-  color: black;
+  color: white;
   display: flex;
 `

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-export const Container = styled.nav`
-  background: black;
+export const ContainerPrd = styled.nav`
+  background: black; /*linear-gradient(150deg, #53f, 15%, #05d5ff);*/
   > ul {
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@ export const Container = styled.nav`
   }
 `
 
-export const DropdownStyles = styled.div`
+export const DropdownPrdStyles = styled.div`
   .dropdown-option {
     padding: 10px 15px;
     outline: 0;
