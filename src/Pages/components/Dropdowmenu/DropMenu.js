@@ -16,7 +16,7 @@ FechaDivMenus.propTypes = {
   sinal: PropTypes.bool
 }
 
-export default function DropMenu({ open, menuprd }) {
+export default function DropMenu({ open, menuprd, clickMenu }) {
   const handleClick = useCallback(
     e => {
       const nm = e && e.target ? e.target.name || null : ''
@@ -50,8 +50,8 @@ export default function DropMenu({ open, menuprd }) {
           </li>
           <li>
             <ButtonMenuDropdown
-              name="Laser"
-              title="Laser."
+              name="Lasers"
+              title="Lasers."
               onClick={handleClick}
             >
               Laser.
@@ -64,11 +64,13 @@ export default function DropMenu({ open, menuprd }) {
 }
 DropMenu.propTypes = {
   open: PropTypes.bool,
-  menuprd: PropTypes.string
+  menuprd: PropTypes.string,
+  clickMenu: PropTypes.func
 }
 DropMenu.defaultProps = {
   open: null,
-  menuprd: ''
+  menuprd: '',
+  clickMenu: () => {}
 }
 /**
  *

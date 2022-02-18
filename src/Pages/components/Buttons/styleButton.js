@@ -26,6 +26,7 @@ export const CtrlPage = styled.div`
     margin: 0px 0px 0px 0px;
   }
 `
+/**    button icon geral */
 export const ContainerButtonImgBg = styled.div`
   border: 0px;
   padding: 1px 1px 1px 1px;
@@ -42,6 +43,37 @@ export const ContainerButtonImgBg = styled.div`
   font-size: 14px;
 `
 export const ButtonsImgBg = styled.button`
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+`
+/**    button icon design */
+export const ContButtImgBgDesig = styled.div`
+  border: 0px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
+  height: 40px;
+  width: 40px;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  min-height: 35px;
+  font-size: 14px;
+`
+export const ButtImgBgDesig = styled.button`
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   display: block;
@@ -78,7 +110,7 @@ export const ContainerButtonLogoPage = styled.div`
   flex-flow: row nowrap;
   justify-content: center;
   align-content: center;
-  align-content: center;n
+  align-content: center;
   color: black;
   min-height: 35px;
   font-size: 14px;

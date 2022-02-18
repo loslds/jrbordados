@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-// import PropTypes from 'prop-types'
+import React, { useState, useCallback } from 'react'
+import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import { PanelMain, PanelLeft, PanelEnd } from '../components/Panel'
 import {
@@ -7,7 +7,7 @@ import {
   ContainerPanelTextFlex,
   DivisionPanel
 } from '../components/Panel/stylePanel'
-import { ButtonBg } from '../components/Buttons'
+import { ButtonBg, ButtonBgDesign } from '../components/Buttons'
 import retornar from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
 import produtoslogo from '../../assets/image/produtoslogo.svg'
@@ -20,8 +20,12 @@ import {
   ToolsBarMain,
   ToolsBarMainFlex,
   ToolsBarColCenter,
-  ToolsBarColEnd
+  ToolsBarColEnd,
+  DataDesigns,
+  DataBordados,
+  DataLasers
 } from '../components/Data'
+
 import { ContainerCenterImgLogo } from '../stylePages'
 import { DropMenu } from '../components/Dropdowmenu'
 
@@ -29,7 +33,33 @@ export default function PagePfProdutos() {
   const [onoff, setOnOff] = useState(false)
   const handleMenu = () => {
     setOnOff(off => !off)
+    handleBtDesigMenu()
   }
+  const [btdesig, setBtDesig] = useState(false)
+  const handleBtDesigMenu = () => {
+    setBtDesig(on => !on)
+  }
+  const [divdesig, setDivDesig] = useState(false)
+  const [divborda, setDivBorda] = useState(false)
+  const [divlaser, setDivLaser] = useState(false)
+  const handleClickMenu = useCallback(e => {
+    const nm = e && e.target ? e.target.name || null : ''
+    if (nm === 'Designs') {
+      setDivDesig(true)
+      setDivBorda(false)
+      setDivLaser(false)
+    } else if (nm === 'Bordados') {
+      setDivDesig(false)
+      setDivBorda(true)
+      setDivLaser(false)
+    } else if (nm === 'Lasers') {
+      setDivDesig(false)
+      setDivBorda(false)
+      setDivLaser(true)
+    }
+    console.log('nm : ', nm)
+  }, [])
+
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -55,7 +85,7 @@ export default function PagePfProdutos() {
               <ToolsBarMain>
                 <ToolsBarMainFlex>
                   <ToolsBarColCenter>
-                    <DropMenu open={onoff} />
+                    <DropMenu open={onoff} onClick={handleClickMenu} />
                   </ToolsBarColCenter>
                   <ToolsBarColEnd>
                     <ButtonBg
@@ -68,10 +98,11 @@ export default function PagePfProdutos() {
                       onClick={() => {}}
                       title={'Limpar Filtros...'}
                     />
-                    <ButtonBg
+                    <ButtonBgDesign
                       img={designbrc}
                       onClick={() => push('/portfolios/pagedesignprod')}
                       title={'Dedigns'}
+                      open={btdesig}
                     />
                   </ToolsBarColEnd>
                 </ToolsBarMainFlex>
@@ -79,18 +110,25 @@ export default function PagePfProdutos() {
             </LayoutMainFlex>
           </LayoutMain>
           <DivisionPanel />
+          <LayoutMain>
+            <LayoutMainFlex>
+              {divdesig ? <DataDesigns /> : null}
+              {divborda ? <DataBordados /> : null}
+              {divlaser ? <DataLasers /> : null}
+            </LayoutMainFlex>
+          </LayoutMain>
         </ContainerPanelTextFlex>
       </ContainerPanelText>
     </PanelMain>
   )
 }
 
-// PagePfProdutos.propTypes = {
-//   color: PropTypes.string
-// }
-// // PagePfProdutos.defaultProps = {
-//   color: 'transparent'
-// }
+PagePfProdutos.propTypes = {
+  divnm: PropTypes.string
+}
+PagePfProdutos.defaultProps = {
+  divnm: ''
+}
 
 /**
  *
