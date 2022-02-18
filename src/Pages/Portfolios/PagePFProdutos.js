@@ -29,7 +29,7 @@ import {
 import { ContainerCenterImgLogo } from '../stylePages'
 import { DropMenu } from '../components/Dropdowmenu'
 
-export default function PagePfProdutos() {
+export default function PagePfProdutos(divnm) {
   const [onoff, setOnOff] = useState(false)
   const handleMenu = () => {
     setOnOff(off => !off)
@@ -39,11 +39,13 @@ export default function PagePfProdutos() {
   const handleBtDesigMenu = () => {
     setBtDesig(on => !on)
   }
+
   const [divdesig, setDivDesig] = useState(false)
   const [divborda, setDivBorda] = useState(false)
   const [divlaser, setDivLaser] = useState(false)
   const handleClickMenu = useCallback(e => {
     const nm = e && e.target ? e.target.name || null : ''
+
     if (nm === 'Designs') {
       setDivDesig(true)
       setDivBorda(false)
@@ -56,10 +58,18 @@ export default function PagePfProdutos() {
       setDivDesig(false)
       setDivBorda(false)
       setDivLaser(true)
+    } else {
+      setDivDesig(false)
+      setDivBorda(false)
+      setDivLaser(false)
     }
     console.log('nm : ', nm)
+    console.log('desig : ', divdesig ? 'true' : 'false')
+    console.log('borda : ', divborda ? 'true' : 'false')
+    console.log('laser : ', divlaser ? 'true' : 'false')
   }, [])
 
+  console.log('divnm : ', divnm)
   const { push } = useHistory()
   return (
     <PanelMain>
