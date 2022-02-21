@@ -10,7 +10,7 @@ import { ButtonBg } from '../components/Buttons'
 import retornar from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
 
-export default function PageDesignProd() {
+export default function PageBordadoProd() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -18,7 +18,7 @@ export default function PageDesignProd() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Show dos Design`s de Produtos." />
+            <PanelTitle title="Show dos Bordados em Produtos." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg
@@ -29,7 +29,7 @@ export default function PageDesignProd() {
             <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
           </PanelEnd>
           <DivisionPanel />
-          {<label>Show dos Designs em Produtos.</label>}
+          {<label>Show dos Produtos em Produtos.</label>}
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

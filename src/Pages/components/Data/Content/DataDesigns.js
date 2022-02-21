@@ -6,7 +6,7 @@ export default function DataDesigns({ children }) {
     <ContainerDataMain>
       <ContainerDataMainFlex>
         <h3>estou</h3>
-        <p>na pagina de design</p>
+        <p>Em Componente Data Design.</p>
         {children}
       </ContainerDataMainFlex>
     </ContainerDataMain>

@@ -13,7 +13,9 @@ import {
   PagePfDesigns,
   PagePfProdutos,
   PagePfServicos,
-  PageDesignProd
+  PageDesignProd,
+  PageBordadoProd,
+  PageLaserProd
 } from '../Pages/Portfolios'
 import { PageDocEmpresa, PageDocProduto, PageDocServico } from '../Pages/Docs'
 import { PageSamples } from '../Pages/Samples'
@@ -98,9 +100,23 @@ export const optionCompanyRoutes = [
   },
   {
     exact: true,
-    label: 'Designs de Produtos',
+    label: 'Show Designs com Produtos',
     path: '/portfolios/pagedesignprod',
     component: PageDesignProd,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Show Designs dos Produtos',
+    path: '/portfolios/pagebordadoprod',
+    component: PageBordadoProd,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Show Serviços com Produtos',
+    path: '/portfolios/pagelaserprod',
+    component: PageLaserProd,
     layout: LayoutPages
   },
   {

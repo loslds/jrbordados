@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import { PanelMain, PanelLeft, PanelEnd } from '../components/Panel'
@@ -7,7 +7,12 @@ import {
   ContainerPanelTextFlex,
   DivisionPanel
 } from '../components/Panel/stylePanel'
-import { ButtonBg, ButtonBgDesign } from '../components/Buttons'
+import {
+  ButtonBg,
+  ButtonBgDesignProd,
+  ButtonBgBordadoProd,
+  ButtonBgLaserProd
+} from '../components/Buttons'
 import retornar from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
 import produtoslogo from '../../assets/image/produtoslogo.svg'
@@ -20,45 +25,43 @@ import {
   ToolsBarMain,
   ToolsBarMainFlex,
   ToolsBarColCenter,
-  ToolsBarColEnd,
-  DataDesigns,
-  DataBordados,
-  DataLasers
+  ToolsBarColEnd
+  // ,
+  // DataDesigns,
+  // DataBordados,
+  // DataLasers
 } from '../components/Data'
-
 import { ContainerCenterImgLogo } from '../stylePages'
 import { DropMenu } from '../components/Dropdowmenu'
 
-export default function PagePfProdutos() {
+export default function PagePfProdutos(divprd) {
   const [onoff, setOnOff] = useState(false)
+
   const handleMenu = () => {
     setOnOff(off => !off)
-    handleBtDesigMenu()
+    openBtDesigMenu()
+    openBtBordadoMenu()
+    openBtLaserMenu()
   }
   const [btdesig, setBtDesig] = useState(false)
-  const handleBtDesigMenu = () => {
+
+  const openBtDesigMenu = () => {
     setBtDesig(on => !on)
   }
-  const [divdesig, setDivDesig] = useState(false)
-  const [divborda, setDivBorda] = useState(false)
-  const [divlaser, setDivLaser] = useState(false)
-  const handleClickMenu = useCallback(e => {
-    const nm = e && e.target ? e.target.name || null : ''
-    if (nm === 'Designs') {
-      setDivDesig(true)
-      setDivBorda(false)
-      setDivLaser(false)
-    } else if (nm === 'Bordados') {
-      setDivDesig(false)
-      setDivBorda(true)
-      setDivLaser(false)
-    } else if (nm === 'Lasers') {
-      setDivDesig(false)
-      setDivBorda(false)
-      setDivLaser(true)
-    }
-    console.log('nm : ', nm)
-  }, [])
+  const [btborda, setBtBorda] = useState(false)
+
+  const openBtBordadoMenu = () => {
+    setBtBorda(on => !on)
+  }
+  const [btlaser, setBtLaser] = useState(false)
+
+  const openBtLaserMenu = () => {
+    setBtLaser(on => !on)
+  }
+
+  // const [divdesig, setDivDesig] = useState(false)
+  // const [divborda, setDivBorda] = useState(false)
+  // const [divlaser, setDivLaser] = useState(false)
 
   const { push } = useHistory()
   return (
@@ -85,7 +88,7 @@ export default function PagePfProdutos() {
               <ToolsBarMain>
                 <ToolsBarMainFlex>
                   <ToolsBarColCenter>
-                    <DropMenu open={onoff} onClick={handleClickMenu} />
+                    <DropMenu open={onoff} onClick={handleMenu} />
                   </ToolsBarColCenter>
                   <ToolsBarColEnd>
                     <ButtonBg
@@ -98,11 +101,23 @@ export default function PagePfProdutos() {
                       onClick={() => {}}
                       title={'Limpar Filtros...'}
                     />
-                    <ButtonBgDesign
+                    <ButtonBgDesignProd
                       img={designbrc}
                       onClick={() => push('/portfolios/pagedesignprod')}
-                      title={'Dedigns'}
+                      title={'Dedigns Produtos.'}
                       open={btdesig}
+                    />
+                    <ButtonBgBordadoProd
+                      // img={designbrc}
+                      onClick={() => push('/portfolios/pagebordadoprod')}
+                      title={'Bordados Produtos.'}
+                      open={btborda}
+                    />
+                    <ButtonBgLaserProd
+                      // img={designbrc}
+                      onClick={() => push('/portfolios/pagelaserprod')}
+                      title={'Lasers Produtos.'}
+                      open={btlaser}
                     />
                   </ToolsBarColEnd>
                 </ToolsBarMainFlex>
@@ -112,9 +127,10 @@ export default function PagePfProdutos() {
           <DivisionPanel />
           <LayoutMain>
             <LayoutMainFlex>
-              {divdesig ? <DataDesigns /> : null}
+              <h3>Abrir aqui a opção do menu</h3>
+              {/* {divdesig ? <DataDesigns /> : null}
               {divborda ? <DataBordados /> : null}
-              {divlaser ? <DataLasers /> : null}
+              {divlaser ? <DataLasers /> : null} */}
             </LayoutMainFlex>
           </LayoutMain>
         </ContainerPanelTextFlex>
@@ -124,10 +140,10 @@ export default function PagePfProdutos() {
 }
 
 PagePfProdutos.propTypes = {
-  divnm: PropTypes.string
+  divprd: PropTypes.string
 }
 PagePfProdutos.defaultProps = {
-  divnm: ''
+  divprd: 'default'
 }
 
 /**

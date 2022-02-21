@@ -6,7 +6,7 @@ export default function DataLasers({ children }) {
     <ContainerDataMain>
       <ContainerDataMainFlex>
         <h3>estou</h3>
-        <p>na pagina de lasers</p>
+        <p>Em Componente Data lasers</p>
         {children}
       </ContainerDataMainFlex>
     </ContainerDataMain>

@@ -6,7 +6,7 @@ export default function DataBordados({ children }) {
     <ContainerDataMain>
       <ContainerDataMainFlex>
         <h3>estou</h3>
-        <p>na pagina de bordados</p>
+        <p>Em Componente Data Bordados</p>
         {children}
       </ContainerDataMainFlex>
     </ContainerDataMain>

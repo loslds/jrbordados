@@ -1,30 +1,28 @@
 import React, { useCallback } from 'react'
 import PropTypes from 'prop-types'
 import { ContentMenu, ButtonMenuDropdown } from './stlyleDropMenu'
+// import PagePfProdutos from '../../Portfolios/PagePfProdutos'
+// import PagePfProdutos from '../../Portfolios/PagePfProdutos'
 
-function FechaDivMenus(props) {
-  const { sinal } = props
-  if (sinal) {
-    return <div>Verdadeiro</div>
-  }
-  return <div>Falso</div>
-}
-FechaDivMenus.defaultProps = {
-  sinal: false
-}
-FechaDivMenus.propTypes = {
-  sinal: PropTypes.bool
-}
+// function FechaDivMenus(props) {
+//   const { sinal } = props
+//   if (sinal) {
+//     return <div>Verdadeiro</div>
+//   }
+//   return <div>Falso</div>
+// }
+// FechaDivMenus.defaultProps = {
+//   sinal: false
+// }
+// FechaDivMenus.propTypes = {
+//   sinal: PropTypes.bool
+// }
 
-export default function DropMenu({ open, menuprd, clickMenu }) {
-  const handleClick = useCallback(
-    e => {
-      const nm = e && e.target ? e.target.name || null : ''
-      console.log('nm : ', nm)
-      menuprd = nm
-    },
-    [menuprd]
-  )
+export default function DropMenu({ open }) {
+  const handleClick = useCallback(e => {
+    const nm = e && e.target ? e.target.name || null : ''
+    console.log('dentro do Opção Menu: ', nm)
+  }, [])
 
   return (
     <ContentMenu open={open}>
@@ -64,14 +62,14 @@ export default function DropMenu({ open, menuprd, clickMenu }) {
 }
 DropMenu.propTypes = {
   open: PropTypes.bool,
-  menuprd: PropTypes.string,
+  name: PropTypes.string,
   clickMenu: PropTypes.func
 }
 DropMenu.defaultProps = {
   open: null,
-  menuprd: '',
-  clickMenu: () => {}
+  name: ''
 }
+
 /**
  *
 , { useState }
