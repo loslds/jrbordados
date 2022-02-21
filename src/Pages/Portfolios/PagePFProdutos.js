@@ -34,11 +34,7 @@ import {
 import { ContainerCenterImgLogo } from '../stylePages'
 import { DropMenu } from '../components/Dropdowmenu'
 
-<<<<<<< HEAD
 export default function PagePfProdutos(divprd) {
-=======
-export default function PagePfProdutos(divnm) {
->>>>>>> bf8d35310ffd6c1e8c9be8f8479c3560208b31c4
   const [onoff, setOnOff] = useState(false)
 
   const handleMenu = () => {
@@ -52,7 +48,7 @@ export default function PagePfProdutos(divnm) {
   const openBtDesigMenu = () => {
     setBtDesig(on => !on)
   }
-<<<<<<< HEAD
+
   const [btborda, setBtBorda] = useState(false)
 
   const openBtBordadoMenu = () => {
@@ -64,42 +60,8 @@ export default function PagePfProdutos(divnm) {
     setBtLaser(on => !on)
   }
 
-  // const [divdesig, setDivDesig] = useState(false)
-  // const [divborda, setDivBorda] = useState(false)
-  // const [divlaser, setDivLaser] = useState(false)
-=======
+  console.log('divprd : ', divprd)
 
-  const [divdesig, setDivDesig] = useState(false)
-  const [divborda, setDivBorda] = useState(false)
-  const [divlaser, setDivLaser] = useState(false)
-  const handleClickMenu = useCallback(e => {
-    const nm = e && e.target ? e.target.name || null : ''
-
-    if (nm === 'Designs') {
-      setDivDesig(true)
-      setDivBorda(false)
-      setDivLaser(false)
-    } else if (nm === 'Bordados') {
-      setDivDesig(false)
-      setDivBorda(true)
-      setDivLaser(false)
-    } else if (nm === 'Lasers') {
-      setDivDesig(false)
-      setDivBorda(false)
-      setDivLaser(true)
-    } else {
-      setDivDesig(false)
-      setDivBorda(false)
-      setDivLaser(false)
-    }
-    console.log('nm : ', nm)
-    console.log('desig : ', divdesig ? 'true' : 'false')
-    console.log('borda : ', divborda ? 'true' : 'false')
-    console.log('laser : ', divlaser ? 'true' : 'false')
-  }, [])
->>>>>>> bf8d35310ffd6c1e8c9be8f8479c3560208b31c4
-
-  console.log('divnm : ', divnm)
   const { push } = useHistory()
   return (
     <PanelMain>
