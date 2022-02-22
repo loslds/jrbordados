@@ -1,20 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerDataMain, ContainerDataMainFlex } from './styleDatas'
-export default function DataBordados({ children }) {
+import { ContainerDataBordadoMain, ContainerDataMainFlex } from './styleDatas'
+export default function DataBordados({ open, children }) {
   return (
-    <ContainerDataMain>
+    <ContainerDataBordadoMain open={open}>
       <ContainerDataMainFlex>
         <h3>estou</h3>
         <p>Em Componente Data Bordados</p>
         {children}
       </ContainerDataMainFlex>
-    </ContainerDataMain>
+    </ContainerDataBordadoMain>
   )
 }
 DataBordados.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
+  open: PropTypes.bool
 }
 DataBordados.defaultProps = {
-  children: null
+  children: null,
+  open: null
 }

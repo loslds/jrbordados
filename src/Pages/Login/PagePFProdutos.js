@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
 import { PanelMain, PanelLeft, PanelEnd } from '../components/Panel'
@@ -19,68 +19,51 @@ import produtoslogo from '../../assets/image/produtoslogo.svg'
 import menubrc from '../../assets/image/menubrc.svg'
 import limparbrc from '../../assets/image/limparbrc.svg'
 import designbrc from '../../assets/image/designbrc.svg'
-import bordadobrc from '../../assets/image/bordadobrc.svg'
 import laserbrc from '../../assets/image/laserbrc.svg'
-
 import {
   LayoutMain,
   LayoutMainFlex,
   ToolsBarMain,
   ToolsBarMainFlex,
   ToolsBarColCenter,
-  ToolsBarColEnd,
-  DataDesigns,
-  DataBordados,
-  DataLasers
+  ToolsBarColEnd
+  // ,
+  // DataDesigns,
+  // DataBordados,
+  // DataLasers
 } from '../components/Data'
 import { ContainerCenterImgLogo } from '../stylePages'
-import {
-  ContentMenu,
-  ButtonMenuDropdown
-} from '../components/Dropdowmenu/stlyleDropMenu'
-// import { DropMenu } from '../components/Dropdowmenu'
+import { DropMenu } from '../components/Dropdowmenu'
 
-export default function PagePfProdutos() {
-  const [menus, setMenus] = useState([
-    { id: 'Designs', open: false },
-    { id: 'Bordados', open: false },
-    { id: 'Lasers', open: false }
-  ])
+export default function PagePfProdutos(divprd) {
   const [onoff, setOnOff] = useState(false)
 
-  const toggleUpdate = id => {
-    setMenus(list =>
-      list.map(m => ({ ...m, open: id === m.id ? !m.open : false }))
-    )
-  }
-
   const handleMenu = () => {
-    const off = !onoff
-    setOnOff(off)
-    if (!off) {
-      handleCloseDatas()
-    }
+    setOnOff(off => !off)
+    openBtDesigMenu()
+    openBtBordadoMenu()
+    openBtLaserMenu()
   }
-  const handleCloseDatas = () => {
-    setMenus(list => list.map(m => ({ ...m, open: false })))
+  const [btdesig, setBtDesig] = useState(false)
+
+  const openBtDesigMenu = () => {
+    setBtDesig(on => !on)
   }
 
-  const handleClick = useCallback(id => {
-    return () => {
-      toggleUpdate(id)
-      console.log('dentro do Opção Menu : ', id)
-    }
-  }, [])
+  const [btborda, setBtBorda] = useState(false)
 
-  const isOpen = id => {
-    const found = menus.find(f => f.id === id)
-    console.log(found)
-    return !!(found && !!found.open)
+  const openBtBordadoMenu = () => {
+    setBtBorda(on => !on)
   }
+  const [btlaser, setBtLaser] = useState(false)
+
+  const openBtLaserMenu = () => {
+    setBtLaser(on => !on)
+  }
+
+  console.log('divprd : ', divprd)
 
   const { push } = useHistory()
-
-  console.log(menus)
   return (
     <PanelMain>
       <ContainerPanelText>
@@ -105,38 +88,7 @@ export default function PagePfProdutos() {
               <ToolsBarMain>
                 <ToolsBarMainFlex>
                   <ToolsBarColCenter>
-                    {/* /** o conteudo do componente Dropmenu,js */}
-                    {/* <DropMenu open={onoff} onClick={handleMenu} /> */}
-                    <ContentMenu open={onoff}>
-                      <nav>
-                        <ul>
-                          <li>
-                            <ButtonMenuDropdown
-                              title="Designs."
-                              onClick={handleClick('Designs')}
-                            >
-                              Design.
-                            </ButtonMenuDropdown>
-                          </li>
-                          <li>
-                            <ButtonMenuDropdown
-                              title="Bordados."
-                              onClick={handleClick('Bordados')}
-                            >
-                              Bordado.
-                            </ButtonMenuDropdown>
-                          </li>
-                          <li>
-                            <ButtonMenuDropdown
-                              title="Lasers."
-                              onClick={handleClick('Lasers')}
-                            >
-                              Laser.
-                            </ButtonMenuDropdown>
-                          </li>
-                        </ul>
-                      </nav>
-                    </ContentMenu>
+                    <DropMenu open={onoff} onClick={handleMenu} />
                   </ToolsBarColCenter>
                   <ToolsBarColEnd>
                     <ButtonBg
@@ -153,19 +105,19 @@ export default function PagePfProdutos() {
                       img={designbrc}
                       onClick={() => push('/portfolios/pagedesignprod')}
                       title={'Dedigns Produtos.'}
-                      open={isOpen('Designs')}
+                      open={btdesig}
                     />
                     <ButtonBgBordadoProd
-                      img={bordadobrc}
+                      // img={designbrc}
                       onClick={() => push('/portfolios/pagebordadoprod')}
                       title={'Bordados Produtos.'}
-                      open={isOpen('Bordados')}
+                      open={btborda}
                     />
                     <ButtonBgLaserProd
                       img={laserbrc}
                       onClick={() => push('/portfolios/pagelaserprod')}
                       title={'Lasers Produtos.'}
-                      open={isOpen('Lasers')}
+                      open={btlaser}
                     />
                   </ToolsBarColEnd>
                 </ToolsBarMainFlex>
@@ -175,9 +127,7 @@ export default function PagePfProdutos() {
           <DivisionPanel />
           <LayoutMain>
             <LayoutMainFlex>
-              <DataDesigns open={isOpen('Designs')} />
-              <DataBordados open={isOpen('Bordados')} />
-              <DataLasers open={isOpen('Lasers')} />
+              <h3>Abrir aqui a opção do menu</h3>
               {/* {divdesig ? <DataDesigns /> : null}
               {divborda ? <DataBordados /> : null}
               {divlaser ? <DataLasers /> : null} */}
@@ -190,15 +140,48 @@ export default function PagePfProdutos() {
 }
 
 PagePfProdutos.propTypes = {
-  open: PropTypes.bool,
-  name: PropTypes.string,
-  clickMenu: PropTypes.func,
-  handleMenu: PropTypes.func,
-  onoffBtDesigMenu: PropTypes.func,
-  onoffBtBordadoMenu: PropTypes.func,
-  onoffBtLaserMenu: PropTypes.func
+  divprd: PropTypes.string
 }
 PagePfProdutos.defaultProps = {
-  open: null,
-  name: ''
+  divprd: 'default'
 }
+
+/**
+ *
+ *
+          <CarroselMain>
+            <CarroselLogo>
+              <ButtonLogo img={produtos} />
+            </CarroselLogo>
+          </CarroselMain>
+
+          <LayoutNav>
+            <LayoutNavHeader>
+              <LayoutNavColCenter>
+                {<h1>ColCenter</h1>}
+                <LayoutNavColCenterFlex>
+                  {<h1>ColCenter</h1>}
+                </LayoutNavColCenterFlex>
+              </LayoutNavColCenter>
+
+              <LayoutNavColEnd>
+                <ButtonNavBar img={menu} title={'Menu de Filtros...'} />
+                <ButtonNavBar />
+                <ButtonNavBar />
+              </LayoutNavColEnd>
+            </LayoutNavHeader>
+          </LayoutNav>
+
+          <CarroselMain>
+            <CarroselOpcoes>
+              <CarroselBar>
+                <CardBarLeft>
+                  <NavBarProdutos />
+                </CardBarLeft>
+                <CardBarEnd>
+                  <ButtonBarBg />
+                </CardBarEnd>
+              </CarroselBar>
+            </CarroselOpcoes>
+          </CarroselMain>
+ */

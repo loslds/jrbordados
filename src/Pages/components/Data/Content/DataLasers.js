@@ -1,21 +1,24 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerDataMain, ContainerDataMainFlex } from './styleDatas'
-export default function DataLasers({ children }) {
+import { ContainerDataLaserMain, ContainerDataMainFlex } from './styleDatas'
+export default function DataLasers({ open, children }) {
   return (
-    <ContainerDataMain>
+    <ContainerDataLaserMain open={open}>
       <ContainerDataMainFlex>
         <h3>estou</h3>
         <p>Em Componente Data lasers</p>
         {children}
       </ContainerDataMainFlex>
-    </ContainerDataMain>
+    </ContainerDataLaserMain>
   )
 }
 
 DataLasers.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
+  open: PropTypes.bool
 }
+
 DataLasers.defaultProps = {
-  children: null
+  children: null,
+  open: null
 }

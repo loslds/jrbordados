@@ -1,20 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerDataMain, ContainerDataMainFlex } from './styleDatas'
-export default function DataDesigns({ children }) {
+import { ContainerDataDesignMain, ContainerDataMainFlex } from './styleDatas'
+export default function DataDesigns({ open, children }) {
   return (
-    <ContainerDataMain>
+    <ContainerDataDesignMain open={open}>
       <ContainerDataMainFlex>
         <h3>estou</h3>
         <p>Em Componente Data Design.</p>
         {children}
       </ContainerDataMainFlex>
-    </ContainerDataMain>
+    </ContainerDataDesignMain>
   )
 }
 DataDesigns.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.any,
+  open: PropTypes.bool
 }
 DataDesigns.defaultProps = {
-  children: null
+  children: null,
+  open: null
 }
