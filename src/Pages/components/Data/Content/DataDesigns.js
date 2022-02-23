@@ -5,8 +5,8 @@ export default function DataDesigns({ open, children }) {
   return (
     <ContainerDataDesignMain open={open}>
       <ContainerDataMainFlex>
-        <h3>estou</h3>
-        <p>Em Componente Data Design.</p>
+        <h3>Em Componente Data Design.</h3>
+
         {children}
       </ContainerDataMainFlex>
     </ContainerDataDesignMain>
