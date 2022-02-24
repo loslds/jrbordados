@@ -7,10 +7,10 @@ import {
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ButtonBg } from '../components/Buttons'
-import retornar from '../../assets/image/previous.svg'
+// import retornar from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
 
-export default function PageLaserProd() {
+export default function PageServicos() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -18,18 +18,18 @@ export default function PageLaserProd() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Show dos Lasers em Produto." />
+            <PanelTitle title="Serviços" />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg
+            {/* <ButtonBg
               img={retornar}
               onClick={() => push('/portfolios/pagepfprodutos')}
               title={'Retornar...'}
-            />
+            /> */}
             <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
           </PanelEnd>
           <DivisionPanel />
-          {<label>Show dos Lasers em Produtos.</label>}
+          {<label>Serviços.</label>}
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

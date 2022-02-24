@@ -1,9 +1,10 @@
 /** ====== Layout dos Componentes Paginas */
 import { LayoutApp } from '../Pages/layouts/LayoutApp'
 import { LayoutPages } from '../Pages/layouts/LayoutPages'
-import { LayoutPrd } from '../Pages/layouts/LayoutPrd'
+// import { LayoutPrd } from '../Pages/layouts/LayoutPrd'
 
 /** ====== Paginas do Component Menu Principal */
+/** opção Empresa */
 import { PageHome } from '../Pages/Home'
 import { PageAbout } from '../Pages/About'
 import { PageLogin } from '../Pages/Login'
@@ -12,15 +13,14 @@ import {
   PagePortfolios,
   PagePfDesigns,
   PagePfProdutos,
-  PagePfServicos,
-  PageDesignProd,
-  PageBordadoProd,
-  PageLaserProd
+  PagePfServicos
 } from '../Pages/Portfolios'
 import { PageDocEmpresa, PageDocProduto, PageDocServico } from '../Pages/Docs'
 import { PageSamples } from '../Pages/Samples'
+/** Opção Produtos */
 import { PageProdutos } from '../Pages/Produtos'
-
+/** opção Serviços */
+import { PageServicos } from '../Pages/Servicos'
 export const homeRoutes = [
   {
     exact: true,
@@ -100,27 +100,6 @@ export const optionCompanyRoutes = [
   },
   {
     exact: true,
-    label: 'Show Designs com Produtos',
-    path: '/portfolios/pagedesignprod',
-    component: PageDesignProd,
-    layout: LayoutPages
-  },
-  {
-    exact: true,
-    label: 'Show Designs dos Produtos',
-    path: '/portfolios/pagebordadoprod',
-    component: PageBordadoProd,
-    layout: LayoutPages
-  },
-  {
-    exact: true,
-    label: 'Show Serviços com Produtos',
-    path: '/portfolios/pagelaserprod',
-    component: PageLaserProd,
-    layout: LayoutPages
-  },
-  {
-    exact: true,
     label: 'Portfólios Serviços',
     path: '/portfolios/pagepfservicos',
     component: PagePfServicos,
@@ -130,23 +109,57 @@ export const optionCompanyRoutes = [
   {
     exact: true,
     label: 'Samples',
-    path: '/samples/samples',
+    path: '/samples',
     component: PageSamples,
     layout: LayoutPages
   }
 ]
-export const optionProdutosRoutes = [
+
+export const optionProductsRoutes = [
   {
     exact: true,
     label: 'Produtos',
     path: '/produtos',
     component: PageProdutos,
-    layout: LayoutPrd
+    layout: LayoutPages
+  }
+]
+
+export const optionDevelopersRoutes = [
+  {
+    exact: true,
+    label: 'Serviços',
+    path: '/servicos',
+    component: PageServicos,
+    layout: LayoutPages
   }
 ]
 
 export const routeList = [
-  ...optionProdutosRoutes,
+  ...optionDevelopersRoutes,
+  ...optionProductsRoutes,
   ...optionCompanyRoutes,
   ...homeRoutes
 ]
+
+// {
+//   exact: true,
+//   label: 'Show Designs com Produtos',
+//   path: '/portfolios/pagedesignprod',
+//   component: PageDesignProd,
+//   layout: LayoutPages
+// },
+// {
+//   exact: true,
+//   label: 'Show Designs dos Produtos',
+//   path: '/portfolios/pagebordadoprod',
+//   component: PageBordadoProd,
+//   layout: LayoutPages
+// },
+// {
+//   exact: true,
+//   label: 'Show Serviços com Produtos',
+//   path: '/portfolios/pagelaserprod',
+//   component: PageLaserProd,
+//   layout: LayoutPages
+// },

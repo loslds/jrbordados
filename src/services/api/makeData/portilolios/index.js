@@ -3,13 +3,14 @@ import { compareValues } from 'mini-helper'
 const data = {
   succes: true,
   portifolios: [
+    /** registros  Categorias  1 - Artes */
     {
       id: 1,
       category: 1,
       subcategoryartes: 1,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01',
+      codref: '001001000000',
       ref: 'Todas as Artes',
       imageUrl: ''
     },
@@ -19,7 +20,7 @@ const data = {
       subcategoryartes: 2,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01020000',
+      codref: '001002000000',
       ref: 'Artes com Bordados.',
       imageUrl: ''
     },
@@ -29,7 +30,7 @@ const data = {
       subcategoryartes: 3,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01030000',
+      codref: '001003000000',
       ref: 'Artes com Bordados em Tecidos.',
       imageUrl: ''
     },
@@ -39,8 +40,8 @@ const data = {
       subcategoryartes: 4,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01040000',
-      ref: 'Artes com Bordados em outro Material.',
+      codref: '001004000000',
+      ref: 'Artes com Bordados em Bonés.',
       imageUrl: ''
     },
     {
@@ -49,8 +50,8 @@ const data = {
       subcategoryartes: 5,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01050000',
-      ref: 'Artes a Lasers.',
+      codref: '001005000000',
+      ref: 'Artes com Bordados em Vestuários.',
       imageUrl: ''
     },
     {
@@ -59,8 +60,8 @@ const data = {
       subcategoryartes: 6,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01060000',
-      ref: 'Artes a Lasers em Acrílico.',
+      codref: '001006000000',
+      ref: 'Artes com Bordados em Acessórios.',
       imageUrl: ''
     },
     {
@@ -69,172 +70,233 @@ const data = {
       subcategoryartes: 7,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01070000',
-      ref: 'Artes a Lasers em M D F.',
+      codref: '001007000000',
+      ref: ' Artes com Bordados em outro Material.',
       imageUrl: ''
     },
+
     {
       id: 8,
       category: 1,
       subcategoryartes: 8,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01080000',
-      ref: 'Artes a Lasers em Madeiras.',
-      imageUrl: ''
-    },
-    {
-      id: 8,
-      category: 1,
-      subcategoryartes: 9,
-      subcategorbordados: 0,
-      subcategorlasers: 0,
-      codref: '01090000',
-      ref: 'Artes a Lasers em Tecidos.',
+      codref: '001008000000',
+      ref: 'Artes a Lasers.',
       imageUrl: ''
     },
     {
       id: 9,
       category: 1,
-      subcategoryartes: 10,
+      subcategoryartes: 9,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01100000',
-      ref: 'Artes a Lasers em Couro, Courino ou Semelhante.',
+      codref: '001009000000',
+      ref: 'Artes a Lasers com Acrílico.',
       imageUrl: ''
     },
     {
       id: 10,
       category: 1,
-      subcategoryartes: 11,
+      subcategoryartes: 10,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01110000',
-      ref: 'Artes a Lasers em Metais.',
+      codref: '001010000000',
+      ref: 'Artes a Lasers com M D F.',
       imageUrl: ''
     },
     {
       id: 11,
       category: 1,
+      subcategoryartes: 11,
+      subcategorbordados: 0,
+      subcategorlasers: 0,
+      codref: '001011000000',
+      ref: 'Artes a Lasers com Madeiras.',
+      imageUrl: ''
+    },
+    {
+      id: 12,
+      category: 1,
       subcategoryartes: 12,
       subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '01120000',
-      ref: 'Laser em outros Materiais.',
-      imageUrl: ''
-    },
-    /** bordados */
-    {
-      id: 12,
-      category: 2,
-      subcategoryartes: 0,
-      subcategorbordados: 1,
-      subcategorlasers: 0,
-      codref: '02',
-      ref: 'Todas os Bordados',
+      codref: '001012000000',
+      ref: 'Artes a Lasers com Tecidos.',
       imageUrl: ''
     },
     {
       id: 13,
-      category: 2,
-      subcategoryartes: 0,
-      subcategorbordados: 2,
+      category: 1,
+      subcategoryartes: 13,
+      subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '02000200',
-      ref: 'Bordados em Tecidos.',
+      codref: '001013000000',
+      ref: 'Artes a Lasers com Couro, Courino ou Semelhante.',
       imageUrl: ''
     },
     {
       id: 14,
-      category: 2,
-      subcategoryartes: 0,
-      subcategorbordados: 3,
+      category: 1,
+      subcategoryartes: 14,
+      subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '02000300',
-      ref: 'Bordados em Bonés.',
+      codref: '001014000000',
+      ref: 'Artes a Lasers com Metais.',
       imageUrl: ''
     },
     {
       id: 15,
-      category: 2,
-      subcategoryartes: 0,
-      subcategorbordados: 4,
+      category: 1,
+      subcategoryartes: 15,
+      subcategorbordados: 0,
       subcategorlasers: 0,
-      codref: '02000400',
-      ref: 'Bordados em Vestuários.',
+      codref: '001015000000',
+      ref: 'Artes a Lasers com outros Materiais.',
       imageUrl: ''
     },
+    /** registros  Categorias  2 - Bordados */
     {
       id: 16,
       category: 2,
       subcategoryartes: 0,
-      subcategorbordados: 5,
+      subcategorbordados: 1,
       subcategorlasers: 0,
-      codref: '02000500',
-      ref: 'Bordados em Acessórios.',
+      codref: '002000001000',
+      ref: 'Todas os Bordados',
       imageUrl: ''
     },
     {
       id: 17,
-      category: 1,
+      category: 2,
       subcategoryartes: 0,
-      subcategorbordados: 6,
+      subcategorbordados: 2,
       subcategorlasers: 0,
-      codref: '02000600',
-      ref: 'Bordados em outro Material.',
+      codref: '002000002000',
+      ref: 'Bordados em Tecidos.',
       imageUrl: ''
     },
     {
       id: 18,
-      category: 1,
+      category: 2,
       subcategoryartes: 0,
-      subcategorbordados: 7,
+      subcategorbordados: 3,
       subcategorlasers: 0,
-      codref: '01000700',
-      ref: 'Bordados com uso de Lasers.',
+      codref: '002000003000',
+      ref: 'Bordados em Bonés.',
+      imageUrl: ''
+    },
+    {
+      id: 19,
+      category: 2,
+      subcategoryartes: 0,
+      subcategorbordados: 4,
+      subcategorlasers: 0,
+      codref: '002000004000',
+      ref: 'Bordados em Vestuários.',
+      imageUrl: ''
+    },
+    {
+      id: 20,
+      category: 2,
+      subcategoryartes: 0,
+      subcategorbordados: 5,
+      subcategorlasers: 0,
+      codref: '002000002000',
+      ref: 'Bordados em Acessórios.',
+      imageUrl: ''
+    },
+    {
+      id: 21,
+      category: 2,
+      subcategoryartes: 0,
+      subcategorbordados: 6,
+      subcategorlasers: 0,
+      codref: '002000006000',
+      ref: 'Bordados em outro Material.',
+      imageUrl: ''
+    },
+    /** registros  Categorias  3 - Laser */
+    {
+      id: 22,
+      category: 3,
+      subcategoryartes: 0,
+      subcategorbordados: 0,
+      subcategorlasers: 1,
+      codref: '003000000001',
+      ref: 'Todos com Laser.',
+      imageUrl: ''
+    },
+    {
+      id: 23,
+      category: 3,
+      subcategoryartes: 0,
+      subcategorbordados: 0,
+      subcategorlasers: 2,
+      codref: '003000000002',
+      ref: 'Laser em Acrílico.',
+      imageUrl: ''
+    },
+    {
+      id: 24,
+      category: 3,
+      subcategoryartes: 0,
+      subcategorbordados: 0,
+      subcategorlasers: 3,
+      codref: '003000000003',
+      ref: 'Laser em M D F.',
+      imageUrl: ''
+    },
+    {
+      id: 25,
+      category: 3,
+      subcategoryartes: 0,
+      subcategorbordados: 0,
+      subcategorlasers: 4,
+      codref: '003000000004',
+      ref: 'Laser em Madeiras.',
+      imageUrl: ''
+    },
+    {
+      id: 26,
+      category: 3,
+      subcategoryartes: 0,
+      subcategorbordados: 0,
+      subcategorlasers: 5,
+      codref: '003000000005',
+      ref: 'Laser em Tecidos.',
+      imageUrl: ''
+    },
+    {
+      id: 27,
+      category: 3,
+      subcategoryartes: 0,
+      subcategorbordados: 0,
+      subcategorlasers: 6,
+      codref: '003000000006',
+      ref: 'Laser em Couro, Courino ou Semelhante.',
+      imageUrl: ''
+    },
+    {
+      id: 28,
+      category: 3,
+      subcategoryartes: 0,
+      subcategorbordados: 0,
+      subcategorlasers: 7,
+      codref: '003000000007',
+      ref: 'Laser em Metais.',
+      imageUrl: ''
+    },
+    {
+      id: 29,
+      category: 3,
+      subcategoryartes: 0,
+      subcategorbordados: 0,
+      subcategorlasers: 8,
+      codref: '003000000008',
+      ref: 'Laser em outros Materiais.',
       imageUrl: ''
     }
-
-    /** Categorias e Sub Categorias para  Filtragem
-     * Categorias
-     * 1 - Artes
-     *  Sub-Categories Arte
-     *  1  - Todas as Artes.
-     *  2  - Artes com Bordados.
-     *  3  - Artes com Bordados em Tecidos.
-     *  4  - Artes com Bordados em outro Material.
-     *  5  - Artes a Lasers.
-     *  6  - Artes a Lasers em Acrílico.
-     *  7  - Artes a Lasers em M D F.
-     *  8  - Artes a Lasers em Madeiras.
-     *  9  - Artes a Lasers em Tecidos.
-     *  10 - Artes a Lasers em Couro, Courino ou Semelhante.
-     *  11 - Artes a Lasers em Metais.
-     *  12 - Artes a Lasers com outros Materiais.
-     *
-     * Categorias
-     * 2 - Bordados
-     *  Sub-Categories Bordados
-     *  1 - Todos os Bordados.
-     *  2 - Bordados em Tecidos.
-     *  3 - Bordados em Bonés.
-     *  4 - Bordados em Vestuários.
-     *  5 - Bordados em Acessórios.
-     *  6 - Bordados em outro Material.
-     *  7 - Bordados com uso de Lasers.
-     *
-     * Categorias
-     * 3 - Laser
-     *  Sub-Categories Lasers *
-     *  1 - Todos com Laser.
-     *  2 - Laser em Acrílico.
-     *  3 - Laser em M D F.
-     *  4 - Laser em Madeiras.
-     *  5 - Laser em Tecidos.
-     *  6 - Laser em Couro, Courino ou Semelhante.
-     *  7 - Laser em Metais.
-     *  8 - Laser em outros Materiais.
-     */
   ]
 }
 

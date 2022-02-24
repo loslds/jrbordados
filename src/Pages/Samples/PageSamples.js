@@ -7,10 +7,8 @@ import {
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ButtonBg } from '../components/Buttons'
+import home from '../../assets/image/logosys.png'
 
-import login from '../../assets/image/key-lock.svg'
-import { ContainerSys, ContainerImgSys } from './stylesSamples'
-import logosys from '../../assets/image/logosys.png'
 export default function PageSamples() {
   const { push } = useHistory()
   return (
@@ -19,20 +17,13 @@ export default function PageSamples() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Bem Vindo ao Portfólio." />
+            <PanelTitle title="Bem Vindo ao Samples." />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg
-              img={login}
-              onClick={() => push('/login')}
-              title={'Login.'}
-            />
+            <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
           </PanelEnd>
           <DivisionPanel />
-          <ContainerSys>
-            <ContainerImgSys img={logosys} />
-          </ContainerSys>
-
+          <h1>PageSamples </h1>
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

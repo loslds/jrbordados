@@ -28,6 +28,10 @@ export const CompanyWrapper = styled.div`
     > li {
       ${h3}
       ${hover}
+      p {
+        ${p}
+        margin-top: 10px;
+      }
       display: flex;
       align-items: center;
       & + li {
@@ -112,6 +116,10 @@ export const ProductsWrapper = styled.div`
     > li {
       ${h3}
       ${hover}
+      p {
+        ${p}
+        margin-top: 10px;
+      }
       display: flex;
       align-items: center;
       & + li {
@@ -134,6 +142,9 @@ export const ProductsWrapper = styled.div`
         }
         &.arte {
           background: #80b9f9;
+        }
+        &.produtos {
+          background: #fd0101;
         }
         &.terminal {
           background: #5355ba;
@@ -193,75 +204,94 @@ export const ProductsWrapper = styled.div`
 `
 
 export const DevelopersWrapper = styled.div`
-  padding: 32px 35px;
+  padding: 16px 16.5px;
   white-space: nowrap;
   .primary {
-    display: flex;
-    > span {
-      display: inline-block;
-      width: 17px;
-      height: 17px;
-      margin-right: 12px;
-      background: #505e7d;
-      border-radius: 3.5px;
-    }
-    > div {
-      > h3 {
-        ${h3}
-        ${hover}
-      }
-      > p {
+    > li {
+      ${h3}
+      ${hover}
+      p {
         ${p}
-        margin-top: 16.7px;
+        margin-top: 10px;
       }
-      > div {
-        margin-top: 35px;
-        display: flex;
-        align-items: center;
-        > ul + ul {
-          margin-left: 41px;
+      display: flex;
+      align-items: center;
+      & + li {
+        margin-top: 22px;
+      }
+      > span {
+        margin-right: 13px;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        &.bordar {
+          background: #beaef0;
         }
-        > ul li {
-          ${hover}
-          color: #424770;
-          h4 {
-            color: #8898aa;
-            text-transform: uppercase;
-          }
-          & + li {
-            margin-top: 13px;
-          }
+        &.cortarlaser {
+          background: #ffd876;
+        }
+        &.gravarlaser {
+          background: #fba2e8;
+        }
+        &.arte {
+          background: #80b9f9;
+        }
+        &.servicos {
+          background: #fd0101;
+        }
+        &.terminal {
+          background: #5355ba;
+        }
+        > span:hover {
+          border: 2px red solid;
         }
       }
     }
   }
+
   .secondary {
-    margin-top: 69px;
+    margin-top: 64.5px;
     li {
-      ${hover}
-      ${h3}
       display: flex;
       align-items: center;
-      & + li {
+      &:not(.title) {
+        ${hover}
         margin-top: 21px;
+        margin-left: 30px;
+        color: #424770;
+
+        .new-tag {
+          text-transform: uppercase;
+          font-size: 10px;
+          background: #646ddf;
+          border-radius: 6px;
+          padding: 2px 4.5px;
+          color: #fff;
+          margin-left: 6px;
+        }
+        .arrow {
+          margin-left: 6px;
+          font-weight: bold;
+          transform: scaleX(0.7) scaleY(1.1);
+        }
+      }
+
+      &:nth-child(2) {
+        margin-top: 30.2px;
+        font-weight: 500;
       }
     }
-    span {
-      display: inline-block;
-      width: 17px;
-      height: 17px;
-      margin-right: 12px;
-      border-radius: 3.5px;
-      background: #505e7d;
-      &.api-reference {
-        border-radius: 0;
-        background: repeating-linear-gradient(
-          rgba(0, 0, 0, 0),
-          #000 0.001px,
-          #000 2.125px,
-          #fff 2.126px,
-          #fff 4.25px
-        );
+
+    li.title {
+      ${h3}
+      .title-icon {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        border-radius: 3.5px;
+        margin-right: 13px;
+        background: #505e7d;
       }
     }
   }

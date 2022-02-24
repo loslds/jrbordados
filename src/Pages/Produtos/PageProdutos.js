@@ -7,10 +7,9 @@ import {
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ButtonBg } from '../components/Buttons'
-import retornar from '../../assets/image/previous.svg'
+import produtos from '../../assets/image/produtos.svg'
 import home from '../../assets/image/home.svg'
-
-export default function PageBordadoProd() {
+export default function PageProdutos() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -18,18 +17,14 @@ export default function PageBordadoProd() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Show dos Bordados em Produtos." />
+            <img src={produtos} />
+            <PanelTitle title="Produtos." />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg
-              img={retornar}
-              onClick={() => push('/portfolios/pagepfprodutos')}
-              title={'Retornar...'}
-            />
             <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
           </PanelEnd>
           <DivisionPanel />
-          {<label>Show dos Produtos em Produtos.</label>}
+          {<label>Produtos.</label>}
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

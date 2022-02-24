@@ -1,7 +1,7 @@
 import { compareValues } from 'mini-helper'
 const data = {
   success: true,
-  subcategoriesbordados: [
+  subcategorylasers: [
     { id: 1, name: 'Todos com Laser.' },
     { id: 2, name: 'Laser em Acrílico.' },
     { id: 3, name: 'Laser em M D F.' },

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Products, Developers, Company } from './Content'
+import { Company, Products, Developers } from './Content'
 import {
   DropdownProvider,
   DropdownOpction,

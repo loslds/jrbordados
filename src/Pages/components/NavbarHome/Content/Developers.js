@@ -1,10 +1,31 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 import { DevelopersWrapper } from './styleContentHome'
 
 export const Developers = () => (
   <DevelopersWrapper>
-    <div className="primary">
+    <ul className="primary">
+      <li>
+        <span className="access" />
+        <Link to="/servicos">Serviços.</Link>
+      </li>
+      <li>
+        <span className="about" />
+        Opção2.
+      </li>
+      <li>
+        <span className="system" />
+        Opção3.
+      </li>
+      <li>
+        <span className="portfolio" />
+        Opção4.
+      </li>
+    </ul>
+  </DevelopersWrapper>
+)
+/**
+ *     <div className="primary">
       <span className="documentation" />
 
       <div>
@@ -49,5 +70,5 @@ export const Developers = () => (
         Código aberto
       </li>
     </ul>
-  </DevelopersWrapper>
-)
+
+ */

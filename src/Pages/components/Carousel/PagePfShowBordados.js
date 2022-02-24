@@ -1,16 +1,16 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import { PanelMain, PanelLeft, PanelEnd, PanelTitle } from '../components/Panel'
+import { PanelMain, PanelLeft, PanelEnd, PanelTitle } from '../Panel'
 import {
   ContainerPanelText,
   ContainerPanelTextFlex,
   DivisionPanel
-} from '../components/Panel/stylePanel'
-import { ButtonBg } from '../components/Buttons'
+} from '../Panel/stylePanel'
+import { ButtonBg } from '../Buttons'
 import retornar from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
 
-export default function PageServicoProd() {
+export default function PagePfShowBordados() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -18,7 +18,7 @@ export default function PageServicoProd() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="Show dos Serviços em Produtos." />
+            <PanelTitle title="Show dos Bordados." />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg
@@ -29,7 +29,7 @@ export default function PageServicoProd() {
             <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
           </PanelEnd>
           <DivisionPanel />
-          {<label>Show dos Serviços em Produtos.</label>}
+          {<label>Show dos Bordados.</label>}
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { ProductsWrapper } from './styleContentHome'
 
 export const Products = () => (
@@ -21,9 +21,14 @@ export const Products = () => (
         <span className="arte" />
         Designs.
       </li>
+      <li>
+        <span className="produtos" />
+        <Link to="/produtos">Produtos.</Link>
+      </li>
     </ul>
-
-    {/*
+  </ProductsWrapper>
+)
+/*
     <ul className="primary">
       <li>
         <span className="payments" />
@@ -84,6 +89,4 @@ export const Products = () => (
         <h3>Terminal</h3>
         <p>Pagamentos pessoais programáveis</p>
       </li>
-    </ul> */}
-  </ProductsWrapper>
-)
+    </ul> */
