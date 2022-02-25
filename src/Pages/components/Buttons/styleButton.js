@@ -88,6 +88,7 @@ export const ButtImgBgDesig = styled.button`
   outline: none;
   font-size: 14px;
 `
+/**    button logo page */
 export const ContainerButtonPage = styled.div`
   border: 0px;
   padding: 2px auto;
@@ -127,6 +128,38 @@ export const ButtonsImgLogoPage = styled.button`
   background-position: center;
   background-image: url(${({ img }) => img || semimg});
   cursor: pointer;
+  outline: none;
+  font-size: 14px;
+`
+/**    button card image logo */
+export const ContainerButtonImgBgLogo = styled.div`
+  border: 0px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
+  height: 45px;
+  width: 130x;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  min-height: 45px;
+  font-size: 14px;
+`
+export const ButtonsImgBgLogo = styled.button`
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  width: 100px;
+  height: 350px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+  cursor: normal;
   outline: none;
   font-size: 14px;
 `

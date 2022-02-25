@@ -21,6 +21,7 @@ export const ContainerToolsBarMainFlex = styled.div`
   justify-content: center;
   background-color: #000000;
   font-size: 14px;
+  color: white;
 `
 
 export const ContainerToolsBarColCenter = styled.div`

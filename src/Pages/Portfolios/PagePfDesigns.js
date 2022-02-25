@@ -1,18 +1,17 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import { PanelMain, PanelLeft, PanelEnd, PanelTitle } from '../components/Panel'
+import { PanelMain, PanelLeft, PanelEnd } from '../components/Panel'
 import {
   ContainerPanelText,
   ContainerPanelTextFlex,
   DivisionPanel
 } from '../components/Panel/stylePanel'
-import { ButtonBg } from '../components/Buttons'
+import { ButtonBg, ButtonBgLogo } from '../components/Buttons'
 import previous from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
-
-import designs from '../../assets/image/designs.svg'
-import { CarroselMain, CarroselLogo, ButtonLogo } from '../components/Carousel'
-
+import designlogo from '../../assets/image/designlogo.svg'
+import { DataToolsBar } from '../components/Data'
+import { NavbarHome } from '../components/NavbarHomeS'
 export default function PagePfDesigns() {
   const { push } = useHistory()
   return (
@@ -21,7 +20,7 @@ export default function PagePfDesigns() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <PanelTitle title="PortFolios Design`s." />
+            <ButtonBgLogo img={designlogo} title={'Designs...'} />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg
@@ -29,15 +28,14 @@ export default function PagePfDesigns() {
               onClick={() => push('/portfolios')}
               title={'Portfólio'}
             />
-            <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
+            <ButtonBg img={home} onClick={() => push('/')} title={'Home...'} />
           </PanelEnd>
           <DivisionPanel />
-          <CarroselMain>
-            <CarroselLogo>
-              <ButtonLogo img={designs} />
-            </CarroselLogo>
-          </CarroselMain>
 
+          <DataToolsBar>
+            <NavbarHome />
+          </DataToolsBar>
+          <h3>Em Componente Data Design.</h3>
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

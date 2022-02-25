@@ -142,6 +142,7 @@ export const ContainerPanelTextFlex = styled.div`
   margin: 5px;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   align-content: center;
   justify-content: center;
   align-items: center;

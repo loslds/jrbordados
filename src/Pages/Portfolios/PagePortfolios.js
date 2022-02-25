@@ -10,7 +10,7 @@ import {
 import { ContainerTitleBg, TitleBg } from '../../styles/styles'
 import { ButtonBg, ButtonLogoPage } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
-import designs from '../../assets/image/designs.svg'
+import designlogo from '../../assets/image/designlogo.svg'
 import produtos from '../../assets/image/produtoslogo.svg'
 import servicos from '../../assets/image/servicoslogo.svg'
 export default function PagePortfolios() {
@@ -55,7 +55,7 @@ export default function PagePortfolios() {
           <ContainerPanelMainCard>
             <ContainerPanelText>
               <ButtonLogoPage
-                img={designs}
+                img={designlogo}
                 onClick={() => push('/portfolios/pagepfdesigns')}
                 title="Portfolio Design`s."
               />
