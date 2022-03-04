@@ -131,13 +131,16 @@ export const ProductsWrapper = styled.div`
         width: 14px;
         height: 14px;
         border-radius: 50%;
+        &.design {
+          background: #5355ba;
+        }
         &.bordar {
           background: #beaef0;
         }
-        &.cortarlaser {
+        &.cortalaser {
           background: #ffd876;
         }
-        &.gravarlaser {
+        &.gravalaser {
           background: #fba2e8;
         }
         &.arte {
@@ -146,9 +149,7 @@ export const ProductsWrapper = styled.div`
         &.produtos {
           background: #fd0101;
         }
-        &.terminal {
-          background: #5355ba;
-        }
+
         > span:hover {
           border: 2px red solid;
         }

@@ -18,6 +18,8 @@ import {
 import { PageDocEmpresa, PageDocProduto, PageDocServico } from '../Pages/Docs'
 import { PageSamples } from '../Pages/Samples'
 /** Opção Produtos */
+import { PageDesigns } from '../Pages/Designs'
+import { PageBordados } from '../Pages/Bordados'
 import { PageProdutos } from '../Pages/Produtos'
 /** opção Serviços */
 import { PageServicos } from '../Pages/Servicos'
@@ -118,9 +120,23 @@ export const optionCompanyRoutes = [
 export const optionProductsRoutes = [
   {
     exact: true,
+    label: 'Designs',
+    path: '/designs',
+    component: PageDesigns,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
     label: 'Produtos',
     path: '/produtos',
     component: PageProdutos,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Bordados',
+    path: '/bordados',
+    component: PageBordados,
     layout: LayoutPages
   }
 ]

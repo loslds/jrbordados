@@ -129,7 +129,6 @@ export const ContainerPanelText = styled.div`
   align-content: center;
   justify-content: center;
   align-items: center;
-
   h5 {
     margin-left: 25px;
     font-size: 10px;

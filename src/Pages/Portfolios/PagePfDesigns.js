@@ -11,7 +11,7 @@ import previous from '../../assets/image/previous.svg'
 import home from '../../assets/image/home.svg'
 import designlogo from '../../assets/image/designlogo.svg'
 import { DataToolsBar } from '../components/Data'
-import { NavbarHome } from '../components/NavbarHomeS'
+import { NavbarProd } from '../components/NavbarProd'
 export default function PagePfDesigns() {
   const { push } = useHistory()
   return (
@@ -31,9 +31,8 @@ export default function PagePfDesigns() {
             <ButtonBg img={home} onClick={() => push('/')} title={'Home...'} />
           </PanelEnd>
           <DivisionPanel />
-
           <DataToolsBar>
-            <NavbarHome />
+            <NavbarProd />
           </DataToolsBar>
           <h3>Em Componente Data Design.</h3>
           <DivisionPanel />

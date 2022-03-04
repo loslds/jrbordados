@@ -7,9 +7,9 @@ import {
   DivisionPanel
 } from '../components/Panel/stylePanel'
 import { ButtonBg, ButtonBgLogo } from '../components/Buttons'
-import produtoslogo from '../../assets/image/produtoslogo.svg'
 import home from '../../assets/image/home.svg'
-export default function PageProdutos() {
+import bordadoslogo from '../../assets/image/bordadoslogo.svg'
+export default function PageBordados() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -17,13 +17,13 @@ export default function PageProdutos() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <ButtonBgLogo img={produtoslogo} title={'Produtos...'} />
+            <ButtonBgLogo img={bordadoslogo} title={'Bordados...'} />
           </PanelLeft>
           <PanelEnd>
-            <ButtonBg img={home} onClick={() => push('/')} title={'Home'} />
+            <ButtonBg img={home} onClick={() => push('/')} title={'Home...'} />
           </PanelEnd>
           <DivisionPanel />
-          <PanelTitle title="Produtos." />
+          <PanelTitle title="Bordados." />
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

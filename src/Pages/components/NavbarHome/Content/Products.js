@@ -6,20 +6,20 @@ export const Products = () => (
   <ProductsWrapper>
     <ul className="primary">
       <li>
+        <span className="design" />
+        <Link to="/designs">Designs.</Link>
+      </li>
+      <li>
         <span className="bordar" />
         Bordados.
       </li>
       <li>
-        <span className="cortarlaser" />
+        <span className="cortalaser" />
         Cortar à Laser.
       </li>
       <li>
-        <span className="gravarlaser" />
+        <span className="gravalaser" />
         Gravar à laser.
-      </li>
-      <li>
-        <span className="arte" />
-        Designs.
       </li>
       <li>
         <span className="produtos" />
