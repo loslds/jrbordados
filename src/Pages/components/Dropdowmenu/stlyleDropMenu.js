@@ -12,35 +12,6 @@ export const ContentMenu = styled.div`
   align-content: center;
   justify-content: center;
   z-index: 10000;
-  /* 
-  h3 {
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-  }
-
-  nav {
-    border: 1px red dashed;
-    width: 100%;
-    color: black;
-  }
-
-  ul {
-    list-style: none;
-    padding-left: 0px;
-  }
-
-  ul li {
-    position: relative;
-    margin: 4 4 4 4;
-    padding: 5 5 5 5;
-    color: black;
-    background-color: transparent;
-  }
-  li {
-    display: block;
-  } */
 `
 
 export const ButtonMenuDropdown = styled.button`

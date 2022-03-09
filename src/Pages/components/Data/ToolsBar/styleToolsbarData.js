@@ -1,6 +1,4 @@
 import styled from 'styled-components'
-// import proibido from '../../../../assets/image/proibido.svg'
-
 export const ContainerToolsBarMain = styled.div`
   border: 0px;
   margin: 0px 0px 0px 0px;

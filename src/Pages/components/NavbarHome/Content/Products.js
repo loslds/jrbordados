@@ -11,15 +11,15 @@ export const Products = () => (
       </li>
       <li>
         <span className="bordar" />
-        Bordados.
+        <Link to="/bordados">Bordados.</Link>
       </li>
       <li>
         <span className="cortalaser" />
-        Cortar à Laser.
+        <Link to="/lasercorta">Cortes a Laser.</Link>
       </li>
       <li>
         <span className="gravalaser" />
-        Gravar à laser.
+        <Link to="/lasergrava">Gravações a Laser.</Link>
       </li>
       <li>
         <span className="produtos" />

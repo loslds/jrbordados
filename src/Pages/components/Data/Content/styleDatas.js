@@ -104,9 +104,9 @@ export const ContainerTitleFlex = styled.div`
 /** ToolsBar */
 export const DataToolsBarMain = styled.div`
   border: 0px;
-  margin: 0px 0px 0px 10px;
-  padding: 0px 0px 0px 5px;
-  width: 100%;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  width: 98%;
   display: flex;
   background-color: transparent;
 `
@@ -114,8 +114,8 @@ export const DataToolsBarMainFlex = styled.div`
   border: 0px;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
-  min-height: 50px;
-  width: 98%;
+  min-height: 45px;
+  width: 100%;
   display: flex;
   flex-flow: wrap;
   align-items: center;
@@ -124,4 +124,17 @@ export const DataToolsBarMainFlex = styled.div`
   background-color: #000000;
   font-size: 14px;
   color: white;
+`
+export const ContentData = styled.div`
+  border: 0px;
+  width: 100%;
+  padding: 0px auto;
+  margin: 0px auto;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  flex-flow: left;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  z-index: 10000;
 `

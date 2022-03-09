@@ -1,10 +1,16 @@
-/** ====== Layout dos Componentes Paginas */
+/**
+ *  ====== Layout dos Componentes Paginas
+ * */
 import { LayoutApp } from '../Pages/layouts/LayoutApp'
 import { LayoutPages } from '../Pages/layouts/LayoutPages'
 // import { LayoutPrd } from '../Pages/layouts/LayoutPrd'
 
-/** ====== Paginas do Component Menu Principal */
-/** opção Empresa */
+/**
+ *  ====== Paginas do Component Menu Principal
+ * */
+/**
+ *  opção Empresa
+ * */
 import { PageHome } from '../Pages/Home'
 import { PageAbout } from '../Pages/About'
 import { PageLogin } from '../Pages/Login'
@@ -17,12 +23,21 @@ import {
 } from '../Pages/Portfolios'
 import { PageDocEmpresa, PageDocProduto, PageDocServico } from '../Pages/Docs'
 import { PageSamples } from '../Pages/Samples'
-/** Opção Produtos */
+/**
+ *  Opção Produtos
+ * */
 import { PageDesigns } from '../Pages/Designs'
-import { PageBordados } from '../Pages/Bordados'
+import { PageLaserCorta, PageLaserGrava } from '../Pages/Laser'
 import { PageProdutos } from '../Pages/Produtos'
-/** opção Serviços */
+/**
+ *  opção Serviços
+ * */
 import { PageServicos } from '../Pages/Servicos'
+import { PageBordados } from '../Pages/Bordados'
+/**
+ *  declaração das Routes
+ * */
+
 export const homeRoutes = [
   {
     exact: true,
@@ -127,16 +142,30 @@ export const optionProductsRoutes = [
   },
   {
     exact: true,
-    label: 'Produtos',
-    path: '/produtos',
-    component: PageProdutos,
+    label: 'Bordados',
+    path: '/bordados',
+    component: PageBordados,
     layout: LayoutPages
   },
   {
     exact: true,
-    label: 'Bordados',
-    path: '/bordados',
-    component: PageBordados,
+    label: 'Cortes a Laser',
+    path: '/lasercorta',
+    component: PageLaserCorta,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Gravações a Laser',
+    path: '/lasergrava',
+    component: PageLaserGrava,
+    layout: LayoutPages
+  },
+  {
+    exact: true,
+    label: 'Produtos',
+    path: '/produtos',
+    component: PageProdutos,
     layout: LayoutPages
   }
 ]

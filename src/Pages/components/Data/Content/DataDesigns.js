@@ -4,11 +4,7 @@ import { ContainerDataDesignMain, ContainerDataMainFlex } from './styleDatas'
 export default function DataDesigns({ open, children }) {
   return (
     <ContainerDataDesignMain open={open}>
-      <ContainerDataMainFlex>
-        <h3>Em Componente Data Design.</h3>
-
-        {children}
-      </ContainerDataMainFlex>
+      <ContainerDataMainFlex>{children}</ContainerDataMainFlex>
     </ContainerDataDesignMain>
   )
 }

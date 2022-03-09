@@ -8,10 +8,9 @@ import {
 } from '../components/Panel/stylePanel'
 import { ButtonBg, ButtonBgLogo } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
-import designlogo from '../../assets/image/designlogo.svg'
+import gravacoeslaserlogo from '../../assets/image/gravacoeslogo.svg'
 
-// export const PageDesigns = () => {
-export default function PageDesigns() {
+export default function PageLaserGrava() {
   const { push } = useHistory()
   return (
     <PanelMain>
@@ -19,13 +18,16 @@ export default function PageDesigns() {
         <ContainerPanelTextFlex>
           <DivisionPanel />
           <PanelLeft>
-            <ButtonBgLogo img={designlogo} title={'Designs...'} />
+            <ButtonBgLogo
+              img={gravacoeslaserlogo}
+              title={'Gravações a Laser...'}
+            />
           </PanelLeft>
           <PanelEnd>
             <ButtonBg img={home} onClick={() => push('/')} title={'Home...'} />
           </PanelEnd>
           <DivisionPanel />
-          <PanelTitle title="Designs." />
+          <PanelTitle title="Gravações a Laser." />
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>
