@@ -2,7 +2,7 @@ import { compareValues } from 'mini-helper'
 
 const data = {
   success: true,
-  subcategorybordados: [
+  subcategoriesbordados: [
     { id: 1, name: 'Todos os Bordados.', onclick: () => {} },
     { id: 2, name: 'Bordados em Tecidos.', onclick: () => {} },
     { id: 3, name: 'Bordados em Bonés.', onclick: () => {} },

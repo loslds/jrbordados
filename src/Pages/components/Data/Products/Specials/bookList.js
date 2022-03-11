@@ -1,12 +1,12 @@
 export const listGrpSGrp = [
   {
     id: 1,
-    label: 'Grupos',
+    title: 'Grupos',
     onclick: () => {}
   },
   {
     id: 2,
-    label: 'Sub-Grupos',
+    title: 'Sub-Grupos',
     onclick: () => {}
   }
 ]

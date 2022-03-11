@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/no-onchange */
+/** eslint-disable jsx-a11y/no-onchange */
 import React, { useCallback, useMemo } from 'react'
 import PropTypes from 'prop-types'
 
@@ -25,11 +25,20 @@ export default function SelectField(props) {
 
   return (
     <>
-      <select name={name} defaultValue={defaultValue} onChange={handleChange} disabled={!!disabled}>
+      <select
+        name={name}
+        defaultValue={defaultValue}
+        onChange={handleChange}
+        disabled={!!disabled}
+      >
         {list.map(option => {
           const { disabled } = option
           return (
-            <option key={`option-${option.id}`} disabled={!!disabled} value={option.id}>
+            <option
+              key={`option-${option.id}`}
+              disabled={!!disabled}
+              value={option.id}
+            >
               {option.name}
             </option>
           )

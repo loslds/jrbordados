@@ -1,7 +1,7 @@
 import { compareValues } from 'mini-helper'
 const data = {
   success: true,
-  subcategorylasers: [
+  subcategorieslasers: [
     { id: 1, name: 'Todos com Laser.', onclick: () => {} },
     { id: 2, name: 'Laser em Acrílico.', onclick: () => {} },
     { id: 3, name: 'Laser em M D F.', onclick: () => {} },

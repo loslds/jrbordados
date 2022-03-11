@@ -2,7 +2,7 @@
 import { compareValues } from 'mini-helper'
 const data = {
   success: true,
-  subcategoryartes: [
+  subcategoriesartes: [
     { id: 1, name: 'Todas as Artes.', onclick: () => {} },
     { id: 2, name: 'Artes com Bordados.', onclick: () => {} },
     { id: 3, name: 'Artes com Bordados em Tecidos.', onclick: () => {} },

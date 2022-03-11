@@ -10,3 +10,13 @@ export function useIsMounted() {
   }, [])
   return isMounted
 }
+
+export function useIsDisplay() {
+  const isDisplay = React.useRef(true)
+  useEffect(() => {
+    return () => {
+      isDisplay.current = false
+    }
+  }, [])
+  return isDisplay
+}
