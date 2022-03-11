@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerMainList, ContainerMainFlexList } from './stylePageDatas'
+import { ContainerMain, ContainerMainFlex } from './style'
 
 export default function BoxList({ children }) {
   return (
-    <ContainerMainList>
-      <ContainerMainFlexList>{children}</ContainerMainFlexList>
-    </ContainerMainList>
+    <ContainerMain>
+      <ContainerMainFlex>{children}</ContainerMainFlex>
+    </ContainerMain>
   )
 }
 

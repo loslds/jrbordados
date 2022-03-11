@@ -1,6 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerDataBordadoMain, ContainerDataMainFlex } from './styleDatas'
+import {
+  ContainerDataBordadoMain,
+  ContainerDataMainFlex
+} from '../stylePageDatas'
 export default function DataBordados({ open, children }) {
   return (
     <ContainerDataBordadoMain open={open}>

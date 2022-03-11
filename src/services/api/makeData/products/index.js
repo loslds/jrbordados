@@ -2,451 +2,362 @@ import { compareValues } from 'mini-helper'
 
 const data = {
   succes: true,
-  products: [
+  portifolios: [
+    /** registros  Categorias  1 - Artes */
     {
       id: 1,
-      grupo: 1,
-      subgrupo: 1,
-      promocao: 1,
-      cod: '01010101',
-      name: 'ZProduct 1.',
+      category: 1,
+      subcategoryartes: 1,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001001000000',
+      ref: 'Todas as Artes',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 2,
-      grupo: 1,
-      subgrupo: 1,
-      promocao: 0,
-      cod: '02010100',
-      name: 'SProduct 2',
+      category: 1,
+      subcategoryartes: 2,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001002000000',
+      ref: 'Artes com Bordados.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 3,
-      grupo: 1,
-      subgrupo: 1,
-      promocao: 0,
-      cod: '03010100',
-      name: 'AProduct 3',
+      category: 1,
+      subcategoryartes: 3,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001003000000',
+      ref: 'Artes com Bordados em Tecidos.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 4,
-      grupo: 1,
-      subgrupo: 1,
-      promocao: 0,
-      cod: '04010100',
-      name: 'CProduct 4',
+      category: 1,
+      subcategoryartes: 4,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001004000000',
+      ref: 'Artes com Bordados em Bonés.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 5,
-      grupo: 1,
-      subgrupo: 2,
-      promocao: 1,
-      cod: '05010201',
-      name: '1Product 5',
+      category: 1,
+      subcategoryartes: 5,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001005000000',
+      ref: 'Artes com Bordados em Vestuários.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 6,
-      grupo: 2,
-      subgrupo: 2,
-      promocao: 0,
-      cod: '06020200',
-      name: 'BProduct 6',
+      category: 1,
+      subcategoryartes: 6,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001006000000',
+      ref: 'Artes com Bordados em Acessórios.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 7,
-      grupo: 2,
-      subgrupo: 2,
-      promocao: 0,
-      cod: '07020200',
-      name: 'FProduct 7',
+      category: 1,
+      subcategoryartes: 7,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001007000000',
+      ref: ' Artes com Bordados em outro Material.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
+
     {
       id: 8,
-      grupo: 2,
-      subgrupo: 2,
-      promocao: 0,
-      cod: '08020200',
-      name: 'JProduct 8',
+      category: 1,
+      subcategoryartes: 8,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001008000000',
+      ref: 'Artes a Lasers.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 9,
-      grupo: 2,
-      subgrupo: 3,
-      promocao: 1,
-      cod: '09020301',
-      name: 'DProduct 9',
+      category: 1,
+      subcategoryartes: 9,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001009000000',
+      ref: 'Artes a Lasers com Acrílico.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 10,
-      grupo: 2,
-      subgrupo: 3,
-      promocao: 0,
-      cod: '10020300',
-      name: 'OProduct 10',
+      category: 1,
+      subcategoryartes: 10,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001010000000',
+      ref: 'Artes a Lasers com M D F.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 11,
-      grupo: 3,
-      subgrupo: 3,
-      promocao: 0,
-      cod: '11030300',
-      name: 'JProduct 11',
+      category: 1,
+      subcategoryartes: 11,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001011000000',
+      ref: 'Artes a Lasers com Madeiras.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 12,
-      grupo: 3,
-      subgrupo: 3,
-      promocao: 0,
-      cod: '12030300',
-      name: 'DProduct 12',
+      category: 1,
+      subcategoryartes: 12,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001012000000',
+      ref: 'Artes a Lasers com Tecidos.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 13,
-      grupo: 3,
-      subgrupo: 4,
-      promocao: 1,
-      cod: '13030401',
-      name: 'JProduct 13',
+      category: 1,
+      subcategoryartes: 13,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001013000000',
+      ref: 'Artes a Lasers com Couro, Courino ou Semelhante.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 14,
-      grupo: 3,
-      subgrupo: 4,
-      promocao: 0,
-      cod: '14030400',
-      name: 'DProduct 14',
+      category: 1,
+      subcategoryartes: 14,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001014000000',
+      ref: 'Artes a Lasers com Metais.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 15,
-      grupo: 3,
-      subgrupo: 4,
-      promocao: 0,
-      cod: '15030400',
-      name: 'OProduct 15',
+      category: 1,
+      subcategoryartes: 15,
+      subcategorybordados: 0,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '001015000000',
+      ref: 'Artes a Lasers com outros Materiais.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
+    /** registros  Categorias  2 - Bordados */
     {
       id: 16,
-      grupo: 4,
-      subgrupo: 4,
-      promocao: 0,
-      cod: '16040400',
-      name: 'JProduct 16',
+      category: 2,
+      subcategoryartes: 0,
+      subcategorybordados: 1,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '002000001000',
+      ref: 'Todas os Bordados',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 17,
-      grupo: 4,
-      subgrupo: 5,
-      promocao: 1,
-      cod: '17040501',
-      name: 'DProduct 17',
+      category: 2,
+      subcategoryartes: 0,
+      subcategorybordados: 2,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '002000002000',
+      ref: 'Bordados em Tecidos.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 18,
-      grupo: 4,
-      subgrupo: 5,
-      promocao: 0,
-      cod: '18040500',
-      name: 'ZProduct 18.',
+      category: 2,
+      subcategoryartes: 0,
+      subcategorybordados: 3,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '002000003000',
+      ref: 'Bordados em Bonés.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 19,
-      grupo: 4,
-      subgrupo: 5,
-      promocao: 0,
-      cod: '19040500',
-      name: 'SProduct 19',
+      category: 2,
+      subcategoryartes: 0,
+      subcategorybordados: 4,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '002000004000',
+      ref: 'Bordados em Vestuários.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 20,
-      grupo: 4,
-      subgrupo: 5,
-      promocao: 0,
-      cod: '20040500',
-      name: 'AProduct 20',
+      category: 2,
+      subcategoryartes: 0,
+      subcategorybordados: 5,
+      subcategorylasers: 0,
+      codref: '002000002000',
+      ref: 'Bordados em Acessórios.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 21,
-      grupo: 5,
-      subgrupo: 6,
-      promocao: 1,
-      cod: '21050601',
-      name: 'CProduct 21',
+      category: 2,
+      subcategoryartes: 0,
+      subcategorybordados: 6,
+      subcategorylasers: 0,
+      name: 's/ nome',
+      codref: '002000006000',
+      ref: 'Bordados em outro Material.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
+    /** registros  Categorias  3 - Laser */
     {
       id: 22,
-      grupo: 5,
-      subgrupo: 6,
-      promocao: 0,
-      cod: '22050600',
-      name: '1Product 22',
+      category: 3,
+      subcategoryartes: 0,
+      subcategorybordados: 0,
+      subcategorylasers: 1,
+      name: 's/ nome',
+      codref: '003000000001',
+      ref: 'Todos com Laser.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 23,
-      grupo: 5,
-      subgrupo: 6,
-      promocao: 0,
-      cod: '23050600',
-      name: 'BProduct 23',
+      category: 3,
+      subcategoryartes: 0,
+      subcategorybordados: 0,
+      subcategorylasers: 2,
+      name: 's/ nome',
+      codref: '003000000002',
+      ref: 'Laser em Acrílico.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 24,
-      grupo: 5,
-      subgrupo: 6,
-      promocao: 0,
-      cod: '24050600',
-      name: 'FProduct 24',
+      category: 3,
+      subcategoryartes: 0,
+      subcategorybordados: 0,
+      subcategorylasers: 3,
+      name: 's/ nome',
+      codref: '003000000003',
+      ref: 'Laser em M D F.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 25,
-      grupo: 5,
-      subgrupo: 7,
-      promocao: 1,
-      cod: '02050701',
-      name: 'JProduct 25',
+      category: 3,
+      subcategoryartes: 0,
+      subcategorybordados: 0,
+      subcategorylasers: 4,
+      name: 's/ nome',
+      codref: '003000000004',
+      ref: 'Laser em Madeiras.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 26,
-      grupo: 6,
-      subgrupo: 7,
-      promocao: 0,
-      cod: '26060700',
-      name: 'DProduct 26',
+      category: 3,
+      subcategoryartes: 0,
+      subcategorybordados: 0,
+      subcategorylasers: 5,
+      name: 's/ nome',
+      codref: '003000000005',
+      ref: 'Laser em Tecidos.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 27,
-      grupo: 6,
-      subgrupo: 7,
-      promocao: 0,
-      cod: '27060700',
-      name: 'OProduct 27',
+      category: 3,
+      subcategoryartes: 0,
+      subcategorybordados: 0,
+      subcategorylasers: 6,
+      name: 's/ nome',
+      codref: '003000000006',
+      ref: 'Laser em Couro, Courino ou Semelhante.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 28,
-      grupo: 6,
-      subgrupo: 7,
-      promocao: 0,
-      cod: '28060700',
-      name: 'JProduct 28',
+      category: 3,
+      subcategoryartes: 0,
+      subcategorybordados: 0,
+      subcategorylasers: 7,
+      name: 's/ nome',
+      codref: '003000000007',
+      ref: 'Laser em Metais.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     },
     {
       id: 29,
-      grupo: 6,
-      subgrupo: 8,
-      promocao: 1,
-      cod: '29060801',
-      name: 'DProduct 29',
+      category: 3,
+      subcategoryartes: 0,
+      subcategorybordados: 0,
+      subcategorylasers: 8,
+      name: 's/ nome',
+      codref: '003000000008',
+      ref: 'Laser em outros Materiais.',
       imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 30,
-      grupo: 6,
-      subgrupo: 8,
-      promocao: 0,
-      cod: '30060800',
-      name: 'JProduct 30',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 31,
-      grupo: 7,
-      subgrupo: 8,
-      promocao: 0,
-      cod: '31070800',
-      name: 'DProduct 31',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 32,
-      grupo: 7,
-      subgrupo: 8,
-      promocao: 0,
-      cod: '32070700',
-      name: 'OProduct 32',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 33,
-      grupo: 7,
-      subgrupo: 9,
-      promocao: 0,
-      cod: '33070900',
-      name: 'JProduct 33',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 34,
-      grupo: 7,
-      subgrupo: 9,
-      promocao: 1,
-      cod: '34070901',
-      name: 'DProduct 34',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 35,
-      grupo: 7,
-      subgrupo: 9,
-      promocao: 0,
-      cod: '35070900',
-      name: 'OProduct 35',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 36,
-      grupo: 8,
-      subgrupo: 9,
-      promocao: 0,
-      cod: '36080900',
-      name: 'JProduct 36',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 37,
-      grupo: 8,
-      subgrupo: 10,
-      promocao: 0,
-      cod: '37081000',
-      name: 'DProduct 37',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 38,
-      grupo: 8,
-      subgrupo: 10,
-      promocao: 1,
-      cod: '38081001',
-      name: 'JProduct 38',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 39,
-      grupo: 8,
-      subgrupo: 10,
-      promocao: 0,
-      cod: '39081000',
-      name: 'DProduct 39',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
-    },
-    {
-      id: 40,
-      grupo: 8,
-      subgrupo: 10,
-      promocao: 0,
-      cod: '40081000',
-      name: 'DProduct 40',
-      imageUrl: '',
-      price: 10.5,
-      ref: 'Descrição do Fabricante do produto'
+      onclick: () => {}
     }
   ]
 }
 
-export async function getProducts(options = {}) {
+export async function getPortifolios(options = {}) {
   const result = await new Promise(resolve => {
     setTimeout(() => {
       resolve({ data })
@@ -456,27 +367,56 @@ export async function getProducts(options = {}) {
   const { order, filter = {} } = options
   const resultData = result && result.data
 
-  const { categoryId, subcategoryId, promocao } = filter
+  const {
+    categoryIdArtes,
+    subcategoryIdArte,
+    categoryIdBordados,
+    subcategoryIdBordados,
+    categoryIdLasers,
+    subcategoryIdLasers,
+    codref
+  } = filter
 
-  if (promocao) {
-    resultData.products = resultData.products.filter(
-      p => p.promocao === promocao
+  if (categoryIdArtes) {
+    resultData.portifolios = resultData.portifolios.filter(
+      p => p.cateroria === categoryIdArtes
+    )
+  }
+  if (subcategoryIdArte) {
+    resultData.portifolios = resultData.portifolios.filter(
+      p => p.subcategoria === subcategoryIdArte
+    )
+  }
+  if (categoryIdBordados) {
+    resultData.portifolios = resultData.portifolios.filter(
+      p => p.categoria === categoryIdBordados
+    )
+  }
+  if (subcategoryIdBordados) {
+    resultData.portifolios = resultData.portifolios.filter(
+      p => p.subcategoria === subcategoryIdBordados
+    )
+  }
+  if (categoryIdLasers) {
+    resultData.portifolios = resultData.portifolios.filter(
+      p => p.categoria === categoryIdLasers
+    )
+  }
+  if (subcategoryIdLasers) {
+    resultData.portifolios = resultData.portifolios.filter(
+      p => p.subcategoria === subcategoryIdLasers
+    )
+  }
+  if (codref) {
+    resultData.portifolios = resultData.portifolios.filter(
+      p => p.codref === codref
+    )
+  }
+  if (resultData.portifolios && order) {
+    resultData.portifolios = resultData.portifolios.sort(
+      compareValues(order, 'asc')
     )
   }
 
-  if (categoryId) {
-    resultData.products = resultData.products.filter(
-      p => p.grupo === categoryId
-    )
-  }
-  if (subcategoryId) {
-    resultData.products = resultData.products.filter(
-      p => p.subgrupo === subcategoryId
-    )
-  }
-
-  if (resultData.products && order) {
-    resultData.products = resultData.products.sort(compareValues(order, 'asc'))
-  }
   return resultData
 }

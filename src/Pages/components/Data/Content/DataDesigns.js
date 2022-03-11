@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerDataDesignMain, ContainerDataMainFlex } from './styleDatas'
-export default function DataDesigns({ open, children }) {
+import { ContainerDataDesignMain, ContainerDataMainFlex } from '../styleDatas'
+export default function DataDesigns({ children }) {
   return (
     <ContainerDataDesignMain open={open}>
       <ContainerDataMainFlex>{children}</ContainerDataMainFlex>
@@ -9,10 +9,8 @@ export default function DataDesigns({ open, children }) {
   )
 }
 DataDesigns.propTypes = {
-  children: PropTypes.any,
-  open: PropTypes.bool
+  children: PropTypes.any
 }
 DataDesigns.defaultProps = {
-  children: null,
-  open: null
+  children: null
 }

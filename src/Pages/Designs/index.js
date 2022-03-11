@@ -9,7 +9,7 @@ import {
 import { ButtonBg, ButtonBgLogo } from '../components/Buttons'
 import home from '../../assets/image/home.svg'
 import designlogo from '../../assets/image/designlogo.svg'
-import { DataPgDesigns } from '../components/Data'
+import { Specials } from '../components/Data/Products'
 export const PageDesigns = () => {
   const { push } = useHistory()
   return (
@@ -24,7 +24,7 @@ export const PageDesigns = () => {
             <ButtonBg img={home} onClick={() => push('/')} title={'Home...'} />
           </PanelEnd>
           <DivisionPanel />
-          <DataPgDesigns open={true} />
+          <Specials />
           <DivisionPanel />
         </ContainerPanelTextFlex>
       </ContainerPanelText>

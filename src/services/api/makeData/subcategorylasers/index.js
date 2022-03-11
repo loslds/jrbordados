@@ -2,14 +2,18 @@ import { compareValues } from 'mini-helper'
 const data = {
   success: true,
   subcategorylasers: [
-    { id: 1, name: 'Todos com Laser.' },
-    { id: 2, name: 'Laser em Acrílico.' },
-    { id: 3, name: 'Laser em M D F.' },
-    { id: 4, name: 'Laser em Madeiras.' },
-    { id: 5, name: 'Laser em Tecidos.' },
-    { id: 6, name: 'Laser em Couro, Courino ou Semelhante.' },
-    { id: 7, name: 'Laser em Metais.' },
-    { id: 8, name: 'Laser em outros Materiais.' }
+    { id: 1, name: 'Todos com Laser.', onclick: () => {} },
+    { id: 2, name: 'Laser em Acrílico.', onclick: () => {} },
+    { id: 3, name: 'Laser em M D F.', onclick: () => {} },
+    { id: 4, name: 'Laser em Madeiras.', onclick: () => {} },
+    { id: 5, name: 'Laser em Tecidos.', onclick: () => {} },
+    {
+      id: 6,
+      name: 'Laser em Couro, Courino ou Semelhante.',
+      onclick: () => {}
+    },
+    { id: 7, name: 'Laser em Metais.', onclick: () => {} },
+    { id: 8, name: 'Laser em outros Materiais.', onclick: () => {} }
   ]
 }
 

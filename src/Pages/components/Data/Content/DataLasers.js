@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerDataLaserMain, ContainerDataMainFlex } from './styleDatas'
+import { ContainerDataLaserMain, ContainerDataMainFlex } from '../styleDatas'
+
 export default function DataLasers({ open, children }) {
   return (
     <ContainerDataLaserMain open={open}>

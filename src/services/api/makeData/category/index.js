@@ -46,9 +46,9 @@ import { compareValues } from 'mini-helper'
 const data = {
   success: true,
   categories: [
-    { id: 1, name: 'Artes.' },
-    { id: 2, name: 'Bordados.' },
-    { id: 3, name: 'Laser.' }
+    { id: 1, name: 'Artes.', onclick: () => {} },
+    { id: 2, name: 'Bordados.', onclick: () => {} },
+    { id: 3, name: 'Lasers.', onclick: () => {} }
   ]
 }
 export async function getCategory(options = {}) {
