@@ -1,12 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContButtImgBgDesig, ButtImgBgDesig } from './styleButton'
+import {
+  ContButtonImgBgBordadosProd,
+  ButtonImgBgBordadosProd
+} from './styleButton'
 
 export default function ButtonBgBordadoProd({ title, onClick, img, open }) {
   return (
-    <ContButtImgBgDesig open={open}>
-      <ButtImgBgDesig img={img} onClick={onClick} title={title} />
-    </ContButtImgBgDesig>
+    <ContButtonImgBgBordadosProd open={open}>
+      <ButtonImgBgBordadosProd img={img} onClick={onClick} title={title} />
+    </ContButtonImgBgBordadosProd>
   )
 }
 

@@ -1,13 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ContainerButton, ButtonModal } from '../ContainerCssModal'
-
-// import send from '../../../assets/images/enviar.svg'
-import close from '../../../assets/image/close.svg'
+import closebrc from '../../../assets/image/closebrc.svg'
 export default function Buttons({ onClick }) {
   return (
     <ContainerButton>
-      <ButtonModal img={close} title="Fechar..." onClick={onClick} />
+      <ButtonModal img={closebrc} title="Fechar..." onClick={onClick} />
     </ContainerButton>
   )
 }

@@ -10,8 +10,8 @@ import Modal from '../../Modal'
 import BarListBox from './BarListBox'
 // imagens
 import {
-  getProducts,
-  setProducts
+  getProducts
+  // setProducts
 } from '../../../services/api/makeData/products'
 import {
   ShoppingCol,
@@ -27,7 +27,7 @@ export default function Promocoes() {
   const [loading, setLoading] = useState(false)
   const [products, setProducts] = useState([])
   const [openFilter, setOpenFilter] = useState(false)
-  const [filter, setFilter] = useState({ promocao: 1 })
+  const [filter, setFilter] = useState({})
 
   const [isButtonMenu, setIsButtonMenu] = useState(false)
 
@@ -62,18 +62,8 @@ export default function Promocoes() {
     <ShoppingCol>
       <ShoppingFlex>
         {products.map(product => {
-          const {
-            id,
-            category,
-            subcategoryartes,
-            subcategorbordados,
-            subcategorlasers,
-            name,
-            codref,
-            ref,
-            imageUrl,
-            onclick
-          } = product
+          const { id, categories, subcategories, name, codref, ref, imageUrl } =
+            product
           return (
             <div key={id}>
               <ShoppingItemProduto>
@@ -83,11 +73,14 @@ export default function Promocoes() {
                   onClick={handleClick(id)}
                 />
                 <div>
-                  <span>Cód: {id}</span>
+                  <span>CódPrd: {id}</span>
+                  <span>IdCat....: {categories}</span>
+                  <span>SIdCat....: {subcategories}</span>
                 </div>
                 <CardAuxilar>
                   <Link to={codref}>
                     <span>{codref}</span>
+                    <span>{ref}</span>
                   </Link>
                 </CardAuxilar>
               </ShoppingItemProduto>

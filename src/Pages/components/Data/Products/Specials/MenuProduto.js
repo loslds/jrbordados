@@ -94,7 +94,10 @@ export default function MenuProduto({ id = 'menu', label = 'MENU' }) {
   const [isClose, setIsClose] = useState(true)
   const [isActive, setIsActive] = useState(false)
 
-  const handleToggleState = useCallback(() => setIsClose(oldState => !oldState), [])
+  const handleToggleState = useCallback(
+    () => setIsClose(oldState => !oldState),
+    []
+  )
   const handleIn = useCallback(() => setIsActive(true), [])
   const handleOut = useCallback(() => setIsActive(false), [])
 
@@ -102,7 +105,12 @@ export default function MenuProduto({ id = 'menu', label = 'MENU' }) {
     <MenuContainer>
       <ContainerNav>
         <nav>
-          <ContainerButton id={id} label={label} isClose={isClose} isActive={isActive}>
+          <ContainerButton
+            id={id}
+            label={label}
+            isClose={isClose}
+            isActive={isActive}
+          >
             <ButtonMenuMain
               img={mnmain}
               title={'Menu'}

@@ -6,84 +6,91 @@ const data = {
     /** registros  Categorias  1 - Artes */
     {
       id: 1,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 1,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001001000000',
+      codref: '001.001.001.000.000',
       ref: 'Todas as Artes',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 2,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 2,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001002000000',
+      codref: '001.001.002.000.000',
       ref: 'Artes com Bordados.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 3,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 3,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001003000000',
+      codref: '001.001.003.000.000',
       ref: 'Artes com Bordados em Tecidos.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 4,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 4,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001004000000',
+      codref: '001.001.004.000.000',
       ref: 'Artes com Bordados em Bonés.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 5,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 5,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001005000000',
+      codref: '001.001.005.000.000',
       ref: 'Artes com Bordados em Vestuários.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 6,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 6,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001006000000',
+      codref: '001.001.006.000.000',
       ref: 'Artes com Bordados em Acessórios.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 7,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 7,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001007000000',
+      codref: '001.001.007.000.000',
       ref: ' Artes com Bordados em outro Material.',
       imageUrl: '',
       onclick: () => {}
@@ -91,96 +98,104 @@ const data = {
 
     {
       id: 8,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 8,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001008000000',
+      codref: '001.001.008.000.000',
       ref: 'Artes a Lasers.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 9,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 9,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001009000000',
+      codref: '001.001.009.000.000',
       ref: 'Artes a Lasers com Acrílico.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 10,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 10,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001010000000',
+      codref: '001.001.010.000.000',
       ref: 'Artes a Lasers com M D F.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 11,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 11,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001011000000',
+      codref: '001.001.011.000.000',
       ref: 'Artes a Lasers com Madeiras.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 12,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 12,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001012000000',
+      codref: '001.001.012.000.000',
       ref: 'Artes a Lasers com Tecidos.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 13,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 13,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001013000000',
+      codref: '001.001.013.000.000',
       ref: 'Artes a Lasers com Couro, Courino ou Semelhante.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 14,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 14,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001014000000',
+      codref: '001.001.014.000.000',
       ref: 'Artes a Lasers com Metais.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 15,
-      category: 1,
+      grupo: 1,
+      subgrupo: 1,
       subcategoryartes: 15,
       subcategorybordados: 0,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '001015000000',
+      codref: '001.001.015.000.000',
       ref: 'Artes a Lasers com outros Materiais.',
       imageUrl: '',
       onclick: () => {}
@@ -188,71 +203,77 @@ const data = {
     /** registros  Categorias  2 - Bordados */
     {
       id: 16,
-      category: 2,
+      grupo: 2,
+      subgrupo: 2,
       subcategoryartes: 0,
       subcategorybordados: 1,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '002000001000',
+      codref: '002.002.000.001.000',
       ref: 'Todas os Bordados',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 17,
-      category: 2,
+      grupo: 2,
+      subgrupo: 2,
       subcategoryartes: 0,
       subcategorybordados: 2,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '002000002000',
+      codref: '002.002.000.002.000',
       ref: 'Bordados em Tecidos.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 18,
-      category: 2,
+      grupo: 2,
+      subgrupo: 2,
       subcategoryartes: 0,
       subcategorybordados: 3,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '002000003000',
+      codref: '002.002.000.003.000',
       ref: 'Bordados em Bonés.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 19,
-      category: 2,
+      grupo: 2,
+      subgrupo: 2,
       subcategoryartes: 0,
       subcategorybordados: 4,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '002000004000',
+      codref: '002.002.000.004.000',
       ref: 'Bordados em Vestuários.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 20,
-      category: 2,
+      grupo: 2,
+      subgrupo: 2,
       subcategoryartes: 0,
       subcategorybordados: 5,
       subcategorylasers: 0,
-      codref: '002000002000',
+      codref: '002.002.000.005.000',
       ref: 'Bordados em Acessórios.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 21,
-      category: 2,
+      grupo: 2,
+      subgrupo: 2,
       subcategoryartes: 0,
       subcategorybordados: 6,
       subcategorylasers: 0,
       name: 's/ nome',
-      codref: '002000006000',
+      codref: '002.002.000.006.000',
       ref: 'Bordados em outro Material.',
       imageUrl: '',
       onclick: () => {}
@@ -260,96 +281,104 @@ const data = {
     /** registros  Categorias  3 - Laser */
     {
       id: 22,
-      category: 3,
+      grupo: 3,
+      subgrupo: 3,
       subcategoryartes: 0,
       subcategorybordados: 0,
       subcategorylasers: 1,
       name: 's/ nome',
-      codref: '003000000001',
+      codref: '003.003.000.000.001',
       ref: 'Todos com Laser.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 23,
-      category: 3,
+      grupo: 3,
+      subgrupo: 3,
       subcategoryartes: 0,
       subcategorybordados: 0,
       subcategorylasers: 2,
       name: 's/ nome',
-      codref: '003000000002',
+      codref: '003.003.000.000.002',
       ref: 'Laser em Acrílico.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 24,
-      category: 3,
+      grupo: 3,
+      subgrupo: 3,
       subcategoryartes: 0,
       subcategorybordados: 0,
       subcategorylasers: 3,
       name: 's/ nome',
-      codref: '003000000003',
+      codref: '003.003.000.000.003',
       ref: 'Laser em M D F.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 25,
-      category: 3,
+      grupo: 3,
+      subgrupo: 3,
       subcategoryartes: 0,
       subcategorybordados: 0,
       subcategorylasers: 4,
       name: 's/ nome',
-      codref: '003000000004',
+      codref: '003.003.000.000.004',
       ref: 'Laser em Madeiras.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 26,
-      category: 3,
+      grupo: 3,
+      subgrupo: 3,
       subcategoryartes: 0,
       subcategorybordados: 0,
       subcategorylasers: 5,
       name: 's/ nome',
-      codref: '003000000005',
+      codref: '003.003.000.000.005',
       ref: 'Laser em Tecidos.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 27,
-      category: 3,
+      grupo: 3,
+      subgrupo: 3,
       subcategoryartes: 0,
       subcategorybordados: 0,
       subcategorylasers: 6,
       name: 's/ nome',
-      codref: '003000000006',
+      codref: '003.003.000.000.006',
       ref: 'Laser em Couro, Courino ou Semelhante.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 28,
-      category: 3,
+      grupo: 3,
+      subgrupo: 3,
       subcategoryartes: 0,
       subcategorybordados: 0,
       subcategorylasers: 7,
       name: 's/ nome',
-      codref: '003000000007',
+      codref: '003.003.000.000.007',
       ref: 'Laser em Metais.',
       imageUrl: '',
       onclick: () => {}
     },
     {
       id: 29,
-      category: 3,
+      grupo: 3,
+      subgrupo: 3,
       subcategoryartes: 0,
       subcategorybordados: 0,
       subcategorylasers: 8,
       name: 's/ nome',
-      codref: '003000000008',
+      codref: '003.003.000.000.008',
       ref: 'Laser em outros Materiais.',
       imageUrl: '',
       onclick: () => {}
@@ -357,7 +386,7 @@ const data = {
   ]
 }
 
-export async function getPortifolios(options = {}) {
+export async function getProducts(options = {}) {
   const result = await new Promise(resolve => {
     setTimeout(() => {
       resolve({ data })
@@ -367,55 +396,25 @@ export async function getPortifolios(options = {}) {
   const { order, filter = {} } = options
   const resultData = result && result.data
 
-  const {
-    categoryIdArtes,
-    subcategoryIdArte,
-    categoryIdBordados,
-    subcategoryIdBordados,
-    categoryIdLasers,
-    subcategoryIdLasers,
-    codref
-  } = filter
+  const { categoryId, subcategoryId } = filter
 
-  if (categoryIdArtes) {
-    resultData.portifolios = resultData.portifolios.filter(
-      p => p.cateroria === categoryIdArtes
+  if (categoryId) {
+    resultData.products = resultData.products.filter(
+      p => p.grupo === categoryId
     )
   }
-  if (subcategoryIdArte) {
-    resultData.portifolios = resultData.portifolios.filter(
-      p => p.subcategoria === subcategoryIdArte
+  if (subcategoryId) {
+    resultData.products = resultData.products.filter(
+      p => p.subgrupo === subcategoryId
     )
   }
-  if (categoryIdBordados) {
-    resultData.portifolios = resultData.portifolios.filter(
-      p => p.categoria === categoryIdBordados
-    )
+
+  if (resultData.products && order) {
+    resultData.products = resultData.products.sort(compareValues(order, 'asc'))
   }
-  if (subcategoryIdBordados) {
-    resultData.portifolios = resultData.portifolios.filter(
-      p => p.subcategoria === subcategoryIdBordados
-    )
-  }
-  if (categoryIdLasers) {
-    resultData.portifolios = resultData.portifolios.filter(
-      p => p.categoria === categoryIdLasers
-    )
-  }
-  if (subcategoryIdLasers) {
-    resultData.portifolios = resultData.portifolios.filter(
-      p => p.subcategoria === subcategoryIdLasers
-    )
-  }
-  if (codref) {
-    resultData.portifolios = resultData.portifolios.filter(
-      p => p.codref === codref
-    )
-  }
-  if (resultData.portifolios && order) {
-    resultData.portifolios = resultData.portifolios.sort(
-      compareValues(order, 'asc')
-    )
+
+  if (resultData.products && order) {
+    resultData.products = resultData.products.sort(compareValues(order, 'asc'))
   }
 
   return resultData

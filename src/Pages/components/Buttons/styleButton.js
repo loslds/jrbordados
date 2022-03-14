@@ -58,7 +58,7 @@ export const ButtonsImgBg = styled.button`
   font-size: 14px;
 `
 /**    button icon design */
-export const ContButtImgBgDesig = styled.div`
+export const ContButtonImgBgDesig = styled.div`
   border: 0px;
   padding: 1px 1px 1px 1px;
   margin: 1px 4px 1px 4px;
@@ -73,7 +73,161 @@ export const ContButtImgBgDesig = styled.div`
   min-height: 35px;
   font-size: 14px;
 `
-export const ButtImgBgDesig = styled.button`
+export const ButtonImgBgDesig = styled.button`
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+`
+export const ContButtonImgBgDesigProd = styled.div`
+  border: 0px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
+  height: 40px;
+  width: 40px;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  min-height: 35px;
+  font-size: 14px;
+`
+export const ButtonImgBgDesigProd = styled.button`
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+`
+/**    button icon produto */
+export const ContButtonImgBgProd = styled.div`
+  border: 0px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
+  height: 40px;
+  width: 40px;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  min-height: 35px;
+  font-size: 14px;
+`
+export const ButtonImgBgProd = styled.button`
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+`
+/** button Bordados  */
+export const ContButtonImgBgBordadosProd = styled.div`
+  border: 0px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
+  height: 40px;
+  width: 40px;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  min-height: 35px;
+  font-size: 14px;
+`
+export const ButtonImgBgBordadosProd = styled.button`
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+`
+/** button Laser  */
+export const ContButtonImgBgLaserProd = styled.div`
+  border: 0px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
+  height: 40px;
+  width: 40px;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  min-height: 35px;
+  font-size: 14px;
+`
+export const ButtonImgBgLaserProd = styled.button`
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+`
+/**    button icon serviço */
+export const ContButtonImgBgServ = styled.div`
+  border: 0px;
+  padding: 1px 1px 1px 1px;
+  margin: 1px 4px 1px 4px;
+  height: 40px;
+  width: 40px;
+  display: ${({ open }) => (open ? 'flex' : 'none')};
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: black;
+  min-height: 35px;
+  font-size: 14px;
+`
+export const ButtonImgBgServ = styled.button`
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
   display: block;
@@ -162,4 +316,19 @@ export const ButtonsImgBgLogo = styled.button`
   cursor: normal;
   outline: none;
   font-size: 14px;
+`
+export const ButtonToolsBar = styled.button`
+  border: 1px #faf000 solid;
+  padding: 0px 0px 0px 0px;
+  margin: 5px 5px 5px 5px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(${({ img }) => img || semimg});
+  cursor: pointer;
+  outline: none;
 `

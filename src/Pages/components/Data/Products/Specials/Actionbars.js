@@ -1,12 +1,12 @@
 import React, { useCallback, useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { useHistory } from 'react-router-dom'
-import { ButtonBar, ToolBar } from '../../ToolBarButton'
+import { ToolsButton, ButtonBgBar } from '../../../Buttons'
 // =======================
-import abortar from '../../../assets/images/close.svg'
-import menuprod from '../../../assets/images/menuprod.svg'
-import refresca from '../../../assets/images/refresca.svg'
-import filtradados from '../../../assets/images/filtradados.svg'
+import closebrc from '../../../../../assets/image/closebrc.svg'
+import menubrc from '../../../../../assets/image/menubrc.svg'
+import refrescabrc from '../../../../../assets/image/refrescabrc.svg'
+import filtrabrc from '../../../../../assets/image/filtrabrc.svg'
 // import subgrupo from '../../../assets/images/subgrupo.svg'
 // import busca from '../../../assets/images/search.svg'
 
@@ -22,20 +22,31 @@ export default function ActionsBar(props) {
   // ...
   const listButtonTools = useMemo(() => {
     return [
-      { img: abortar, label: 'Aborta Shopping', onClick: handleClickAbort },
-      { img: menuprod, label: 'Menu Produtos', onClick: handleClickMenu },
-      { img: refresca, label: 'Refrescar Dados', onClick: handleClickRefresh },
-      { img: filtradados, label: 'Filtra Dados ', onClick: handleClickFilter }
+      { img: closebrc, label: 'Aborta Shopping', onClick: handleClickAbort },
+      { img: menubrc, label: 'Menu Produtos', onClick: handleClickMenu },
+      {
+        img: refrescabrc,
+        label: 'Refrescar Dados',
+        onClick: handleClickRefresh
+      },
+      { img: filtrabrc, label: 'Filtra Dados ', onClick: handleClickFilter }
     ]
   }, [handleClickAbort, handleClickMenu, handleClickRefresh, handleClickFilter])
 
   return (
-    <ToolBar>
+    <ToolsButton>
       {listButtonTools.map(({ img, label, onClick }) => {
         const key = `action-${Math.floor(Math.random() * 10000)}`
-        return <ButtonBar key={key} img={img} title={`${label}`} onClick={onClick} />
+        return (
+          <ButtonBgBar
+            key={key}
+            img={img}
+            title={`${label}`}
+            onClick={onClick}
+          />
+        )
       })}
-    </ToolBar>
+    </ToolsButton>
   )
 }
 

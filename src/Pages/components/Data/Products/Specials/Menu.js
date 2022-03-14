@@ -2,9 +2,8 @@ import React, { useCallback } from 'react'
 // import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { useHistory } from 'react-router-dom'
-import semimg from '../../../assets/images/semimg.svg'
-import mnmain from '../../../assets/images/menuprod.svg'
-
+import semimg from '../../../../../assets/image/semimg.svg'
+import menubrc from '../../../../../assets/image/menubrc.svg'
 const MenuContainer = styled.div`
   border: 1px black solid;
   position: fixed;
@@ -98,13 +97,13 @@ export default function Menu() {
         <nav>
           <ContainerFlexButton>
             {'AAAAAAAA'}
-            <ButtonMenuMain img={mnmain} />
+            <ButtonMenuMain img={menubrc} />
           </ContainerFlexButton>
           <ul>
             <li>
               <ContainerFlexButton>
                 {'li item 1'}
-                <ButtonMenuMain img={mnmain} onClick={handleHome} />
+                <ButtonMenuMain img={menubrc} onClick={handleHome} />
               </ContainerFlexButton>
             </li>
 
