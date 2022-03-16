@@ -186,25 +186,3 @@ export const routeList = [
   ...optionCompanyRoutes,
   ...homeRoutes
 ]
-
-// {
-//   exact: true,
-//   label: 'Show Designs com Produtos',
-//   path: '/portfolios/pagedesignprod',
-//   component: PageDesignProd,
-//   layout: LayoutPages
-// },
-// {
-//   exact: true,
-//   label: 'Show Designs dos Produtos',
-//   path: '/portfolios/pagebordadoprod',
-//   component: PageBordadoProd,
-//   layout: LayoutPages
-// },
-// {
-//   exact: true,
-//   label: 'Show Serviços com Produtos',
-//   path: '/portfolios/pagelaserprod',
-//   component: PageLaserProd,
-//   layout: LayoutPages
-// },

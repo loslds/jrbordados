@@ -5,17 +5,17 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "framer-motion": "^4.1.17",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "framer-motion": "^6.2.8",
     "mini-helper": "^1.0.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-hook-form": "^7.22.0",
-    "react-router-dom": "^5.3.0",
-    "react-scripts": "4.0.3",
+    "react-hook-form": "^7.28.0",
+    "react-router-dom": "^6.2.2",
+    "react-scripts": "5.0.0",
     "styled-components": "^5.3.0",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "lint": "yarn eslint src --ext .js --fix",
@@ -42,17 +42,18 @@
     ]
   },
   "devDependencies": {
+    "@svgr/cli": "^6.2.1",
     "babel-eslint": "^10.1.0",
-    "eslint": "7.12.1",
-    "eslint-config-react-app": "^6.0.0",
+    "eslint": "8.11.0",
+    "eslint-config-react-app": "^7.0.0",
     "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "2.22.1",
-    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-promise": "4.2.1",
-    "eslint-plugin-react": "^7.24.0",
-    "eslint-plugin-react-hooks": "4.0.8",
-    "prettier": "^2.3.1"
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "6.0.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "4.3.0",
+    "prettier": "^2.6.0"
   }
 }
