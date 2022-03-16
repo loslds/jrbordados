@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { DataToolsBarMain, DataToolsBarMainFlex } from '../../../styleData'
+import { DataToolsBarMain, DataToolsBarMainFlex } from '../styleDatas'
 export default function DataToolsBar({ children }) {
   return (
     <DataToolsBarMain>

@@ -4,15 +4,16 @@ import { Link } from 'react-router-dom'
 
 // components
 import ActionsBar from './Actionbars'
-import Loading from '../../Loading'
+import Loading from '../../../Loading'
 import Menu from './Menu'
-import Modal from '../../Modal'
+import Modal from '../../../Modal'
 import BarListBox from './BarListBox'
 // imagens
 import {
-  getProducts
-  // setProducts
-} from '../../../services/api/makeData/products'
+  getProducts,
+  setProducts
+} from '../../../../../services/api/makeData/products'
+
 import {
   ShoppingCol,
   ShoppingFlex,

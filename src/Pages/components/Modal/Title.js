@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { CardTitle } from '../ContainerCssModal'
+import { CardTitle } from './stylerModal'
 
 export default function Title({ title }) {
   return (

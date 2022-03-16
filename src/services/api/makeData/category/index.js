@@ -1,5 +1,32 @@
 // import Api from '../../requester'
+
 import { compareValues } from 'mini-helper'
+
+const data = {
+  success: true,
+  categories: [
+    { id: 1, name: 'Artes.', onclick: () => {} },
+    { id: 2, name: 'Bordados.', onclick: () => {} },
+    { id: 3, name: 'Lasers.', onclick: () => {} }
+  ]
+}
+
+export async function getCategory(options = {}) {
+  const result = await new Promise(resolve => {
+    setTimeout(() => {
+      resolve({ data })
+    }, 2000)
+  })
+
+  const { order } = options
+  const resultData = result && result.data
+  if (resultData.categories && order) {
+    resultData.categories = resultData.categories.sort(
+      compareValues(order, 'asc')
+    )
+  }
+  return resultData
+}
 
 /** Categorias e Sub Categorias para  Filtragem
  * Categorias
@@ -42,26 +69,3 @@ import { compareValues } from 'mini-helper'
  *  7 - Laser em Metais.
  *  8 - Laser em outros Materiais.
  */
-
-const data = {
-  success: true,
-  categories: [
-    { id: 1, name: 'Artes.', onclick: () => {} },
-    { id: 2, name: 'Bordados.', onclick: () => {} },
-    { id: 3, name: 'Lasers.', onclick: () => {} }
-  ]
-}
-export async function getCategory(options = {}) {
-  const result = await new Promise(resolve => {
-    setTimeout(() => {
-      resolve({ data })
-    }, 2000)
-  })
-
-  const { order } = options
-  const resultData = result && result.data
-  if (resultData.category && order) {
-    resultData.category = resultData.category.sort(compareValues(order, 'asc'))
-  }
-  return resultData
-}

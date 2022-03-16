@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContainerButton, ButtonModal } from '../ContainerCssModal'
+import { ContainerButton, ButtonModal } from './stylerModal'
 import closebrc from '../../../assets/image/closebrc.svg'
 export default function Buttons({ onClick }) {
   return (
